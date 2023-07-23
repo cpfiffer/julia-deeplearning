@@ -332,10 +332,10 @@ uuid = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
 version = "0.7.11"
 
 [[deps.DataFrames]]
-deps = ["Compat", "DataAPI", "Future", "InlineStrings", "InvertedIndices", "IteratorInterfaceExtensions", "LinearAlgebra", "Markdown", "Missings", "PooledArrays", "PrecompileTools", "PrettyTables", "Printf", "REPL", "Random", "Reexport", "SentinelArrays", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
-git-tree-sha1 = "089d29c0fc00a190661517e4f3cba5dcb3fd0c08"
+deps = ["Compat", "DataAPI", "DataStructures", "Future", "InlineStrings", "InvertedIndices", "IteratorInterfaceExtensions", "LinearAlgebra", "Markdown", "Missings", "PooledArrays", "PrecompileTools", "PrettyTables", "Printf", "REPL", "Random", "Reexport", "SentinelArrays", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
+git-tree-sha1 = "04c738083f29f86e62c8afc341f0967d8717bdb8"
 uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-version = "1.6.0"
+version = "1.6.1"
 
 [[deps.DataStructures]]
 deps = ["Compat", "InteractiveUtils", "OrderedCollections"]
@@ -376,10 +376,14 @@ uuid = "b552c78f-8df3-52c6-915a-8e097449b14b"
 version = "1.15.1"
 
 [[deps.Distances]]
-deps = ["LinearAlgebra", "SparseArrays", "Statistics", "StatsAPI"]
-git-tree-sha1 = "49eba9ad9f7ead780bfb7ee319f962c811c6d3b2"
+deps = ["LinearAlgebra", "Statistics", "StatsAPI"]
+git-tree-sha1 = "b6def76ffad15143924a2199f72a5cd883a2e8a9"
 uuid = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
-version = "0.10.8"
+version = "0.10.9"
+weakdeps = ["SparseArrays"]
+
+    [deps.Distances.extensions]
+    DistancesSparseArraysExt = "SparseArrays"
 
 [[deps.Distributed]]
 deps = ["Random", "Serialization", "Sockets"]
@@ -925,9 +929,9 @@ version = "1.2.1"
 
 [[deps.LazyArrays]]
 deps = ["ArrayLayouts", "FillArrays", "LinearAlgebra", "MacroTools", "MatrixFactorizations", "SparseArrays"]
-git-tree-sha1 = "a552e17ee600c6fa933f3f9bff7c380b2e032ba8"
+git-tree-sha1 = "c786c27463dc06520be39520b27484175678500a"
 uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
-version = "1.4.1"
+version = "1.5.0"
 weakdeps = ["StaticArrays"]
 
     [deps.LazyArrays.extensions]
@@ -1065,9 +1069,9 @@ version = "0.5.10"
 
 [[deps.MakieCore]]
 deps = ["Observables"]
-git-tree-sha1 = "9926529455a331ed73c19ff06d16906737a876ed"
+git-tree-sha1 = "87a85ff81583bd392642869557cb633532989517"
 uuid = "20f20a25-4f0e-4fdf-b5d1-57303727442b"
-version = "0.6.3"
+version = "0.6.4"
 
 [[deps.MappedArrays]]
 git-tree-sha1 = "2dab0221fe2b0f2cb6754eaa743cc266339f527e"
@@ -1272,9 +1276,9 @@ uuid = "3bd65402-5787-11e9-1adc-39752487f4e2"
 version = "0.2.18"
 
 [[deps.OrderedCollections]]
-git-tree-sha1 = "1791b503101162477bf11e951caf6983e57cd8c2"
+git-tree-sha1 = "2e73fe17cac3c62ad1aebe70d44c963c3cfdc3e3"
 uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
-version = "1.6.1"
+version = "1.6.2"
 
 [[deps.PDMats]]
 deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse"]
