@@ -4,4 +4,4 @@ Here's some handy links and references.
 
 ## Links
 
-- [fast.ai](https://fast.ai)
+- ~~~<a href="https://fast.ai" target="_blank" rel="nooopener noreferrer">fast.ai</a>~~~
