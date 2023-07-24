@@ -14,13 +14,13 @@ We discussed this assignment briefly during our initial meeting, recorded [on Yo
 - Learn how to use Google Colab for GPU access (guide [here](https://www.deep-learning.club/resources/programming-environment/#google_colab_cloud))
 - Read chapters 1-4 of [fastbook](https://github.com/fastai/fastbook)
 - Watch the [part 1](https://course.fast.ai/Lessons/lesson1.html) lecture
-- Watch the [part 1](https://course.fast.ai/Lessons/lesson2.html) lecture
-- Watch the [part 1](https://course.fast.ai/Lessons/lesson3.html) lecture
+- Watch the [part 2](https://course.fast.ai/Lessons/lesson2.html) lecture
+- Watch the [part 3](https://course.fast.ai/Lessons/lesson3.html) lecture
 - Implement Julia versions of the Python code in Chapter 4 of the fastbook
 
 ### Bare-bones assignment
 
 - Read chapter 1 and 4 of [fastbook](https://github.com/fastai/fastbook)
 - Watch the [part 1](https://course.fast.ai/Lessons/lesson1.html) lecture
-- Watch the [part 1](https://course.fast.ai/Lessons/lesson3.html) lecture
+- Watch the [part 2](https://course.fast.ai/Lessons/lesson3.html) lecture
 - Implement Julia versions of the Python code in Chapter 4 of the fastbook
