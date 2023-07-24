@@ -1,4 +1,4 @@
-Sitemap: https://tlienart.github.io/FranklinTemplates.jl/sitemap.xml
+Sitemap: https://www.deep-learning.club/sitemap.xml
 
 User-agent: *
 Disallow:
