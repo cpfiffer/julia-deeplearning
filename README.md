@@ -1,6 +1,6 @@
 # Deep Learning in Julia
 
-[![Website link](https://img.shields.io/badge/URL-website-blue)](http://www.deep-learning.club/)
+[![Website link](https://img.shields.io/badge/URL-website-blue)](https://www.deep-learning.club/)
 [![Link to discord invite](https://img.shields.io/badge/Chat-discord-teal?logo=discord)](https://discord.gg/xKjGn9m6)
 
 A course repository to follow along fast.ai using [Julia](https://julialang.org)!
