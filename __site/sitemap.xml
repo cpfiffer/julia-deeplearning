@@ -2,26 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://tlienart.github.io/FranklinTemplates.jl/code/index.html</loc>
+    <loc>https://www.deep-learning.club/resources/programming-environment/index.html</loc>
+    <lastmod>2023-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://www.deep-learning.club/code/index.html</loc>
     <lastmod>2023-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://tlienart.github.io/FranklinTemplates.jl/schedule/index.html</loc>
+    <loc>https://www.deep-learning.club/schedule/index.html</loc>
     <lastmod>2023-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://tlienart.github.io/FranklinTemplates.jl/resources/index.html</loc>
-    <lastmod>2023-07-23</lastmod>
+    <loc>https://www.deep-learning.club/resources/index.html</loc>
+    <lastmod>2023-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://tlienart.github.io/FranklinTemplates.jl/index.html</loc>
-    <lastmod>2023-07-23</lastmod>
+    <loc>https://www.deep-learning.club/index.html</loc>
+    <lastmod>2023-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
