@@ -5,7 +5,7 @@ There are a few ways of setting up your programming environment for this course,
 
 ## Local
 
-For working locally, we recommend using [Visual Studio Code](https://code.visualstudio.com) with the [Julia extension](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia).
+For working locally, we recommend using [Visual Studio Code](https://code.visualstudio.com) with the [Julia extension](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia). This [document](https://github.com/brianguenter/Julia-Programming-Workflow/blob/main/Workflow.md) describes how to set up your VSCode environment so you can work efficiently.
 
 
 ## Google Colab (Cloud)
