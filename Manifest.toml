@@ -719,9 +719,9 @@ version = "0.9.4"
 
 [[deps.ImageDraw]]
 deps = ["Distances", "ImageCore", "LinearAlgebra"]
-git-tree-sha1 = "6ed6e945d909f87c3013e391dcd3b2a56e48b331"
+git-tree-sha1 = "a547622ba30143363a844350c8cfb84f40b5a796"
 uuid = "4381153b-2b60-58ae-a1ba-fd683676385f"
-version = "0.2.5"
+version = "0.2.6"
 
 [[deps.ImageIO]]
 deps = ["FileIO", "IndirectArrays", "JpegTurbo", "LazyModules", "Netpbm", "OpenEXR", "PNGFiles", "QOI", "Sixel", "TiffImages", "UUIDs"]
