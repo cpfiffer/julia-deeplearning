@@ -14,6 +14,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://www.deep-learning.club/resources/index.html</loc>
+    <lastmod>2023-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://www.deep-learning.club/resources/programming-environment/index.html</loc>
     <lastmod>2023-07-25</lastmod>
     <changefreq>monthly</changefreq>
