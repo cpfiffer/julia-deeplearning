@@ -244,9 +244,9 @@ version = "0.3.0"
 
 [[deps.Compat]]
 deps = ["UUIDs"]
-git-tree-sha1 = "4e88377ae7ebeaf29a047aa1ee40826e0b708a5d"
+git-tree-sha1 = "5ce999a19f4ca23ea484e92a1774a61b8ca4cf8e"
 uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
-version = "4.7.0"
+version = "4.8.0"
 weakdeps = ["Dates", "LinearAlgebra"]
 
     [deps.Compat.extensions]
@@ -535,12 +535,6 @@ deps = ["BSON", "ChainRulesCore", "DataStructures", "EarlyStopping", "Flux", "Gl
 git-tree-sha1 = "83db23f0a0c7c06fac4dad78a1c55270a5973413"
 uuid = "7bf95e4d-ca32-48da-9824-f0dc5310474f"
 version = "0.3.8"
-
-[[deps.Formatting]]
-deps = ["Printf"]
-git-tree-sha1 = "8339d61043228fdd3eb658d86c926cb282ae72a8"
-uuid = "59287772-0a20-5a39-b81b-1366585eb4c0"
-version = "0.4.2"
 
 [[deps.ForwardDiff]]
 deps = ["CommonSubexpressions", "DiffResults", "DiffRules", "LinearAlgebra", "LogExpFunctions", "NaNMath", "Preferences", "Printf", "Random", "SpecialFunctions"]
@@ -929,9 +923,9 @@ version = "1.2.1"
 
 [[deps.LazyArrays]]
 deps = ["ArrayLayouts", "FillArrays", "LinearAlgebra", "MacroTools", "MatrixFactorizations", "SparseArrays"]
-git-tree-sha1 = "c786c27463dc06520be39520b27484175678500a"
+git-tree-sha1 = "97f5b18c92d58dac051d4c4657493e5032822f1d"
 uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
-version = "1.5.0"
+version = "1.5.1"
 weakdeps = ["StaticArrays"]
 
     [deps.LazyArrays.extensions]
@@ -1051,9 +1045,9 @@ version = "4.1.2+0"
 
 [[deps.MPIPreferences]]
 deps = ["Libdl", "Preferences"]
-git-tree-sha1 = "d86a788b336e8ae96429c0c42740ccd60ac0dfcc"
+git-tree-sha1 = "781916a2ebf2841467cda03b6f1af43e23839d85"
 uuid = "3da0fdf6-3ccc-4f1b-acd9-58baa6c99267"
-version = "0.1.8"
+version = "0.1.9"
 
 [[deps.MPItrampoline_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "MPIPreferences", "TOML"]
@@ -1271,9 +1265,9 @@ version = "0.5.5+0"
 
 [[deps.Optimisers]]
 deps = ["ChainRulesCore", "Functors", "LinearAlgebra", "Random", "Statistics"]
-git-tree-sha1 = "6a01f65dd8583dee82eecc2a19b0ff21521aa749"
+git-tree-sha1 = "16776280310aa5553c370b9c7b17f34aadaf3c8e"
 uuid = "3bd65402-5787-11e9-1adc-39752487f4e2"
-version = "0.2.18"
+version = "0.2.19"
 
 [[deps.OrderedCollections]]
 git-tree-sha1 = "2e73fe17cac3c62ad1aebe70d44c963c3cfdc3e3"
@@ -1368,10 +1362,10 @@ uuid = "8162dcfd-2161-5ef2-ae6c-7681170c5f98"
 version = "0.2.0"
 
 [[deps.PrettyTables]]
-deps = ["Crayons", "Formatting", "LaTeXStrings", "Markdown", "Reexport", "StringManipulation", "Tables"]
-git-tree-sha1 = "542b1bd03329c1d235110f96f1bb0eeffc48a87d"
+deps = ["Crayons", "LaTeXStrings", "Markdown", "Printf", "Reexport", "StringManipulation", "Tables"]
+git-tree-sha1 = "ee094908d720185ddbdc58dbe0c1cbe35453ec7a"
 uuid = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
-version = "2.2.6"
+version = "2.2.7"
 
 [[deps.Printf]]
 deps = ["Unicode"]
