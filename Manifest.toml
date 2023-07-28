@@ -444,9 +444,9 @@ uuid = "460bff9d-24e4-43bc-9d9f-a8973cb893f4"
 version = "0.1.9"
 
 [[deps.ExprTools]]
-git-tree-sha1 = "c1d06d129da9f55715c6c212866f5b1bddc5fa00"
+git-tree-sha1 = "27415f162e6028e81c72b82ef756bf321213b6ec"
 uuid = "e2ba6199-217a-4e67-a87a-7c52f15ade04"
-version = "0.1.9"
+version = "0.1.10"
 
 [[deps.ExproniconLite]]
 deps = ["Pkg", "TOML"]
@@ -671,9 +671,9 @@ version = "1.9.14"
 
 [[deps.HypergeometricFunctions]]
 deps = ["DualNumbers", "LinearAlgebra", "OpenLibm_jll", "SpecialFunctions"]
-git-tree-sha1 = "83e95aaab9dc184a6dcd9c4c52aa0dc26cd14a1d"
+git-tree-sha1 = "f218fe3736ddf977e0e772bc9a586b2383da2685"
 uuid = "34004b35-14d8-5ef3-9330-4cdb6864b03a"
-version = "0.3.21"
+version = "0.3.23"
 
 [[deps.HypertextLiteral]]
 deps = ["Tricks"]
@@ -759,10 +759,14 @@ uuid = "9b13fd28-a010-5f03-acff-a1bbcff69959"
 version = "1.0.0"
 
 [[deps.InfiniteArrays]]
-deps = ["ArrayLayouts", "FillArrays", "Infinities", "LazyArrays", "LinearAlgebra", "Statistics"]
-git-tree-sha1 = "6caf665a1d25a10c22b4415e9d5b4a5b90f9abdf"
+deps = ["ArrayLayouts", "FillArrays", "Infinities", "LazyArrays", "LinearAlgebra"]
+git-tree-sha1 = "e61675cbcf3ce57ea3566b0abcfe46e4a521bf6f"
 uuid = "4858937d-0d70-526a-a4dd-2d5cb5dd786c"
-version = "0.12.14"
+version = "0.12.15"
+weakdeps = ["Statistics"]
+
+    [deps.InfiniteArrays.extensions]
+    InfiniteArraysStatisticsExt = "Statistics"
 
 [[deps.Infinities]]
 git-tree-sha1 = "83fc1771340f16ec9da174ba39c83efc605251db"
