@@ -813,9 +813,9 @@ version = "0.13.6"
 
 [[deps.IntervalSets]]
 deps = ["Dates", "Random"]
-git-tree-sha1 = "19ef25c6befb8076aefbc6f89d9011b415fb25da"
+git-tree-sha1 = "cc93182adbc04a6b2183e222a0fa0d256bb977e6"
 uuid = "8197267c-284f-5f27-9208-e0e47529a953"
-version = "0.7.5"
+version = "0.7.6"
 weakdeps = ["Statistics"]
 
     [deps.IntervalSets.extensions]
@@ -931,9 +931,9 @@ version = "1.2.1"
 
 [[deps.LazyArrays]]
 deps = ["ArrayLayouts", "FillArrays", "LinearAlgebra", "MacroTools", "MatrixFactorizations", "SparseArrays"]
-git-tree-sha1 = "97f5b18c92d58dac051d4c4657493e5032822f1d"
+git-tree-sha1 = "c9af92d0be60963babfd762e57376bb1bde01bce"
 uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
-version = "1.5.1"
+version = "1.5.2"
 weakdeps = ["StaticArrays"]
 
     [deps.LazyArrays.extensions]
@@ -1314,9 +1314,9 @@ version = "0.12.3"
 
 [[deps.Parsers]]
 deps = ["Dates", "PrecompileTools", "UUIDs"]
-git-tree-sha1 = "4b2e829ee66d4218e0cef22c0a64ee37cf258c29"
+git-tree-sha1 = "716e24b21538abc91f6205fd1d8363f39b442851"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
-version = "2.7.1"
+version = "2.7.2"
 
 [[deps.Pickle]]
 deps = ["BFloat16s", "DataStructures", "InternedStrings", "Serialization", "SparseArrays", "Strided", "StringEncodings", "ZipFile"]
