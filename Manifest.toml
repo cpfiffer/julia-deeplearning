@@ -6,13 +6,14 @@ project_hash = "56c72d81909110d6e92adb733d73b6bffada833c"
 
 [[deps.AbstractFFTs]]
 deps = ["LinearAlgebra"]
-git-tree-sha1 = "cad4c758c0038eea30394b1b671526921ca85b21"
+git-tree-sha1 = "d92ad398961a3ed262d8bf04a1a2b8340f915fef"
 uuid = "621f4979-c628-5d54-868e-fcf4e3e8185c"
-version = "1.4.0"
-weakdeps = ["ChainRulesCore"]
+version = "1.5.0"
+weakdeps = ["ChainRulesCore", "Test"]
 
     [deps.AbstractFFTs.extensions]
     AbstractFFTsChainRulesCoreExt = "ChainRulesCore"
+    AbstractFFTsTestExt = "Test"
 
 [[deps.AbstractTrees]]
 git-tree-sha1 = "faa260e4cb5aba097a73fab382dd4b5819d8ec8c"
@@ -46,9 +47,9 @@ version = "0.2.0"
 
 [[deps.ArrayLayouts]]
 deps = ["FillArrays", "LinearAlgebra", "SparseArrays"]
-git-tree-sha1 = "0adeb373cb2268a0f4e62d349ce9957b509d4d7e"
+git-tree-sha1 = "6189f7819e6345bcc097331c7db571f2f211364f"
 uuid = "4c555306-a7a7-4459-81d9-ec55ddd5c99a"
-version = "1.1.0"
+version = "1.1.1"
 
 [[deps.Artifacts]]
 uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
@@ -653,9 +654,9 @@ version = "0.16.15"
 
 [[deps.HDF5_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "LLVMOpenMP_jll", "LazyArtifacts", "LibCURL_jll", "Libdl", "MPICH_jll", "MPIPreferences", "MPItrampoline_jll", "MicrosoftMPI_jll", "OpenMPI_jll", "OpenSSL_jll", "TOML", "Zlib_jll", "libaec_jll"]
-git-tree-sha1 = "3b20c3ce9c14aedd0adca2bc8c882927844bd53d"
+git-tree-sha1 = "592e1c427983a465831fc73c5ae0ca5d0ac13a9e"
 uuid = "0234f1f7-429e-5d53-9886-15a909be8d59"
-version = "1.14.0+0"
+version = "1.14.1+0"
 
 [[deps.HTML_Entities]]
 deps = ["StrTables"]
@@ -813,9 +814,9 @@ version = "0.13.6"
 
 [[deps.IntervalSets]]
 deps = ["Dates", "Random"]
-git-tree-sha1 = "cc93182adbc04a6b2183e222a0fa0d256bb977e6"
+git-tree-sha1 = "8e59ea773deee525c99a8018409f64f19fb719e6"
 uuid = "8197267c-284f-5f27-9208-e0e47529a953"
-version = "0.7.6"
+version = "0.7.7"
 weakdeps = ["Statistics"]
 
     [deps.IntervalSets.extensions]
@@ -919,10 +920,10 @@ uuid = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
 version = "1.3.0"
 
 [[deps.Languages]]
-deps = ["InteractiveUtils", "JSON"]
-git-tree-sha1 = "b1a564061268ccc3f3397ac0982983a657d4dcb8"
+deps = ["InteractiveUtils", "JSON", "RelocatableFolders"]
+git-tree-sha1 = "85b0221304a723f3fc5221f33b471675e5f64e74"
 uuid = "8ef0a80b-9436-5d2c-a485-80b904378c43"
-version = "0.4.3"
+version = "0.4.4"
 
 [[deps.LazilyInitializedFields]]
 git-tree-sha1 = "410fe4739a4b092f2ffe36fcb0dcc3ab12648ce1"
