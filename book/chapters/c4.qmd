@@ -5,12 +5,16 @@
 using Pkg; Pkg.activate("book")
 
 # Packages
+using DataFrames
 using Flux
 using Images
 using Measures
 using MLDatasets
 using MLUtils
+using OneHotArrays
 using Plots
+import UnicodePlots
+
 ```
 
 ## Calculating Gradients
@@ -47,7 +51,7 @@ x = [-0.75xmax]
 x = repeat(x,length(lrs),1)                             # repeat x for each learning rate
 plts = [deepcopy(plt) for i in 1:length(lrs)]           # repeat plt for each learning rate
 anim = @animate for j in 1:nsteps
-    global x = hcat(x, zeros(size(x,1)))       # add column of zeros to x
+    global x = hcat(x, zeros(size(x,1)))                # add column of zeros to x
     for (i, lr) in enumerate(lrs)
         _plt = plot(plts[i], title="lr = $lr", ylims=(0,f(xmax)), legend=false)
         scatter!([x[i,j]], [f(x[i,j])]; label=nothing, ms=5, c=:red)    # plot current point
@@ -74,7 +78,9 @@ The MNIST dataset can be loaded in Julia as follows:
 ```{julia}
 # Data
 X, y = MLDatasets.MNIST(:train)[:]
+y_enc = Flux.onehotbatch(y, 0:9)
 Xtest, ytest = MLDatasets.MNIST(:test)[:]
+ytest_enc = onehotbatch(ytest, 0:9)
 mosaic(map(i -> convert2image(MNIST, X[:,:,i]), rand(1:60000,100)), ncol=10)
 ```
 
@@ -82,28 +88,28 @@ We can preprocess the data as follows:
 
 ```{julia}
 i_train, i_val = [], []
-for (k,v) in group_indices(ytrain)
+for (k,v) in group_indices(y)
     _i_train, _i_val = splitobs(v, at=0.7)
     push!(i_train, _i_train...)
     push!(i_val, _i_val...)
 end
-Xtrain, ytrain = X[:,:,i_train], y[i_train]
-Xval, yval = X[:,:,i_val], y[i_val]
+Xtrain, ytrain = X[:,:,i_train], y_enc[:,i_train]
+Xval, yval = X[:,:,i_val], y_enc[:,i_val]
 ```
 
 Next, we define a data loader:
 
 ```{julia}
 batchsize = 128
-dl_train = DataLoader((Xtrain, ytrain), batchsize=batchsize, shuffle=true)
-dl_val = DataLoader((Xval, yval), batchsize=batchsize)
+train_set = DataLoader((Xtrain, ytrain), batchsize=batchsize, shuffle=true)
+val_set = DataLoader((Xval, yval), batchsize=batchsize)
 ```
 
 We can now define a model, based on how we preprocessed the data:
 
 ```{julia}
 model = Chain(
-    flatten,
+    Flux.flatten,
     Dense(28^2, 32, relu),
     Dense(32, 10),
     softmax
@@ -113,39 +119,115 @@ model = Chain(
 Finally, what's left to do is to define a loss function and an optimiser:
 
 ```{julia}
-loss(y_hat, y) = crossentropy(y_hat, y)
+loss(y_hat, y) = Flux.Losses.crossentropy(y_hat, y)
 opt_state = Flux.setup(Adam(),model)
 ```
 
+Before we start training, we define some helper functions:
+
 ```{julia}
+# Callbacks:
+function accuracy(model, data::DataLoader)
+    acc = 0
+    for (x,y) in data
+        acc += sum(onecold(model(x)) .== onecold(y)) / size(y,2)
+    end
+    return acc / length(data)
+end
+
+function avg_loss(model, data::DataLoader)
+    _loss = 0
+    for (x,y) in data
+        _loss += loss(model(x), y)[1]
+    end
+    return _loss / length(data)
+end
+```
+
+As very last step, we set up our traning logs:
+
+```{julia}
+# Final setup:
 nepochs = 100
 log = []
+acc_train, acc_val = accuracy(model, train_set), accuracy(model, val_set)
+loss_train, loss_val = avg_loss(model, train_set), avg_loss(model, val_set)
+results = Dict(
+    :epoch => 0,
+    :acc_train => acc_train,
+    :acc_val => acc_val,
+    :loss_train => loss_train,
+    :loss_val => loss_val
+)
+push!(log, results)
+```
+
+Below we finally train our model:
+
+```{julia}
+# Training loop:
 for epoch in 1:nepochs
 
-  for (i, data) in enumerate(dl_train)
+    for (i, data) in enumerate(train_set)
 
-    # Extract data:
-    input, label = data
+        # Extract data:
+        input, label = data
 
-    # Compute loss and gradient:
-    val, grads = Flux.withgradient(model) do m
-      result = m(input)
-      loss(result, label)
+        # Compute loss and gradient:
+        val, grads = Flux.withgradient(model) do m
+            result = m(input)
+            loss(result, label)
+        end
+
+        # Detect loss of Inf or NaN. Print a warning, and then skip update!
+        if !isfinite(val)
+            @warn "loss is $val on item $i" epoch
+            continue
+        end
+
+        Flux.update!(opt_state, model, grads[1])
+
     end
 
-    # Detect loss of Inf or NaN. Print a warning, and then skip update!
-    if !isfinite(val)
-      @warn "loss is $val on item $i" epoch
-      continue
-    end
+    # Monitor progress:
+    acc_train, acc_val = accuracy(model, train_set), accuracy(model, val_set)
+    loss_train, loss_val = avg_loss(model, train_set), avg_loss(model, val_set)
+    results = Dict(
+        :epoch => epoch,
+        :acc_train => acc_train,
+        :acc_val => acc_val,
+        :loss_train => loss_train,
+        :loss_val => loss_val
+    )
+    push!(log, results)
 
-    Flux.update!(opt_state, model, grads[1])
-
-  end
-
-  # Compute some accuracy, and save details as a NamedTuple
-  acc = my_accuracy(model, train_set)
-  push!(my_log, (; acc, losses))
+    # Print progress:
+    results_df = DataFrame(log)
+    vals = Matrix(results_df[2:end,[:loss_train,:loss_val]])
+    plt = UnicodePlots.lineplot(1:epoch, vals; 
+        name=["Train","Validation"], title="Loss in epoch $epoch", xlim=(1,nepochs))
+    UnicodePlots.display(plt)
 
 end
+```
+
+
+
+
+```{julia}
+#| output: true
+#| fig-cap: Training and validation loss and accuracy
+#| label: fig-mnist
+
+output = DataFrame(log)
+output = output[2:end,:]
+
+anim = @animate for epoch in 1:maximum(output.epoch)
+    p_loss = plot(output[1:epoch,:epoch], Matrix(output[1:epoch,[:loss_train,:loss_val]]), 
+        label=["Train" "Validation"], title="Loss", legend=:topleft)
+    p_acc = plot(output[1:epoch,:epoch], Matrix(output[1:epoch,[:acc_train,:acc_val]]), 
+        label=["Train" "Validation"], title="Accuracy", legend=:topleft)
+    plot(p_loss, p_acc, layout=(1,2), size=(800,400))
+end
+gif(anim, fps=5)
 ```
