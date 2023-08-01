@@ -2,10 +2,8 @@
 
 ```{julia}
 #| echo: false
-using Pkg; Pkg.activate("book")
-```
+using Pkg; Pkg.activate(".")
 
-```{julia}
 # Packages
 using DataFrames
 using Flux
@@ -16,6 +14,9 @@ using MLUtils
 using OneHotArrays
 using Plots
 import UnicodePlots
+
+# File paths:
+www_path = "www"
 ```
 
 ## Calculating Gradients
@@ -33,7 +34,6 @@ df(2)
 Below we implement and visualise gradient descent from scratch in Julia. 
 
 ```{julia}
-#| output: true
 #| fig-cap: Gradient descent for different learning rates
 #| label: fig-gd
 
@@ -64,12 +64,11 @@ anim = @animate for j in 1:nsteps
         plts[i] = _plt
     end
     plot(
-        plts..., layout=(1,length(plts)), 
-        size=(length(plts)*300,300), legend=false,
+        plts..., legend=false,
         plot_title="Step $j", margin = 5mm
     )
 end
-gif(anim, fps=0.5)
+gif(anim, joinpath(www_path, "c4_gd.gif"), fps=0.5)
 ```
 
 ## Training a Digit Classifier
@@ -145,7 +144,7 @@ function avg_loss(model, data::DataLoader)
 end
 ```
 
-As very last step, we set up our traning logs:
+As a very last step, we set up our training logs:
 
 ```{julia}
 # Final setup:
@@ -166,6 +165,8 @@ push!(log, results)
 Below we finally train our model:
 
 ```{julia}
+#| output: false
+
 # Training loop:
 for epoch in 1:nepochs
 
@@ -216,7 +217,6 @@ end
 @fig-mnist shows the training and validation loss and accuracy over epochs. Evidently, the model is overfitting, as the validation loss increases after bottoming out at around epoch 20.
 
 ```{julia}
-#| output: true
 #| fig-cap: Training and validation loss and accuracy
 #| label: fig-mnist
 
@@ -230,5 +230,5 @@ anim = @animate for epoch in 1:maximum(output.epoch)
         label=["Train" "Validation"], title="Accuracy", legend=:topleft)
     plot(p_loss, p_acc, layout=(1,2), size=(800,400))
 end
-gif(anim, fps=5)
+gif(anim, joinpath(www_path, "c4_mnist.gif"), fps=5)
 ```

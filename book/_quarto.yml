@@ -18,10 +18,6 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
-  epub:
-    cover-image: cover.png
 
 jupyter: julia-1.9
 
