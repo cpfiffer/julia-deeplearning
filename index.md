@@ -1,4 +1,4 @@
-@def title = "Franklin Example"
+@def title = "Julia for Deep Learning"
 @def tags = ["syntax", "code"]
 
 # Julia for Deep Learning
