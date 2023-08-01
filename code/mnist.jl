@@ -4,12 +4,21 @@
 using Markdown
 using InteractiveUtils
 
-# ╔═╡ 04b7adaf-c369-4d22-80aa-24d0f0301c37
-using Pkg; Pkg.activate("..")
+# This Pluto notebook uses @bind for interactivity. When running this notebook outside of Pluto, the following 'mock version' of @bind gives bound variables a default value (instead of an error).
+macro bind(def, element)
+    quote
+        local iv = try Base.loaded_modules[Base.PkgId(Base.UUID("6e696c72-6542-2067-7265-42206c756150"), "AbstractPlutoDingetjes")].Bonds.initial_value catch; b -> missing; end
+        local el = $(esc(element))
+        global $(esc(def)) = Core.applicable(Base.get, el) ? Base.get(el) : iv(el)
+        el
+    end
+end
 
 # ╔═╡ 3726383c-2a91-11ee-2be6-8f64410b6b5b
 # Setting up imports
 begin 
+	import Pkg; Pkg.activate("..")
+	using Revise
 	using Flux
 	using FluxTraining
 	using MLDatasets
@@ -17,6 +26,14 @@ begin
 	using cuDNN
 	using CUDA
 	using Colors
+	using Statistics
+	using OneHotArrays
+	using Random
+	using Printf
+	using Plots
+	using ProgressLogging
+	using PlutoUI
+	plotlyjs()
 end
 
 # ╔═╡ ced62b30-0860-4b46-8c52-db460cf8c29e
@@ -64,31 +81,144 @@ A five? That's a five. Whatever man. Work on your handwriting because holy hell 
 Anyway. Let's move on. 
 """
 
+# ╔═╡ 6b16aa0d-a7db-4e9c-a8e2-b36c30eff83e
+function process(dt; pct=0.2, batchsize=512)
+	# Extract all the features and targets
+	X_raw, y_raw = dt[:]
+
+	# Reshape the X's from a 28 x 28 x N to a 28^2 x N matrix
+	X = reshape(X_raw, (28^2, size(X_raw, 3)))
+
+	# One-hot encode the Ys
+	y = onehotbatch(y_raw, collect(0:9))
+
+	# Draw pct samples for validation
+	# valid_inds = rand(eachindex(y_raw), (Int32 ∘ floor)(length(y_raw) * pct))
+	valid_inds = shuffle(eachindex(y_raw))
+	cutpoint = Int(floor(size(X, 2) * 0.2))
+	X_valid, y_valid = X[:,valid_inds[1:cutpoint]], y[:,valid_inds[1:cutpoint]]
+	X_train, y_train = X[:,valid_inds[(cutpoint+1):end]],
+		y[:,valid_inds[(cutpoint+1):end]]
+
+	@info "Data size" size(X_valid) size(y_valid) size(X_train) size(y_train)
+
+	# Return dataloaders for validation and train
+	return (
+		train=DataLoader((X_train, y_train) |> gpu, shuffle=true, batchsize=batchsize),
+		valid=DataLoader((X_valid, y_valid) |> gpu, shuffle=true, batchsize=batchsize),
+	)
+end
+
 # ╔═╡ 66a8c5b1-017b-463e-83ca-4224cf9bcd06
-X, y = dataset[:];
+trainload, validload = process(MNIST(:train));
 
-# ╔═╡ a2250120-c293-4932-9ca7-5bd30ba2ffee
+# ╔═╡ bb360160-5790-4d7c-8452-dc928018768d
+trainload
 
-vec_X = reshape(X[:,:,:], (28^2, 60_000))' |> Array
+# ╔═╡ 99e776bf-a521-4c0b-9e0c-2cdb80e74090
+@bind thickness NumberField(1:30, default=10)
 
-# ╔═╡ 0a0b518e-9256-4a39-8a11-6c274831fc6f
-loader = DataLoader((vec_X, y), batchsize=32, shuffle=true);
+# ╔═╡ fb0ef8e0-b82f-400c-9959-931f880d23c8
+@bind epochs NumberField(1:10, default=10)
 
 # ╔═╡ 56c33691-3f7d-4cf1-b0a4-8fdced123921
 model = Chain(
-	Dense(28^2 => 10, relu),
-	Dense(10 => 10, relu),
-	Dense(10 => 10, softmax)
-)
+	Dense(28^2 => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => thickness, celu),
+	Dense(thickness => 10, celu),
+	softmax
+) |> gpu
 
-# ╔═╡ 407a726c-1922-4dfe-8fe5-56ea613cc981
-learner = Learner(model, Flux.Losses.logitcrossentropy)
+# ╔═╡ 7962c59a-5ded-47a3-a81e-371d8fc160ba
+function accuracy(model::Flux.Chain, data::DataLoader)
+	# Compute the percent that the model ascribes to the true outcome
+	# mean(sum(map(x -> model(x[1]) .* x[2], data), dims=1))
+	# for (feature, label) in data
+	# 	yhat = sum(model(feature) .* label, dims=1)
+	# end
+	mean(map(x -> sum(model(x[1]) .* x[2], dims=1), data)) |> mean |> cpu
+end
 
-# ╔═╡ 3ed8922e-8f74-44b8-839d-462061af02b8
-fit!(learner, 10, (10, 10))
+# ╔═╡ c6403f4a-936f-4359-8b69-19bf8cc41f21
+state = Flux.setup(Flux.Adam(0.001), model)
+
+# ╔═╡ 3cadc0c0-131a-49c8-ac10-29018ca76035
+train_accuracy = zeros(Float32, epochs);
+
+# ╔═╡ e9ba68f1-ee10-4663-901e-0586e47cafb5
+valid_accuracy = zeros(Float32, epochs);
+
+# ╔═╡ 93dbef0a-7c9b-4be8-b0c0-01e273bf8360
+# Manual training
+begin
+	@progress for epoch in 1:epochs
+		# @info "Epoch $epoch"
+		# Iterate through samples
+		for (feature, label) in trainload
+			# Compute the gradients
+			grads = Flux.gradient(model) do m
+				result = m(feature)
+				Flux.Losses.crossentropy(result, label)
+			end
+			# Update the model
+			Flux.update!(state, model, grads[1])
+		end
+
+		# Compute accuracy
+		train_accuracy[epoch] = accuracy(model, trainload)
+		valid_accuracy[epoch] = accuracy(model, validload)
+	end
+end
+
+# ╔═╡ 2c954db3-f144-4f83-afba-98949ce524a9
+begin
+	plot(valid_accuracy, label="valid")
+	plot!(train_accuracy, label="train")
+end
+
+# ╔═╡ 35151dec-88d3-4cdc-8d3b-3a1fd75ef0cf
+function predict(img, model)
+	predictions = model(vec(img) |> gpu) |> cpu
+	prob, i = findmax(predictions)
+	# display(predictions)
+	return (prob, i-1)
+end
+
+# ╔═╡ 49e36999-2f21-47ca-98a1-c9e4fe587aef
+predict(dataset.features[:,:,3], model)
+
+# ╔═╡ 2f3888e2-1df4-4df5-8966-f64def460992
+@bind sample_number Slider(1:30)
+
+# ╔═╡ f9defc31-e394-4192-b586-cb241dd180a0
+Gray.(MNIST(:test).features[:,:,sample_number]')
+
+# ╔═╡ c192f6dc-1797-49c7-a439-f5246fd6ae51
+let
+	prob, thing = predict(MNIST(:test).features[:,:,sample_number], model)
+	md"""
+	The number is probably a $(thing), with probability $(prob)!
+	"""
+end
 
 # ╔═╡ Cell order:
-# ╠═04b7adaf-c369-4d22-80aa-24d0f0301c37
 # ╟─ced62b30-0860-4b46-8c52-db460cf8c29e
 # ╠═3726383c-2a91-11ee-2be6-8f64410b6b5b
 # ╟─989319a2-6ca8-4030-846c-b16145419e81
@@ -97,12 +227,23 @@ fit!(learner, 10, (10, 10))
 # ╠═40608d61-775b-41f2-a5f5-1352fb545d22
 # ╟─25a1adc5-5a9e-4663-8878-62706c1d562c
 # ╠═5f2722de-80ad-463d-aa75-acf1368d3db5
-# ╠═b3a694e2-7a15-4021-85cd-a4bc538c4568
+# ╟─b3a694e2-7a15-4021-85cd-a4bc538c4568
 # ╠═3964ccf5-a408-4b96-ba26-09306b275ea8
-# ╠═2bad0e09-c03e-490e-994f-b31a6f969e8e
+# ╟─2bad0e09-c03e-490e-994f-b31a6f969e8e
+# ╠═6b16aa0d-a7db-4e9c-a8e2-b36c30eff83e
 # ╠═66a8c5b1-017b-463e-83ca-4224cf9bcd06
-# ╠═a2250120-c293-4932-9ca7-5bd30ba2ffee
-# ╠═0a0b518e-9256-4a39-8a11-6c274831fc6f
+# ╠═bb360160-5790-4d7c-8452-dc928018768d
+# ╠═99e776bf-a521-4c0b-9e0c-2cdb80e74090
+# ╠═fb0ef8e0-b82f-400c-9959-931f880d23c8
 # ╠═56c33691-3f7d-4cf1-b0a4-8fdced123921
-# ╠═407a726c-1922-4dfe-8fe5-56ea613cc981
-# ╠═3ed8922e-8f74-44b8-839d-462061af02b8
+# ╠═7962c59a-5ded-47a3-a81e-371d8fc160ba
+# ╠═c6403f4a-936f-4359-8b69-19bf8cc41f21
+# ╠═3cadc0c0-131a-49c8-ac10-29018ca76035
+# ╠═e9ba68f1-ee10-4663-901e-0586e47cafb5
+# ╠═93dbef0a-7c9b-4be8-b0c0-01e273bf8360
+# ╠═2c954db3-f144-4f83-afba-98949ce524a9
+# ╠═35151dec-88d3-4cdc-8d3b-3a1fd75ef0cf
+# ╠═49e36999-2f21-47ca-98a1-c9e4fe587aef
+# ╠═2f3888e2-1df4-4df5-8966-f64def460992
+# ╠═f9defc31-e394-4192-b586-cb241dd180a0
+# ╠═c192f6dc-1797-49c7-a439-f5246fd6ae51
