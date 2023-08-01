@@ -3,7 +3,9 @@
 ```{julia}
 #| echo: false
 using Pkg; Pkg.activate("book")
+```
 
+```{julia}
 # Packages
 using DataFrames
 using Flux
@@ -14,7 +16,6 @@ using MLUtils
 using OneHotArrays
 using Plots
 import UnicodePlots
-
 ```
 
 ## Calculating Gradients
@@ -212,7 +213,7 @@ end
 ```
 
 
-
+@fig-mnist shows the training and validation loss and accuracy over epochs. Evidently, the model is overfitting, as the validation loss increases after bottoming out at around epoch 20.
 
 ```{julia}
 #| output: true
