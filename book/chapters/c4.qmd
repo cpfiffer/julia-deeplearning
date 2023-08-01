@@ -73,9 +73,9 @@ The MNIST dataset can be loaded in Julia as follows:
 
 ```{julia}
 # Data
-Xtrain, ytrain = MLDatasets.MNIST(:train)[:]
+X, y = MLDatasets.MNIST(:train)[:]
 Xtest, ytest = MLDatasets.MNIST(:test)[:]
-mosaic(map(i -> convert2image(MNIST, Xtrain[:,:,i]), rand(1:60000,100)), ncol=10)
+mosaic(map(i -> convert2image(MNIST, X[:,:,i]), rand(1:60000,100)), ncol=10)
 ```
 
 We can preprocess the data as follows:
@@ -83,13 +83,23 @@ We can preprocess the data as follows:
 ```{julia}
 i_train, i_val = [], []
 for (k,v) in group_indices(ytrain)
-    _i_train, _i_val = splitobs(v, at=0.7, shuffle=true)
+    _i_train, _i_val = splitobs(v, at=0.7)
     push!(i_train, _i_train...)
     push!(i_val, _i_val...)
 end
-Xtrain, ytrain = Xtrain[:,:,i_train], ytrain[i_train]
-Xval, yval = Xtrain[:,:,i_val], ytrain[i_val]
+Xtrain, ytrain = X[:,:,i_train], y[i_train]
+Xval, yval = X[:,:,i_val], y[i_val]
 ```
+
+Next, we define a data loader:
+
+```{julia}
+batchsize = 128
+dl_train = DataLoader((Xtrain, ytrain), batchsize=batchsize, shuffle=true)
+dl_val = DataLoader((Xval, yval), batchsize=batchsize)
+```
+
+We can now define a model, based on how we preprocessed the data:
 
 ```{julia}
 model = Chain(
@@ -98,4 +108,44 @@ model = Chain(
     Dense(32, 10),
     softmax
 )
+```
+
+Finally, what's left to do is to define a loss function and an optimiser:
+
+```{julia}
+loss(y_hat, y) = crossentropy(y_hat, y)
+opt_state = Flux.setup(Adam(),model)
+```
+
+```{julia}
+nepochs = 100
+log = []
+for epoch in 1:nepochs
+
+  for (i, data) in enumerate(dl_train)
+
+    # Extract data:
+    input, label = data
+
+    # Compute loss and gradient:
+    val, grads = Flux.withgradient(model) do m
+      result = m(input)
+      loss(result, label)
+    end
+
+    # Detect loss of Inf or NaN. Print a warning, and then skip update!
+    if !isfinite(val)
+      @warn "loss is $val on item $i" epoch
+      continue
+    end
+
+    Flux.update!(opt_state, model, grads[1])
+
+  end
+
+  # Compute some accuracy, and save details as a NamedTuple
+  acc = my_accuracy(model, train_set)
+  push!(my_log, (; acc, losses))
+
+end
 ```
