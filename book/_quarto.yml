@@ -1,5 +1,6 @@
 project:
   type: book
+  execute-dir: project
 
 book:
   title: "book"
@@ -8,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - chapters/c4.qmd
     - summary.qmd
     - references.qmd
 
@@ -18,6 +20,10 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
+  epub:
+    cover-image: cover.png
+
+jupyter: julia-1.9
 
 
 

@@ -1,5 +1,3 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+This book provides an overview of a pure Julia implementation of the fastai book: [Deep Learning for Coders with fastai and PyTorch](https://github.com/fastai/fastbook). The original book works with Python and PyTorch. This book works with Julia and relies primarily on `Flux.jl`. The original book is written by Jeremy Howard and Sylvain Gugger. This book is written by participants of the [Julia for Deep Learning](https://www.deep-learning.club/) course.

@@ -1,0 +1,101 @@
+# Chapter 4: Under the Hood: Training a Digit Classifier
+
+```{julia}
+#| echo: false
+using Pkg; Pkg.activate("book")
+
+# Packages
+using Flux
+using Images
+using Measures
+using MLDatasets
+using MLUtils
+using Plots
+```
+
+## Calculating Gradients
+
+### Using [`Flux.jl`](https://fluxml.ai/Flux.jl/stable/models/basics/)
+
+Taking gradients in `Flux.jl` is as simple as calling `gradient` on a function. For example, to take the gradient of `f(x) = x^2` at `x = 2`, we can do the following:
+
+```{julia}
+f(x) = x^2
+df(x) = gradient(f, x)[1]
+df(2)
+```
+
+Below we implement and visualise gradient descent from scratch in Julia. 
+
+```{julia}
+#| output: true
+#| fig-cap: Gradient descent for different learning rates
+#| label: fig-gd
+
+xmax = 10
+n = 100
+plt = plot(
+    range(-xmax, xmax, length=n), f;
+    label="f(x)", lw=5, xlim=1.5 .* [-xmax, xmax], 
+    xlab="Parameter", ylab="Loss",legend=false
+)
+
+nsteps = 10
+lrs = [0.05, 0.3, 0.975, 1.025]
+descend(x;lr=0.1) = x - lr * df(x)
+x = [-0.75xmax]       
+x = repeat(x,length(lrs),1)                             # repeat x for each learning rate
+plts = [deepcopy(plt) for i in 1:length(lrs)]           # repeat plt for each learning rate
+anim = @animate for j in 1:nsteps
+    global x = hcat(x, zeros(size(x,1)))       # add column of zeros to x
+    for (i, lr) in enumerate(lrs)
+        _plt = plot(plts[i], title="lr = $lr", ylims=(0,f(xmax)), legend=false)
+        scatter!([x[i,j]], [f(x[i,j])]; label=nothing, ms=5, c=:red)    # plot current point
+        x[i,j+1] = descend(x[i,j]; lr=lr)                               # descend
+        Δx = x[i,j+1] - x[i,j]
+        Δy = f(x[i,j+1]) - f(x[i,j])
+        quiver!([x[i,j]],[f(x[i,j])],quiver=([Δx],[0]),c=:red)          # horizontal arrow
+        quiver!([x[i,j+1]],[f(x[i,j])],quiver=([0],[Δy]),c=:red)        # vertical arrow
+        plts[i] = _plt
+    end
+    plot(
+        plts..., layout=(1,length(plts)), 
+        size=(length(plts)*300,300), legend=false,
+        plot_title="Step $j", margin = 5mm
+    )
+end
+gif(anim, fps=0.5)
+```
+
+## Training a Digit Classifier
+
+The MNIST dataset can be loaded in Julia as follows:
+
+```{julia}
+# Data
+Xtrain, ytrain = MLDatasets.MNIST(:train)[:]
+Xtest, ytest = MLDatasets.MNIST(:test)[:]
+mosaic(map(i -> convert2image(MNIST, Xtrain[:,:,i]), rand(1:60000,100)), ncol=10)
+```
+
+We can preprocess the data as follows:
+
+```{julia}
+i_train, i_val = [], []
+for (k,v) in group_indices(ytrain)
+    _i_train, _i_val = splitobs(v, at=0.7, shuffle=true)
+    push!(i_train, _i_train...)
+    push!(i_val, _i_val...)
+end
+Xtrain, ytrain = Xtrain[:,:,i_train], ytrain[i_train]
+Xval, yval = Xtrain[:,:,i_val], ytrain[i_val]
+```
+
+```{julia}
+model = Chain(
+    flatten,
+    Dense(28^2, 32, relu),
+    Dense(32, 10),
+    softmax
+)
+```
