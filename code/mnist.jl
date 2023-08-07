@@ -78,7 +78,12 @@ y1
 md"""
 A five? That's a five. Whatever man. Work on your handwriting because holy hell that's bad.
 
-Anyway. Let's move on. 
+Anyway. Let's move on. Our next challenge is to get all of our data into a shape that we can work with. There's a few steps we need to take:
+
+- We have $28 \times 28$ matrices that we need to flatten into vectors of length $28^2$. 
+- We want to one-hot encode our outcomes, i.e. we can't have `4` be our output, we need to have the outcome be a vector of length 10 with a 1 where the result is. In the case of 4, we want to have `[0,0,0,0,1,0,0,0,0,0]`. Note that the 1 is in the fifth spot -- the first element of this vector indicates whether the digit is a 0.
+- We want to create a validation set! We'll default to 20% of the sample as validation.
+- We want to bundle everything up into a [`DataLoader`](https://fluxml.ai/Flux.jl/stable/data/mlutils/#MLUtils.DataLoader), which handles batching, shuffling, etc.
 """
 
 # ╔═╡ 6b16aa0d-a7db-4e9c-a8e2-b36c30eff83e
@@ -86,14 +91,14 @@ function process(dt; pct=0.2, batchsize=512)
 	# Extract all the features and targets
 	X_raw, y_raw = dt[:]
 
-	# Reshape the X's from a 28 x 28 x N to a 28^2 x N matrix
-	X = reshape(X_raw, (28^2, size(X_raw, 3)))
+	# Reshape the X's from a 28 x 28 x N to a 28^2 x N matrix.
+	# We also divide by 255 to scale the features to between 0 and 1.
+	X = reshape(X_raw, (28^2, size(X_raw, 3))) ./ 255
 
 	# One-hot encode the Ys
 	y = onehotbatch(y_raw, collect(0:9))
 
 	# Draw pct samples for validation
-	# valid_inds = rand(eachindex(y_raw), (Int32 ∘ floor)(length(y_raw) * pct))
 	valid_inds = shuffle(eachindex(y_raw))
 	cutpoint = Int(floor(size(X, 2) * 0.2))
 	X_valid, y_valid = X[:,valid_inds[1:cutpoint]], y[:,valid_inds[1:cutpoint]]
@@ -109,39 +114,28 @@ function process(dt; pct=0.2, batchsize=512)
 	)
 end
 
+# ╔═╡ f5d9cfaa-27f7-40dd-9bed-bbbda0521155
+md"""
+Let's take the `MNIST(:train)` dataset and process it using the function we just made.
+"""
+
 # ╔═╡ 66a8c5b1-017b-463e-83ca-4224cf9bcd06
+# Generate our training and validation samples
 trainload, validload = process(MNIST(:train));
 
-# ╔═╡ bb360160-5790-4d7c-8452-dc928018768d
-trainload
-
 # ╔═╡ 99e776bf-a521-4c0b-9e0c-2cdb80e74090
-@bind thickness NumberField(1:30, default=10)
+md"""
+How "thick" do you want the hidden layers to be? $(@bind thickness NumberField(1:30, default=10)) units.
 
-# ╔═╡ fb0ef8e0-b82f-400c-9959-931f880d23c8
-@bind epochs NumberField(1:10, default=10)
+How many layers do you want to use? $(@bind n_layers NumberField(1:10, default=5)) layers.
+
+How many epochs do you want to train for? $(@bind epochs NumberField(1:10, default=10)) epochs.
+"""
 
 # ╔═╡ 56c33691-3f7d-4cf1-b0a4-8fdced123921
 model = Chain(
 	Dense(28^2 => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
-	Dense(thickness => thickness, celu),
+	repeat([Dense(thickness => thickness, celu)], n_layers)...,
 	Dense(thickness => 10, celu),
 	softmax
 ) |> gpu
@@ -168,6 +162,7 @@ valid_accuracy = zeros(Float32, epochs);
 # ╔═╡ 93dbef0a-7c9b-4be8-b0c0-01e273bf8360
 # Manual training
 begin
+	done = false
 	@progress for epoch in 1:epochs
 		# @info "Epoch $epoch"
 		# Iterate through samples
@@ -180,17 +175,20 @@ begin
 			# Update the model
 			Flux.update!(state, model, grads[1])
 		end
-
+	
 		# Compute accuracy
 		train_accuracy[epoch] = accuracy(model, trainload)
 		valid_accuracy[epoch] = accuracy(model, validload)
 	end
+	done=true
 end
 
-# ╔═╡ 2c954db3-f144-4f83-afba-98949ce524a9
-begin
-	plot(valid_accuracy, label="valid")
-	plot!(train_accuracy, label="train")
+
+# ╔═╡ f5136eb5-329b-4692-a6f1-91b0387dc499
+let 
+	done 
+	p = plot(valid_accuracy, label="valid");
+	plot!(p, train_accuracy, label="train")
 end
 
 # ╔═╡ 35151dec-88d3-4cdc-8d3b-3a1fd75ef0cf
@@ -231,19 +229,18 @@ end
 # ╠═3964ccf5-a408-4b96-ba26-09306b275ea8
 # ╟─2bad0e09-c03e-490e-994f-b31a6f969e8e
 # ╠═6b16aa0d-a7db-4e9c-a8e2-b36c30eff83e
+# ╟─f5d9cfaa-27f7-40dd-9bed-bbbda0521155
 # ╠═66a8c5b1-017b-463e-83ca-4224cf9bcd06
-# ╠═bb360160-5790-4d7c-8452-dc928018768d
-# ╠═99e776bf-a521-4c0b-9e0c-2cdb80e74090
-# ╠═fb0ef8e0-b82f-400c-9959-931f880d23c8
+# ╟─99e776bf-a521-4c0b-9e0c-2cdb80e74090
 # ╠═56c33691-3f7d-4cf1-b0a4-8fdced123921
 # ╠═7962c59a-5ded-47a3-a81e-371d8fc160ba
 # ╠═c6403f4a-936f-4359-8b69-19bf8cc41f21
 # ╠═3cadc0c0-131a-49c8-ac10-29018ca76035
 # ╠═e9ba68f1-ee10-4663-901e-0586e47cafb5
 # ╠═93dbef0a-7c9b-4be8-b0c0-01e273bf8360
-# ╠═2c954db3-f144-4f83-afba-98949ce524a9
+# ╠═f5136eb5-329b-4692-a6f1-91b0387dc499
 # ╠═35151dec-88d3-4cdc-8d3b-3a1fd75ef0cf
 # ╠═49e36999-2f21-47ca-98a1-c9e4fe587aef
 # ╠═2f3888e2-1df4-4df5-8966-f64def460992
 # ╠═f9defc31-e394-4192-b586-cb241dd180a0
-# ╠═c192f6dc-1797-49c7-a439-f5246fd6ae51
+# ╟─c192f6dc-1797-49c7-a439-f5246fd6ae51
