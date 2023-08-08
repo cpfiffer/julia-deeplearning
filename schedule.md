@@ -1,5 +1,11 @@
 # Schedule
 
+## Second assignment!
+
+This assignment is due on **August 16th, 2023**.
+
+For this section, please read [chapter 5](https://github.com/fastai/fastbook/blob/master/05_pet_breeds.ipynb) of fastbook and follow along with a Julia implementation.
+
 ## First assignment!
 
 This assignment is due on **August 7th, 2023**. You've got two options based on your availability. One is just the bare minimum, one is the full set of learning. This first assignment is a bit different than others since it's a lot of set-up, building motivation, etc.
