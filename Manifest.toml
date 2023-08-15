@@ -623,10 +623,10 @@ uuid = "d2c73de3-f751-5644-a686-071e5b155ba9"
 version = "0.72.9+1"
 
 [[deps.GZip]]
-deps = ["Libdl"]
-git-tree-sha1 = "8d838ee3772e00c75d6cc06bb08891379868c18d"
+deps = ["Libdl", "Zlib_jll"]
+git-tree-sha1 = "e062176cedd5fc4551eb15b956cbf433c246ce3f"
 uuid = "92fee26a-97fe-5a0c-ad85-20a5f3185b63"
-version = "0.5.2"
+version = "0.6.0"
 
 [[deps.Gettext_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl", "Libiconv_jll", "Pkg", "XML2_jll"]
@@ -1095,9 +1095,9 @@ version = "0.1.4"
 
 [[deps.MLDatasets]]
 deps = ["CSV", "Chemfiles", "DataDeps", "DataFrames", "DelimitedFiles", "FileIO", "FixedPointNumbers", "GZip", "Glob", "HDF5", "ImageShow", "JLD2", "JSON3", "LazyModules", "MAT", "MLUtils", "NPZ", "Pickle", "Printf", "Requires", "SparseArrays", "Statistics", "Tables"]
-git-tree-sha1 = "a03a093b03824f07fe00931df76b18d99398ebb9"
+git-tree-sha1 = "41922968c0aaca46baa5d658d3a173828313e2d0"
 uuid = "eb30cadb-4394-5ae3-aed4-317e484a6458"
-version = "0.7.11"
+version = "0.7.12"
 
 [[deps.MLStyle]]
 git-tree-sha1 = "bc38dff0548128765760c79eb7388a4b37fae2c8"
