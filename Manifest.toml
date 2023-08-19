@@ -548,9 +548,9 @@ weakdeps = ["StaticArrays"]
 
 [[deps.Franklin]]
 deps = ["Dates", "DelimitedFiles", "DocStringExtensions", "ExprTools", "FranklinTemplates", "HTTP", "Literate", "LiveServer", "Logging", "Markdown", "NodeJS", "OrderedCollections", "Pkg", "REPL", "Random", "TOML"]
-git-tree-sha1 = "e5fa293df486643306df7e0d18928b3a2ee54530"
+git-tree-sha1 = "f52ac28105b6043ca4238553a9a4a1d025e36b2a"
 uuid = "713c75ef-9fc9-4b05-94a9-213340da978e"
-version = "0.10.90"
+version = "0.10.91"
 
 [[deps.FranklinTemplates]]
 deps = ["LiveServer"]
