@@ -1056,9 +1056,9 @@ uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 
 [[deps.Literate]]
 deps = ["Base64", "IOCapture", "JSON", "REPL"]
-git-tree-sha1 = "a1a0d4ff9f785a2184baca7a5c89e664f144143d"
+git-tree-sha1 = "f65966c5518ed2b9db90944d7657c312190854f1"
 uuid = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
-version = "2.14.1"
+version = "2.14.2"
 
 [[deps.LiveServer]]
 deps = ["HTTP", "LoggingExtras", "MIMEs", "Pkg", "Sockets", "Test"]
@@ -1797,9 +1797,9 @@ version = "1.10.0"
 
 [[deps.TensorBoardLogger]]
 deps = ["CRC32c", "FileIO", "ImageCore", "ProtoBuf", "Requires", "StatsBase"]
-git-tree-sha1 = "6c178c63eded2937deafaa86d2d1b4312b79965b"
+git-tree-sha1 = "80a63afa5863521d21ba03120ff5ff10948a084b"
 uuid = "899adc3e-224a-11e9-021f-63837185c80f"
-version = "0.1.21"
+version = "0.1.22"
 
 [[deps.TensorCore]]
 deps = ["LinearAlgebra"]
