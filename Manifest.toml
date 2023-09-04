@@ -200,10 +200,10 @@ uuid = "49dc2e85-a5d0-5ad3-a950-438e2897f1b9"
 version = "0.5.1"
 
 [[deps.ChainRules]]
-deps = ["Adapt", "ChainRulesCore", "Compat", "Distributed", "GPUArraysCore", "IrrationalConstants", "LinearAlgebra", "Random", "RealDot", "SparseArrays", "Statistics", "StructArrays"]
-git-tree-sha1 = "f98ae934cd677d51d2941088849f0bf2f59e6f6e"
+deps = ["Adapt", "ChainRulesCore", "Compat", "Distributed", "GPUArraysCore", "IrrationalConstants", "LinearAlgebra", "Random", "RealDot", "SparseArrays", "SparseInverseSubset", "Statistics", "StructArrays", "SuiteSparse"]
+git-tree-sha1 = "dbeca245b0680f5393b4e6c40dcead7230ab0b3b"
 uuid = "082447d4-558c-5d27-93f4-14fc19e9eca2"
-version = "1.53.0"
+version = "1.54.0"
 
 [[deps.ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra", "SparseArrays"]
@@ -1510,9 +1510,9 @@ version = "1.8.0"
 
 [[deps.ProtoBuf]]
 deps = ["BufferedStreams", "Dates", "EnumX", "TOML", "TranscodingStreams"]
-git-tree-sha1 = "1a1c06cf81fc5f979c0c4a5aa1e5647dca4f5ddc"
+git-tree-sha1 = "5df9efa85d9586fdc8d2a7b80015c961493687ec"
 uuid = "3349acd9-ac6a-5e09-bcdb-63829b23a429"
-version = "1.0.12"
+version = "1.0.13"
 
 [[deps.Qt6Base_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Fontconfig_jll", "Glib_jll", "JLLWrappers", "Libdl", "Libglvnd_jll", "OpenSSL_jll", "Pkg", "Xorg_libXext_jll", "Xorg_libXrender_jll", "Xorg_libxcb_jll", "Xorg_xcb_util_image_jll", "Xorg_xcb_util_keysyms_jll", "Xorg_xcb_util_renderutil_jll", "Xorg_xcb_util_wm_jll", "Zlib_jll", "xkbcommon_jll"]
@@ -1668,6 +1668,12 @@ version = "1.1.1"
 [[deps.SparseArrays]]
 deps = ["Libdl", "LinearAlgebra", "Random", "Serialization", "SuiteSparse_jll"]
 uuid = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[[deps.SparseInverseSubset]]
+deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse"]
+git-tree-sha1 = "91402087fd5d13b2d97e3ef29bbdf9d7859e678a"
+uuid = "dc90abb0-5640-4711-901d-7e5b23a2fada"
+version = "0.1.1"
 
 [[deps.SpecialFunctions]]
 deps = ["IrrationalConstants", "LogExpFunctions", "OpenLibm_jll", "OpenSpecFun_jll"]
@@ -2130,9 +2136,9 @@ version = "1.5.5+0"
 
 [[deps.Zygote]]
 deps = ["AbstractFFTs", "ChainRules", "ChainRulesCore", "DiffRules", "Distributed", "FillArrays", "ForwardDiff", "GPUArrays", "GPUArraysCore", "IRTools", "InteractiveUtils", "LinearAlgebra", "LogExpFunctions", "MacroTools", "NaNMath", "PrecompileTools", "Random", "Requires", "SparseArrays", "SpecialFunctions", "Statistics", "ZygoteRules"]
-git-tree-sha1 = "e2fe78907130b521619bc88408c859a472c4172b"
+git-tree-sha1 = "b97c927497c1de55a78dc9030f6068be5d83ef80"
 uuid = "e88e6eb3-aa80-5325-afca-941959d7151f"
-version = "0.6.63"
+version = "0.6.64"
 
     [deps.Zygote.extensions]
     ZygoteColorsExt = "Colors"
