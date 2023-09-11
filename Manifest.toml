@@ -1114,9 +1114,9 @@ version = "0.1.4"
 
 [[deps.MLDatasets]]
 deps = ["CSV", "Chemfiles", "DataDeps", "DataFrames", "DelimitedFiles", "FileIO", "FixedPointNumbers", "GZip", "Glob", "HDF5", "ImageShow", "JLD2", "JSON3", "LazyModules", "MAT", "MLUtils", "NPZ", "Pickle", "Printf", "Requires", "SparseArrays", "Statistics", "Tables"]
-git-tree-sha1 = "41922968c0aaca46baa5d658d3a173828313e2d0"
+git-tree-sha1 = "10bc70e4c875f1b2ca65cef3ef9ebe705ef936b5"
 uuid = "eb30cadb-4394-5ae3-aed4-317e484a6458"
-version = "0.7.12"
+version = "0.7.13"
 
 [[deps.MLStyle]]
 git-tree-sha1 = "bc38dff0548128765760c79eb7388a4b37fae2c8"
@@ -1510,9 +1510,9 @@ version = "1.8.0"
 
 [[deps.ProtoBuf]]
 deps = ["BufferedStreams", "Dates", "EnumX", "TOML", "TranscodingStreams"]
-git-tree-sha1 = "5df9efa85d9586fdc8d2a7b80015c961493687ec"
+git-tree-sha1 = "dc85dc33abde04b3c2f687834a5551994b27c328"
 uuid = "3349acd9-ac6a-5e09-bcdb-63829b23a429"
-version = "1.0.13"
+version = "1.0.14"
 
 [[deps.Qt6Base_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Fontconfig_jll", "Glib_jll", "JLLWrappers", "Libdl", "Libglvnd_jll", "OpenSSL_jll", "Pkg", "Xorg_libXext_jll", "Xorg_libXrender_jll", "Xorg_libxcb_jll", "Xorg_xcb_util_image_jll", "Xorg_xcb_util_keysyms_jll", "Xorg_xcb_util_renderutil_jll", "Xorg_xcb_util_wm_jll", "Zlib_jll", "xkbcommon_jll"]
@@ -1757,9 +1757,9 @@ version = "0.3.7"
 
 [[deps.StringManipulation]]
 deps = ["PrecompileTools"]
-git-tree-sha1 = "25ad9b0ccbc6cc63dfff1eb3f4bbb4d3e0d8a491"
+git-tree-sha1 = "a04cabe79c5f01f4d723cc6704070ada0b9d46d5"
 uuid = "892a3eda-7b42-436c-8928-eab12a02cf0e"
-version = "0.3.2"
+version = "0.3.4"
 
 [[deps.StructArrays]]
 deps = ["Adapt", "ConstructionBase", "DataAPI", "GPUArraysCore", "StaticArraysCore", "Tables"]
