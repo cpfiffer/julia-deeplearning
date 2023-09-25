@@ -271,9 +271,9 @@ version = "0.3.0"
 
 [[deps.Compat]]
 deps = ["UUIDs"]
-git-tree-sha1 = "e460f044ca8b99be31d35fe54fc33a5c33dd8ed7"
+git-tree-sha1 = "8a62af3e248a8c4bad6b32cbbe663ae02275e32c"
 uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
-version = "4.9.0"
+version = "4.10.0"
 weakdeps = ["Dates", "LinearAlgebra"]
 
     [deps.Compat.extensions]
@@ -698,10 +698,16 @@ uuid = "42e2da0e-8278-4e71-bc24-59509adca0fe"
 version = "1.0.2"
 
 [[deps.HDF5]]
-deps = ["Compat", "HDF5_jll", "Libdl", "Mmap", "Printf", "Random", "Requires", "UUIDs"]
-git-tree-sha1 = "114e20044677badbc631ee6fdc80a67920561a29"
+deps = ["Compat", "HDF5_jll", "Libdl", "MPIPreferences", "Mmap", "Preferences", "Printf", "Random", "Requires", "UUIDs"]
+git-tree-sha1 = "ec7df74b7b2022e8252a8bfd4ec23411491adc3b"
 uuid = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
-version = "0.16.16"
+version = "0.17.0"
+
+    [deps.HDF5.extensions]
+    MPIExt = "MPI"
+
+    [deps.HDF5.weakdeps]
+    MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
 
 [[deps.HDF5_jll]]
 deps = ["Artifacts", "JLLWrappers", "LibCURL_jll", "Libdl", "OpenSSL_jll", "Pkg", "Zlib_jll"]
@@ -1119,9 +1125,9 @@ version = "2.3.0"
 
 [[deps.MAT]]
 deps = ["BufferedStreams", "CodecZlib", "HDF5", "SparseArrays"]
-git-tree-sha1 = "79fd0b5ee384caf8ebba6c8fb3f365ca3e2c5493"
+git-tree-sha1 = "ed1cf0a322d78cee07718bed5fd945e2218c35a1"
 uuid = "23992714-dd62-5051-b70f-ba57cb901cac"
-version = "0.10.5"
+version = "0.10.6"
 
 [[deps.MIMEs]]
 git-tree-sha1 = "65f28ad4b594aebe22157d6fac869786a255b7eb"
@@ -1144,6 +1150,12 @@ deps = ["ChainRulesCore", "Compat", "DataAPI", "DelimitedFiles", "FLoops", "NNli
 git-tree-sha1 = "3504cdb8c2bc05bde4d4b09a81b01df88fcbbba0"
 uuid = "f1d291b0-491e-4a28-83b9-f70985020b54"
 version = "0.4.3"
+
+[[deps.MPIPreferences]]
+deps = ["Libdl", "Preferences"]
+git-tree-sha1 = "781916a2ebf2841467cda03b6f1af43e23839d85"
+uuid = "3da0fdf6-3ccc-4f1b-acd9-58baa6c99267"
+version = "0.1.9"
 
 [[deps.MacroTools]]
 deps = ["Markdown", "Random"]
@@ -1368,9 +1380,9 @@ version = "10.42.0+0"
 
 [[deps.PDMats]]
 deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse"]
-git-tree-sha1 = "3129380a93388e5062e946974246fe3f2e7c73e2"
+git-tree-sha1 = "bf6085e8bd7735e68c210c6e5d81f9a6fe192060"
 uuid = "90014a1f-27ba-587c-ab20-58faa44d9150"
-version = "0.11.18"
+version = "0.11.19"
 
 [[deps.PaddedViews]]
 deps = ["OffsetArrays"]
