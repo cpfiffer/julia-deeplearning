@@ -1113,9 +1113,9 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [[deps.LoggingExtras]]
 deps = ["Dates", "Logging"]
-git-tree-sha1 = "0d097476b6c381ab7906460ef1ef1638fbce1d91"
+git-tree-sha1 = "c1dd6d7978c12545b4179fb6153b9250c96b0075"
 uuid = "e6f89c97-d47a-5376-807f-9c37f3926c36"
-version = "1.0.2"
+version = "1.0.3"
 
 [[deps.LoweredCodeUtils]]
 deps = ["JuliaInterpreter"]
@@ -1388,9 +1388,9 @@ version = "10.42.0+0"
 
 [[deps.PDMats]]
 deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse"]
-git-tree-sha1 = "b7c4f29f93b548caa58f703580f4d79ab753c8ac"
+git-tree-sha1 = "528664265c9c36b3ecdb6d721d47aaab52ddf267"
 uuid = "90014a1f-27ba-587c-ab20-58faa44d9150"
-version = "0.11.21"
+version = "0.11.24"
 
 [[deps.PaddedViews]]
 deps = ["OffsetArrays"]
@@ -1854,9 +1854,9 @@ version = "1.10.0"
 
 [[deps.TensorBoardLogger]]
 deps = ["CRC32c", "FileIO", "ImageCore", "ProtoBuf", "Requires", "StatsBase"]
-git-tree-sha1 = "80a63afa5863521d21ba03120ff5ff10948a084b"
+git-tree-sha1 = "71a6522b34f092ae261c86ef13948a86c566fe4a"
 uuid = "899adc3e-224a-11e9-021f-63837185c80f"
-version = "0.1.22"
+version = "0.1.23"
 
 [[deps.TensorCore]]
 deps = ["LinearAlgebra"]
