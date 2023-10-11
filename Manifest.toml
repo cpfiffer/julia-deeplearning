@@ -1135,9 +1135,9 @@ version = "0.1.4"
 
 [[deps.MLDatasets]]
 deps = ["CSV", "Chemfiles", "DataDeps", "DataFrames", "DelimitedFiles", "FileIO", "FixedPointNumbers", "GZip", "Glob", "HDF5", "ImageShow", "JLD2", "JSON3", "LazyModules", "MAT", "MLUtils", "NPZ", "Pickle", "Printf", "Requires", "SparseArrays", "Statistics", "Tables"]
-git-tree-sha1 = "10bc70e4c875f1b2ca65cef3ef9ebe705ef936b5"
+git-tree-sha1 = "aab72207b3c687086a400be710650a57494992bd"
 uuid = "eb30cadb-4394-5ae3-aed4-317e484a6458"
-version = "0.7.13"
+version = "0.7.14"
 
 [[deps.MLStyle]]
 git-tree-sha1 = "bc38dff0548128765760c79eb7388a4b37fae2c8"
