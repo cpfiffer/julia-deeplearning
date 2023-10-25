@@ -574,9 +574,9 @@ weakdeps = ["StaticArrays"]
 
 [[deps.Franklin]]
 deps = ["Dates", "DelimitedFiles", "DocStringExtensions", "ExprTools", "FranklinTemplates", "HTTP", "Literate", "LiveServer", "Logging", "Markdown", "NodeJS", "OrderedCollections", "Pkg", "REPL", "Random", "TOML"]
-git-tree-sha1 = "a9dd685745912cbe1d8d9c5e3126ab1f885b94ee"
+git-tree-sha1 = "199482e05f777503fd5995783fdb50b219e7ca94"
 uuid = "713c75ef-9fc9-4b05-94a9-213340da978e"
-version = "0.10.93"
+version = "0.10.94"
 
 [[deps.FranklinTemplates]]
 deps = ["LiveServer"]
@@ -614,9 +614,9 @@ uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
 [[deps.FuzzyCompletions]]
 deps = ["REPL"]
-git-tree-sha1 = "001bd0eefc8c532660676725bed56b696321dfd2"
+git-tree-sha1 = "c8d37d615586bea181063613dccc555499feb298"
 uuid = "fb4132e2-a121-4a70-b8a1-d5b831dcdcc2"
-version = "0.5.2"
+version = "0.5.3"
 
 [[deps.GLFW_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Libglvnd_jll", "Pkg", "Xorg_libXcursor_jll", "Xorg_libXi_jll", "Xorg_libXinerama_jll", "Xorg_libXrandr_jll"]
@@ -1640,9 +1640,9 @@ version = "1.3.0"
 
 [[deps.Revise]]
 deps = ["CodeTracking", "Distributed", "FileWatching", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Pkg", "REPL", "Requires", "UUIDs", "Unicode"]
-git-tree-sha1 = "609c26951d80551620241c3d7090c71a73da75ab"
+git-tree-sha1 = "ba168f8fc36bf83c8d0573d464b7aab0f8a81623"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "3.5.6"
+version = "3.5.7"
 
 [[deps.Rmath]]
 deps = ["Random", "Rmath_jll"]
