@@ -1198,9 +1198,9 @@ version = "0.5.11"
 
 [[deps.Malt]]
 deps = ["Distributed", "Logging", "RelocatableFolders", "Serialization", "Sockets"]
-git-tree-sha1 = "5333200b6a2c49c2de68310cede765ebafa255ea"
+git-tree-sha1 = "18cf4151e390fce29ca846b92b06baf9bc6e002e"
 uuid = "36869731-bdee-424d-aa32-cab38c994e3b"
-version = "1.1.0"
+version = "1.1.1"
 
 [[deps.MappedArrays]]
 git-tree-sha1 = "2dab0221fe2b0f2cb6754eaa743cc266339f527e"
