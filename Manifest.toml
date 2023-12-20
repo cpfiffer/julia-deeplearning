@@ -1204,9 +1204,9 @@ version = "5.3.1+0"
 
 [[deps.MacroTools]]
 deps = ["Markdown", "Random"]
-git-tree-sha1 = "9ee1618cbf5240e6d4e0371d6f24065083f60c48"
+git-tree-sha1 = "b211c553c199c111d998ecdaf7623d1b89b69f93"
 uuid = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
-version = "0.5.11"
+version = "0.5.12"
 
 [[deps.Malt]]
 deps = ["Distributed", "Logging", "RelocatableFolders", "Serialization", "Sockets"]
@@ -1358,10 +1358,13 @@ uuid = "510215fc-4207-5dde-b226-833fc4488ee2"
 version = "0.5.5"
 
 [[deps.OffsetArrays]]
-deps = ["Adapt"]
-git-tree-sha1 = "2ac17d29c523ce1cd38e27785a7d23024853a4bb"
+git-tree-sha1 = "6a731f2b5c03157418a20c12195eb4b74c8f8621"
 uuid = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
-version = "1.12.10"
+version = "1.13.0"
+weakdeps = ["Adapt"]
+
+    [deps.OffsetArrays.extensions]
+    OffsetArraysAdaptExt = "Adapt"
 
 [[deps.Ogg_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
