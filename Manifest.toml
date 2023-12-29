@@ -537,9 +537,9 @@ version = "0.8.4"
 
 [[deps.Flux]]
 deps = ["Adapt", "ChainRulesCore", "Compat", "Functors", "LinearAlgebra", "MLUtils", "MacroTools", "NNlib", "OneHotArrays", "Optimisers", "Preferences", "ProgressLogging", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "Zygote"]
-git-tree-sha1 = "75e3b3732929e880e7fd121e8a4e4dd5e1bfeaee"
+git-tree-sha1 = "e3b646440f6d0af12c44402c1b9a73f7dcd1157d"
 uuid = "587475ba-b771-5e3f-ad9e-33799f191a9c"
-version = "0.14.7"
+version = "0.14.8"
 
     [deps.Flux.extensions]
     FluxAMDGPUExt = "AMDGPU"
