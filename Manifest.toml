@@ -128,9 +128,9 @@ version = "0.1.8"
 
 [[deps.Blink]]
 deps = ["Base64", "Distributed", "HTTP", "JSExpr", "JSON", "Lazy", "Logging", "MacroTools", "Mustache", "Mux", "Pkg", "Reexport", "Sockets", "WebIO"]
-git-tree-sha1 = "b1c61fd7e757c7e5ca6521ef41df8d929f41e3af"
+git-tree-sha1 = "bc93511973d1f949d45b0ea17878e6cb0ad484a1"
 uuid = "ad839575-38b3-5650-b840-f874b8c74a25"
-version = "0.12.8"
+version = "0.12.9"
 
 [[deps.BufferedStreams]]
 git-tree-sha1 = "4ae47f9a4b1dc19897d3743ff13685925c5202ec"
@@ -170,9 +170,9 @@ weakdeps = ["ChainRulesCore", "SpecialFunctions"]
 
 [[deps.CUDA_Driver_jll]]
 deps = ["Artifacts", "JLLWrappers", "LazyArtifacts", "Libdl", "Pkg"]
-git-tree-sha1 = "1e42ef1bdb45487ff28de16182c0df4920181dc3"
+git-tree-sha1 = "d01bfc999768f0a31ed36f5d22a76161fc63079c"
 uuid = "4ee394cb-3365-5eb0-8335-949819d2adfc"
-version = "0.7.0+0"
+version = "0.7.0+1"
 
 [[deps.CUDA_Runtime_Discovery]]
 deps = ["Libdl"]
@@ -504,9 +504,9 @@ version = "0.1.1"
 
 [[deps.FileIO]]
 deps = ["Pkg", "Requires", "UUIDs"]
-git-tree-sha1 = "299dc33549f68299137e51e6d49a13b5b1da9673"
+git-tree-sha1 = "c5c28c245101bd59154f649e19b038d15901b5dc"
 uuid = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
-version = "1.16.1"
+version = "1.16.2"
 
 [[deps.FilePathsBase]]
 deps = ["Compat", "Dates", "Mmap", "Printf", "Test", "UUIDs"]
@@ -959,9 +959,9 @@ version = "3.0.0+1"
 
 [[deps.LLVM]]
 deps = ["CEnum", "LLVMExtra_jll", "Libdl", "Preferences", "Printf", "Requires", "Unicode"]
-git-tree-sha1 = "0678579657515e88b6632a3a482d39adcbb80445"
+git-tree-sha1 = "cb4619f7353fc62a1a22ffa3d7ed9791cfb47ad8"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "6.4.1"
+version = "6.4.2"
 weakdeps = ["BFloat16s"]
 
     [deps.LLVM.extensions]
@@ -1708,9 +1708,9 @@ version = "1.3.0"
 
 [[deps.Revise]]
 deps = ["CodeTracking", "Distributed", "FileWatching", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Pkg", "REPL", "Requires", "UUIDs", "Unicode"]
-git-tree-sha1 = "033b3dcf811234b6d0bad28ea5395981c387fad2"
+git-tree-sha1 = "116d71e489abc472efa460cfa2bc0ac7cd0bab54"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "3.5.11"
+version = "3.5.12"
 
 [[deps.Rmath]]
 deps = ["Random", "Rmath_jll"]
@@ -1819,9 +1819,9 @@ version = "0.1.1"
 
 [[deps.StaticArrays]]
 deps = ["LinearAlgebra", "PrecompileTools", "Random", "StaticArraysCore"]
-git-tree-sha1 = "42d5373c10272d14ef49cc68ffc22df3b93c549a"
+git-tree-sha1 = "4e17a790909b17f7bf1496e3aec138cf01b60b3b"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
-version = "1.8.2"
+version = "1.9.0"
 weakdeps = ["ChainRulesCore", "Statistics"]
 
     [deps.StaticArrays.extensions]
