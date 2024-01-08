@@ -53,9 +53,9 @@ version = "0.2.0"
 
 [[deps.ArrayLayouts]]
 deps = ["FillArrays", "LinearAlgebra"]
-git-tree-sha1 = "ab9e65a1a0cfa0c1add8525f75533aea063cd8b4"
+git-tree-sha1 = "6364e1f449627f9ca6ba9dd2e48527dd4a682a5e"
 uuid = "4c555306-a7a7-4459-81d9-ec55ddd5c99a"
-version = "1.5.0"
+version = "1.5.1"
 weakdeps = ["SparseArrays"]
 
     [deps.ArrayLayouts.extensions]
@@ -911,9 +911,9 @@ version = "3.0.1+0"
 
 [[deps.JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
-git-tree-sha1 = "e49bce680c109bc86e3e75ebcb15040d6ad9e1d3"
+git-tree-sha1 = "04663b9e1eb0d0eabf76a6d0752e0dac83d53b36"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.9.27"
+version = "0.9.28"
 
 [[deps.JuliaNVTXCallbacks_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -2307,9 +2307,9 @@ version = "0.2.4"
 
 [[deps.cuDNN]]
 deps = ["CEnum", "CUDA", "CUDA_Runtime_Discovery", "CUDNN_jll"]
-git-tree-sha1 = "c092c26591a851083ed3358890d0d916c58dde62"
+git-tree-sha1 = "94f6b231d21b8a10f5c3ccc4b4009017ca922847"
 uuid = "02a925ec-e4fe-4b08-9a7e-0d78e3d38ccd"
-version = "1.2.1"
+version = "1.2.2"
 
 [[deps.eudev_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg", "gperf_jll"]
