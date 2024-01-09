@@ -53,9 +53,9 @@ version = "0.2.0"
 
 [[deps.ArrayLayouts]]
 deps = ["FillArrays", "LinearAlgebra"]
-git-tree-sha1 = "6364e1f449627f9ca6ba9dd2e48527dd4a682a5e"
+git-tree-sha1 = "a45ec4acc9d905f94b47243cff666820bb107789"
 uuid = "4c555306-a7a7-4459-81d9-ec55ddd5c99a"
-version = "1.5.1"
+version = "1.5.2"
 weakdeps = ["SparseArrays"]
 
     [deps.ArrayLayouts.extensions]
@@ -403,9 +403,9 @@ uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 
 [[deps.Distributions]]
 deps = ["FillArrays", "LinearAlgebra", "PDMats", "Printf", "QuadGK", "Random", "SpecialFunctions", "Statistics", "StatsAPI", "StatsBase", "StatsFuns"]
-git-tree-sha1 = "a4532d110ce91bd744b99280193a317310960c46"
+git-tree-sha1 = "7c302d7a5fec5214eb8a5a4c466dcf7a51fcf169"
 uuid = "31c24e10-a181-5473-b8eb-7969acd0382f"
-version = "0.25.106"
+version = "0.25.107"
 
     [deps.Distributions.extensions]
     DistributionsChainRulesCoreExt = "ChainRulesCore"
@@ -537,9 +537,9 @@ version = "0.8.4"
 
 [[deps.Flux]]
 deps = ["Adapt", "ChainRulesCore", "Compat", "Functors", "LinearAlgebra", "MLUtils", "MacroTools", "NNlib", "OneHotArrays", "Optimisers", "Preferences", "ProgressLogging", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "Zygote"]
-git-tree-sha1 = "e3b646440f6d0af12c44402c1b9a73f7dcd1157d"
+git-tree-sha1 = "2827339fbc2291d541a9c62ffbf28da7f3621ae4"
 uuid = "587475ba-b771-5e3f-ad9e-33799f191a9c"
-version = "0.14.8"
+version = "0.14.9"
 
     [deps.Flux.extensions]
     FluxAMDGPUExt = "AMDGPU"
@@ -722,10 +722,10 @@ version = "0.17.1"
     MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
 
 [[deps.HDF5_jll]]
-deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "LLVMOpenMP_jll", "LazyArtifacts", "LibCURL_jll", "Libdl", "MPICH_jll", "MPIPreferences", "MPItrampoline_jll", "MicrosoftMPI_jll", "OpenMPI_jll", "OpenSSL_jll", "TOML", "Zlib_jll", "libaec_jll"]
-git-tree-sha1 = "38c8874692d48d5440d5752d6c74b0c6b0b60739"
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "LazyArtifacts", "LibCURL_jll", "Libdl", "MPICH_jll", "MPIPreferences", "MPItrampoline_jll", "MicrosoftMPI_jll", "OpenMPI_jll", "OpenSSL_jll", "TOML", "Zlib_jll", "libaec_jll"]
+git-tree-sha1 = "8156325170d6763b5494c072ac4754214db3e669"
 uuid = "0234f1f7-429e-5d53-9886-15a909be8d59"
-version = "1.14.2+1"
+version = "1.14.3+0"
 
 [[deps.HTTP]]
 deps = ["Base64", "CodecZlib", "ConcurrentUtilities", "Dates", "ExceptionUnwrapping", "Logging", "LoggingExtras", "MbedTLS", "NetworkOptions", "OpenSSL", "Random", "SimpleBufferStream", "Sockets", "URIs", "UUIDs"]
@@ -744,12 +744,6 @@ deps = ["MacroTools", "Test"]
 git-tree-sha1 = "6187bb2d5fcbb2007c39e7ac53308b0d371124bd"
 uuid = "9fb69e20-1954-56bb-a84f-559cc56a8ff7"
 version = "0.2.2"
-
-[[deps.Hwloc_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "ca0f6bf568b4bfc807e7537f081c81e35ceca114"
-uuid = "e33a78d0-f292-5ffc-b300-72abe9b543c8"
-version = "2.10.0+0"
 
 [[deps.HypergeometricFunctions]]
 deps = ["DualNumbers", "LinearAlgebra", "OpenLibm_jll", "SpecialFunctions"]
@@ -1406,10 +1400,10 @@ uuid = "05823500-19ac-5b8b-9628-191a04bc5112"
 version = "0.8.1+2"
 
 [[deps.OpenMPI_jll]]
-deps = ["Artifacts", "CompilerSupportLibraries_jll", "Hwloc_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "MPIPreferences", "PMIx_jll", "TOML", "Zlib_jll", "libevent_jll", "prrte_jll"]
-git-tree-sha1 = "1d1421618bab0e820bdc7ae1a2b46ce576981273"
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "MPIPreferences", "TOML"]
+git-tree-sha1 = "e25c1778a98e34219a00455d6e4384e017ea9762"
 uuid = "fe0851c0-eecd-5654-98d4-656369965a5c"
-version = "5.0.1+0"
+version = "4.1.6+0"
 
 [[deps.OpenSSL]]
 deps = ["BitFlags", "Dates", "MozillaCACerts_jll", "OpenSSL_jll", "Sockets"]
@@ -1456,12 +1450,6 @@ deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse"]
 git-tree-sha1 = "949347156c25054de2db3b166c52ac4728cbad65"
 uuid = "90014a1f-27ba-587c-ab20-58faa44d9150"
 version = "0.11.31"
-
-[[deps.PMIx_jll]]
-deps = ["Artifacts", "Hwloc_jll", "JLLWrappers", "Libdl", "Zlib_jll", "libevent_jll"]
-git-tree-sha1 = "8b3b19351fa24791f94d7ae85faf845ca1362541"
-uuid = "32165bc3-0280-59bc-8c0b-c33b6203efab"
-version = "4.2.7+0"
 
 [[deps.PaddedViews]]
 deps = ["OffsetArrays"]
@@ -1958,9 +1946,9 @@ weakdeps = ["Random", "Test"]
 
 [[deps.Transducers]]
 deps = ["Adapt", "ArgCheck", "BangBang", "Baselet", "CompositionsBase", "ConstructionBase", "DefineSingletons", "Distributed", "InitialValues", "Logging", "Markdown", "MicroCollections", "Requires", "Setfield", "SplittablesBase", "Tables"]
-git-tree-sha1 = "e579d3c991938fecbb225699e8f611fa3fbf2141"
+git-tree-sha1 = "3064e780dbb8a9296ebb3af8f440f787bb5332af"
 uuid = "28d57a85-8fef-5791-bfe6-a80928e7c999"
-version = "0.4.79"
+version = "0.4.80"
 
     [deps.Transducers.extensions]
     TransducersBlockArraysExt = "BlockArrays"
@@ -2358,12 +2346,6 @@ git-tree-sha1 = "141fe65dc3efabb0b1d5ba74e91f6ad26f84cc22"
 uuid = "2db6ffa8-e38f-5e21-84af-90c45d0032cc"
 version = "1.11.0+0"
 
-[[deps.libevent_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "OpenSSL_jll"]
-git-tree-sha1 = "f04ec6d9a186115fb38f858f05c0c4e1b7fc9dcb"
-uuid = "1080aeaf-3a6a-583e-a51c-c537b09f60ec"
-version = "2.1.13+1"
-
 [[deps.libfdk_aac_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
 git-tree-sha1 = "daacc84a041563f965be61859a36e17c4e4fcd55"
@@ -2403,12 +2385,6 @@ version = "1.52.0+1"
 deps = ["Artifacts", "Libdl"]
 uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 version = "17.4.0+2"
-
-[[deps.prrte_jll]]
-deps = ["Artifacts", "Hwloc_jll", "JLLWrappers", "Libdl", "PMIx_jll", "libevent_jll"]
-git-tree-sha1 = "5adb2d7a18a30280feb66cad6f1a1dfdca2dc7b0"
-uuid = "eb928a42-fffd-568d-ab9c-3f5d54fc65b9"
-version = "3.0.2+0"
 
 [[deps.x264_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
