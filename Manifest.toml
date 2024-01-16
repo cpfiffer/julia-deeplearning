@@ -753,9 +753,9 @@ version = "0.3.23"
 
 [[deps.Hyperscript]]
 deps = ["Test"]
-git-tree-sha1 = "8d511d5b81240fc8e6802386302675bdf47737b9"
+git-tree-sha1 = "179267cfa5e712760cd43dcae385d7ea90cc25a4"
 uuid = "47d2ed2b-36de-50cf-bf87-49c2cf4b8b91"
-version = "0.0.4"
+version = "0.0.5"
 
 [[deps.HypertextLiteral]]
 deps = ["Tricks"]
@@ -857,9 +857,9 @@ version = "1.0.0"
 
 [[deps.JLD2]]
 deps = ["FileIO", "MacroTools", "Mmap", "OrderedCollections", "Pkg", "PrecompileTools", "Printf", "Reexport", "Requires", "TranscodingStreams", "UUIDs"]
-git-tree-sha1 = "853b9e0b876e8c7093a824c4f83c619d23525e64"
+git-tree-sha1 = "315b508ec5df53936532097ffe6e5deacbf41861"
 uuid = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
-version = "0.4.43"
+version = "0.4.44"
 
 [[deps.JLFzf]]
 deps = ["Pipe", "REPL", "Random", "fzf_jll"]
@@ -1561,9 +1561,9 @@ version = "0.19.36"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
-git-tree-sha1 = "bd7c69c7f7173097e7b5e1be07cee2b8b7447f51"
+git-tree-sha1 = "68723afdb616445c6caaef6255067a8339f91325"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.54"
+version = "0.7.55"
 
 [[deps.PooledArrays]]
 deps = ["DataAPI", "Future"]
