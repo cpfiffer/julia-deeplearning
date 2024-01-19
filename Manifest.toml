@@ -348,10 +348,10 @@ uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
 version = "1.15.0"
 
 [[deps.DataDeps]]
-deps = ["HTTP", "Libdl", "Reexport", "SHA", "p7zip_jll"]
-git-tree-sha1 = "6e8d74545d34528c30ccd3fa0f3c00f8ed49584c"
+deps = ["HTTP", "Libdl", "Reexport", "SHA", "Scratch", "p7zip_jll"]
+git-tree-sha1 = "d481f6419c262edcb7294179bd63249d123eb081"
 uuid = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
-version = "0.7.11"
+version = "0.7.12"
 
 [[deps.DataFrames]]
 deps = ["Compat", "DataAPI", "DataStructures", "Future", "InlineStrings", "InvertedIndices", "IteratorInterfaceExtensions", "LinearAlgebra", "Markdown", "Missings", "PooledArrays", "PrecompileTools", "PrettyTables", "Printf", "REPL", "Random", "Reexport", "SentinelArrays", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
@@ -857,9 +857,9 @@ version = "1.0.0"
 
 [[deps.JLD2]]
 deps = ["FileIO", "MacroTools", "Mmap", "OrderedCollections", "Pkg", "PrecompileTools", "Printf", "Reexport", "Requires", "TranscodingStreams", "UUIDs"]
-git-tree-sha1 = "315b508ec5df53936532097ffe6e5deacbf41861"
+git-tree-sha1 = "7c0008f0b7622c6c0ee5c65cbc667b69f8a65672"
 uuid = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
-version = "0.4.44"
+version = "0.4.45"
 
 [[deps.JLFzf]]
 deps = ["Pipe", "REPL", "Random", "fzf_jll"]
