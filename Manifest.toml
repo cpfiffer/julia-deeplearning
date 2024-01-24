@@ -206,9 +206,9 @@ version = "0.5.1"
 
 [[deps.ChainRules]]
 deps = ["Adapt", "ChainRulesCore", "Compat", "Distributed", "GPUArraysCore", "IrrationalConstants", "LinearAlgebra", "Random", "RealDot", "SparseArrays", "SparseInverseSubset", "Statistics", "StructArrays", "SuiteSparse"]
-git-tree-sha1 = "237cb6c8e662b7648f8ccdb336e0d8faedfc24b8"
+git-tree-sha1 = "07fbef147241b3869deb9cb08b10a2fc37600101"
 uuid = "082447d4-558c-5d27-93f4-14fc19e9eca2"
-version = "1.58.2"
+version = "1.59.0"
 
 [[deps.ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra"]
@@ -537,9 +537,9 @@ version = "0.8.4"
 
 [[deps.Flux]]
 deps = ["Adapt", "ChainRulesCore", "Compat", "Functors", "LinearAlgebra", "MLUtils", "MacroTools", "NNlib", "OneHotArrays", "Optimisers", "Preferences", "ProgressLogging", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "Zygote"]
-git-tree-sha1 = "2827339fbc2291d541a9c62ffbf28da7f3621ae4"
+git-tree-sha1 = "0f018f81c5221f6b7aaf93d50d97e447686767f0"
 uuid = "587475ba-b771-5e3f-ad9e-33799f191a9c"
-version = "0.14.9"
+version = "0.14.10"
 
     [deps.Flux.extensions]
     FluxAMDGPUExt = "AMDGPU"
@@ -723,9 +723,9 @@ version = "0.17.1"
 
 [[deps.HDF5_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "LazyArtifacts", "LibCURL_jll", "Libdl", "MPICH_jll", "MPIPreferences", "MPItrampoline_jll", "MicrosoftMPI_jll", "OpenMPI_jll", "OpenSSL_jll", "TOML", "Zlib_jll", "libaec_jll"]
-git-tree-sha1 = "8156325170d6763b5494c072ac4754214db3e669"
+git-tree-sha1 = "e4591176488495bf44d7456bd73179d87d5e6eab"
 uuid = "0234f1f7-429e-5d53-9886-15a909be8d59"
-version = "1.14.3+0"
+version = "1.14.3+1"
 
 [[deps.HTTP]]
 deps = ["Base64", "CodecZlib", "ConcurrentUtilities", "Dates", "ExceptionUnwrapping", "Logging", "LoggingExtras", "MbedTLS", "NetworkOptions", "OpenSSL", "Random", "SimpleBufferStream", "Sockets", "URIs", "UUIDs"]
