@@ -53,9 +53,9 @@ version = "0.2.0"
 
 [[deps.ArrayLayouts]]
 deps = ["FillArrays", "LinearAlgebra"]
-git-tree-sha1 = "a45ec4acc9d905f94b47243cff666820bb107789"
+git-tree-sha1 = "f5c3f5584f14322a0bd73362fd88b589dabd4019"
 uuid = "4c555306-a7a7-4459-81d9-ec55ddd5c99a"
-version = "1.5.2"
+version = "1.5.3"
 weakdeps = ["SparseArrays"]
 
     [deps.ArrayLayouts.extensions]
@@ -206,9 +206,9 @@ version = "0.5.1"
 
 [[deps.ChainRules]]
 deps = ["Adapt", "ChainRulesCore", "Compat", "Distributed", "GPUArraysCore", "IrrationalConstants", "LinearAlgebra", "Random", "RealDot", "SparseArrays", "SparseInverseSubset", "Statistics", "StructArrays", "SuiteSparse"]
-git-tree-sha1 = "b308c249f38637cc5022c079fe5e19701a160395"
+git-tree-sha1 = "213f001d1233fd3b8ef007f50c8cab29061917d8"
 uuid = "082447d4-558c-5d27-93f4-14fc19e9eca2"
-version = "1.60.0"
+version = "1.61.0"
 
 [[deps.ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra"]
@@ -801,13 +801,17 @@ version = "0.3.8"
 
 [[deps.InfiniteArrays]]
 deps = ["ArrayLayouts", "FillArrays", "Infinities", "LazyArrays", "LinearAlgebra"]
-git-tree-sha1 = "e61675cbcf3ce57ea3566b0abcfe46e4a521bf6f"
+git-tree-sha1 = "f72d4b348b992435d86f1b63e9ba5ae917dade47"
 uuid = "4858937d-0d70-526a-a4dd-2d5cb5dd786c"
-version = "0.12.15"
-weakdeps = ["Statistics"]
+version = "0.13.4"
 
     [deps.InfiniteArrays.extensions]
+    InfiniteArraysDSPExt = "DSP"
     InfiniteArraysStatisticsExt = "Statistics"
+
+    [deps.InfiniteArrays.weakdeps]
+    DSP = "717857b8-e6f2-59f4-9121-6e50c889abd2"
+    Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [[deps.Infinities]]
 git-tree-sha1 = "6336676b91409ec0a2c82723de9bdf4cabd02d78"
@@ -1471,9 +1475,9 @@ version = "0.5.12"
 
 [[deps.ParameterSchedulers]]
 deps = ["Flux", "InfiniteArrays"]
-git-tree-sha1 = "c1e016a96afc915cb04eed77f4b261532948e841"
+git-tree-sha1 = "b83a6400c3f93fa18c536684d0a4d4035b3c6679"
 uuid = "d7d3b36b-41b8-4d0d-a2bf-768c6151755e"
-version = "0.3.6"
+version = "0.3.7"
 
 [[deps.Parameters]]
 deps = ["OrderedCollections", "UnPack"]
@@ -1567,9 +1571,9 @@ version = "1.40.0"
 
 [[deps.Pluto]]
 deps = ["Base64", "Configurations", "Dates", "Downloads", "ExpressionExplorer", "FileWatching", "FuzzyCompletions", "HTTP", "HypertextLiteral", "InteractiveUtils", "Logging", "LoggingExtras", "MIMEs", "Malt", "Markdown", "MsgPack", "Pkg", "PrecompileSignatures", "PrecompileTools", "REPL", "RegistryInstances", "RelocatableFolders", "Scratch", "Sockets", "TOML", "Tables", "URIs", "UUIDs"]
-git-tree-sha1 = "e1f12b2d765ff3f50e3732017126bbb5335b7911"
+git-tree-sha1 = "449f468cbb80c3eec6e6d8443a0913d8bbad4d0d"
 uuid = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
-version = "0.19.37"
+version = "0.19.38"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
