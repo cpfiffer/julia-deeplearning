@@ -1,6 +1,6 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.10.1"
+julia_version = "1.10.2"
 manifest_format = "2.0"
 project_hash = "42542ea8097221a84479cafcac6b580e934f617b"
 
@@ -474,9 +474,9 @@ uuid = "21656369-7473-754a-2065-74616d696c43"
 version = "1.0.0"
 
 [[deps.ExproniconLite]]
-git-tree-sha1 = "fbc390c2f896031db5484bc152a7e805ecdfb01f"
+git-tree-sha1 = "5552cf384e4577c5dd2db57d7086a4a41747dbb9"
 uuid = "55351af7-c7e9-48d6-89ff-24e801d99491"
-version = "0.10.5"
+version = "0.10.6"
 
 [[deps.FFMPEG]]
 deps = ["FFMPEG_jll"]
