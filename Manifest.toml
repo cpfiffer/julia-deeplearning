@@ -28,9 +28,9 @@ version = "0.4.5"
 
 [[deps.Adapt]]
 deps = ["LinearAlgebra", "Requires"]
-git-tree-sha1 = "0fb305e0253fd4e833d486914367a2ee2c2e78d0"
+git-tree-sha1 = "e2a9873379849ce2ac9f9fa34b0e37bde5d5fe0a"
 uuid = "79e6a3ab-5dfb-504d-930d-738a2a938a0e"
-version = "4.0.1"
+version = "4.0.2"
 weakdeps = ["StaticArrays"]
 
     [deps.Adapt.extensions]
@@ -53,9 +53,9 @@ version = "0.2.0"
 
 [[deps.ArrayLayouts]]
 deps = ["FillArrays", "LinearAlgebra"]
-git-tree-sha1 = "64d582bcb9c93ac741234789eeb4f16812413efb"
+git-tree-sha1 = "e46675dbc095ddfdf2b5fba247d5a25f34e1f8a2"
 uuid = "4c555306-a7a7-4459-81d9-ec55ddd5c99a"
-version = "1.6.0"
+version = "1.6.1"
 weakdeps = ["SparseArrays"]
 
     [deps.ArrayLayouts.extensions]
@@ -361,9 +361,9 @@ version = "1.6.1"
 
 [[deps.DataStructures]]
 deps = ["Compat", "InteractiveUtils", "OrderedCollections"]
-git-tree-sha1 = "1fb174f0d48fe7d142e1109a10636bc1d14f5ac2"
+git-tree-sha1 = "0f4b5d62a88d8f59003e43c25a8a90de9eb76317"
 uuid = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
-version = "0.18.17"
+version = "0.18.18"
 
 [[deps.DataValueInterfaces]]
 git-tree-sha1 = "bfc1187b79289637fa0ef6d4436ebdfe6905cbd6"
@@ -938,9 +938,9 @@ version = "0.2.1+0"
 
 [[deps.KernelAbstractions]]
 deps = ["Adapt", "Atomix", "InteractiveUtils", "LinearAlgebra", "MacroTools", "PrecompileTools", "Requires", "SparseArrays", "StaticArrays", "UUIDs", "UnsafeAtomics", "UnsafeAtomicsLLVM"]
-git-tree-sha1 = "c7753cc3febe006708ce6798482004241f7d890b"
+git-tree-sha1 = "ed7167240f40e62d97c1f5f7735dea6de3cc5c49"
 uuid = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
-version = "0.9.17"
+version = "0.9.18"
 
     [deps.KernelAbstractions.extensions]
     EnzymeExt = "EnzymeCore"
@@ -1532,9 +1532,9 @@ version = "3.1.0"
 
 [[deps.PlotUtils]]
 deps = ["ColorSchemes", "Colors", "Dates", "PrecompileTools", "Printf", "Random", "Reexport", "Statistics"]
-git-tree-sha1 = "862942baf5663da528f66d24996eb6da85218e76"
+git-tree-sha1 = "7b1a9df27f072ac4c9c7cbe5efb198489258d1f5"
 uuid = "995b91a9-d308-5afd-9ec6-746e21dbc043"
-version = "1.4.0"
+version = "1.4.1"
 
 [[deps.PlotlyBase]]
 deps = ["ColorSchemes", "Dates", "DelimitedFiles", "DocStringExtensions", "JSON", "LaTeXStrings", "Logging", "Parameters", "Pkg", "REPL", "Requires", "Statistics", "UUIDs"]
@@ -1562,9 +1562,9 @@ version = "0.18.13"
 
 [[deps.PlotlyKaleido]]
 deps = ["Base64", "JSON", "Kaleido_jll"]
-git-tree-sha1 = "3169fe6248e443889b4712e72f59414b0c452b34"
+git-tree-sha1 = "2650cd8fb83f73394996d507b3411a7316f6f184"
 uuid = "f2990250-8cf9-495f-b13a-cce12b45703c"
-version = "2.2.3"
+version = "2.2.4"
 
 [[deps.Plots]]
 deps = ["Base64", "Contour", "Dates", "Downloads", "FFMPEG", "FixedPointNumbers", "GR", "JLFzf", "JSON", "LaTeXStrings", "Latexify", "LinearAlgebra", "Measures", "NaNMath", "Pkg", "PlotThemes", "PlotUtils", "PrecompileTools", "Printf", "REPL", "Random", "RecipesBase", "RecipesPipeline", "Reexport", "RelocatableFolders", "Requires", "Scratch", "Showoff", "SparseArrays", "Statistics", "StatsBase", "UUIDs", "UnicodeFun", "UnitfulLatexify", "Unzip"]
@@ -1650,9 +1650,9 @@ version = "0.1.4"
 
 [[deps.ProgressMeter]]
 deps = ["Distributed", "Printf"]
-git-tree-sha1 = "00099623ffee15972c16111bcf84c58a0051257c"
+git-tree-sha1 = "763a8ceb07833dd51bb9e3bbca372de32c0605ad"
 uuid = "92933f4c-e287-5a05-a399-4b506db050ca"
-version = "1.9.0"
+version = "1.10.0"
 
 [[deps.ProtoBuf]]
 deps = ["BufferedStreams", "Dates", "EnumX", "TOML", "TranscodingStreams"]
