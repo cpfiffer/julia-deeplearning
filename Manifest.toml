@@ -537,9 +537,9 @@ version = "0.8.4"
 
 [[deps.Flux]]
 deps = ["Adapt", "ChainRulesCore", "Compat", "Functors", "LinearAlgebra", "MLUtils", "MacroTools", "NNlib", "OneHotArrays", "Optimisers", "Preferences", "ProgressLogging", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "Zygote"]
-git-tree-sha1 = "fd7b23aa8013a7528563d429f6eaf406f60364ed"
+git-tree-sha1 = "5a626d6ef24ae0a8590c22dc12096fb65eb66325"
 uuid = "587475ba-b771-5e3f-ad9e-33799f191a9c"
-version = "0.14.12"
+version = "0.14.13"
 
     [deps.Flux.extensions]
     FluxAMDGPUExt = "AMDGPU"
@@ -1594,9 +1594,9 @@ version = "0.19.40"
 
 [[deps.PlutoDependencyExplorer]]
 deps = ["ExpressionExplorer", "InteractiveUtils", "Markdown"]
-git-tree-sha1 = "dd77d591d2f72c49541dfd245630b3535b4ff7c4"
+git-tree-sha1 = "4bc5284f77d731196d3e97f23abb732ad6f2a6e4"
 uuid = "72656b73-756c-7461-726b-72656b6b696b"
-version = "1.0.3"
+version = "1.0.4"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
