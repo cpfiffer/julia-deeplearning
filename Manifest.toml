@@ -555,9 +555,9 @@ version = "0.14.13"
 
 [[deps.FluxTraining]]
 deps = ["BSON", "ChainRulesCore", "DataStructures", "EarlyStopping", "Flux", "Glob", "Graphs", "ImageCore", "InlineTest", "OnlineStats", "Optimisers", "ParameterSchedulers", "Parameters", "PrecompileTools", "PrettyTables", "ProgressMeter", "Reexport", "Setfield", "Statistics", "TensorBoardLogger", "UUIDs", "ValueHistories", "Zygote"]
-git-tree-sha1 = "f615a3bdefdafdb1b3b03639a6279939a54a3e4c"
+git-tree-sha1 = "ad3f49f048c69a36cc61e7f77932ac5eafdba11a"
 uuid = "7bf95e4d-ca32-48da-9824-f0dc5310474f"
-version = "0.3.9"
+version = "0.3.10"
 
 [[deps.Fontconfig_jll]]
 deps = ["Artifacts", "Bzip2_jll", "Expat_jll", "FreeType2_jll", "JLLWrappers", "Libdl", "Libuuid_jll", "Pkg", "Zlib_jll"]
@@ -1473,10 +1473,10 @@ uuid = "5432bcbf-9aad-5242-b902-cca2824c8663"
 version = "0.5.12"
 
 [[deps.ParameterSchedulers]]
-deps = ["Flux", "InfiniteArrays"]
-git-tree-sha1 = "b83a6400c3f93fa18c536684d0a4d4035b3c6679"
+deps = ["InfiniteArrays", "Optimisers"]
+git-tree-sha1 = "f2fa4f19f11076097cc9eb3afca83801273a47f3"
 uuid = "d7d3b36b-41b8-4d0d-a2bf-768c6151755e"
-version = "0.3.7"
+version = "0.4.1"
 
 [[deps.Parameters]]
 deps = ["OrderedCollections", "UnPack"]
@@ -1617,9 +1617,9 @@ version = "3.0.3"
 
 [[deps.PrecompileTools]]
 deps = ["Preferences"]
-git-tree-sha1 = "03b4c25b43cb84cee5c90aa9b5ea0a78fd848d2f"
+git-tree-sha1 = "5aa36f7049a63a1528fe8f7c3f2113413ffd4e1f"
 uuid = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
-version = "1.2.0"
+version = "1.2.1"
 
 [[deps.Preferences]]
 deps = ["TOML"]
