@@ -537,9 +537,9 @@ version = "0.8.4"
 
 [[deps.Flux]]
 deps = ["Adapt", "ChainRulesCore", "Compat", "Functors", "LinearAlgebra", "MLUtils", "MacroTools", "NNlib", "OneHotArrays", "Optimisers", "Preferences", "ProgressLogging", "Random", "Reexport", "SparseArrays", "SpecialFunctions", "Statistics", "Zygote"]
-git-tree-sha1 = "502d0232ec6430d40b6e5b57637333f32192592e"
+git-tree-sha1 = "a5475163b611812d073171583982c42ea48d22b0"
 uuid = "587475ba-b771-5e3f-ad9e-33799f191a9c"
-version = "0.14.14"
+version = "0.14.15"
 
     [deps.Flux.extensions]
     FluxAMDGPUExt = "AMDGPU"
@@ -914,9 +914,9 @@ version = "3.0.2+0"
 
 [[deps.JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
-git-tree-sha1 = "7b762d81887160169ddfc93a47e5fd7a6a3e78ef"
+git-tree-sha1 = "0015726aa3eb28973fbbdbb7ca2ed6396ffe3a23"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.9.29"
+version = "0.9.30"
 
 [[deps.JuliaNVTXCallbacks_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -962,9 +962,9 @@ version = "3.0.0+1"
 
 [[deps.LLVM]]
 deps = ["CEnum", "LLVMExtra_jll", "Libdl", "Preferences", "Printf", "Requires", "Unicode"]
-git-tree-sha1 = "7c6650580b4c3169d9905858160db895bff6d2e2"
+git-tree-sha1 = "ab01dde107f21aa76144d0771dccc08f152ccac7"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "6.6.1"
+version = "6.6.2"
 weakdeps = ["BFloat16s"]
 
     [deps.LLVM.extensions]
