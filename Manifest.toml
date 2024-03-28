@@ -469,9 +469,9 @@ uuid = "e2ba6199-217a-4e67-a87a-7c52f15ade04"
 version = "0.1.10"
 
 [[deps.ExpressionExplorer]]
-git-tree-sha1 = "bce17cd0180a75eec637d6e3f8153011b8bdb25a"
+git-tree-sha1 = "520986131078a17b5a873f0e53cd7d227dc44e1e"
 uuid = "21656369-7473-754a-2065-74616d696c43"
-version = "1.0.0"
+version = "1.0.1"
 
 [[deps.ExproniconLite]]
 git-tree-sha1 = "5552cf384e4577c5dd2db57d7086a4a41747dbb9"
@@ -1982,9 +1982,9 @@ uuid = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
 version = "0.5.23"
 
 [[deps.TranscodingStreams]]
-git-tree-sha1 = "14389d51751169994b2e1317d5c72f7dc4f21045"
+git-tree-sha1 = "71509f04d045ec714c4748c785a59045c3736349"
 uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
-version = "0.10.6"
+version = "0.10.7"
 weakdeps = ["Random", "Test"]
 
     [deps.TranscodingStreams.extensions]
