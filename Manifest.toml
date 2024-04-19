@@ -159,9 +159,9 @@ version = "0.10.14"
 
 [[deps.CUDA]]
 deps = ["AbstractFFTs", "Adapt", "BFloat16s", "CEnum", "CUDA_Driver_jll", "CUDA_Runtime_Discovery", "CUDA_Runtime_jll", "Crayons", "DataFrames", "ExprTools", "GPUArrays", "GPUCompiler", "KernelAbstractions", "LLVM", "LLVMLoopInfo", "LazyArtifacts", "Libdl", "LinearAlgebra", "Logging", "NVTX", "Preferences", "PrettyTables", "Printf", "Random", "Random123", "RandomNumbers", "Reexport", "Requires", "SparseArrays", "StaticArrays", "Statistics"]
-git-tree-sha1 = "3dcab8a2c18ca319ea15a41d90e9528b8e93894a"
+git-tree-sha1 = "dd1c682b372b6791b69f6823afe364fc92a0146c"
 uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-version = "5.3.0"
+version = "5.3.1"
 weakdeps = ["ChainRulesCore", "SpecialFunctions"]
 
     [deps.CUDA.extensions]
@@ -1025,9 +1025,9 @@ version = "0.15.1"
 
 [[deps.LazyArrays]]
 deps = ["ArrayLayouts", "FillArrays", "LinearAlgebra", "MacroTools", "MatrixFactorizations", "SparseArrays"]
-git-tree-sha1 = "30fc74040b7507231ba889e363fd1135f5067395"
+git-tree-sha1 = "35079a6a869eecace778bcda8641f9a54ca3a828"
 uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
-version = "1.9.1"
+version = "1.10.0"
 weakdeps = ["StaticArrays"]
 
     [deps.LazyArrays.extensions]
