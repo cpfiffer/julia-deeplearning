@@ -212,9 +212,9 @@ version = "0.5.1"
 
 [[deps.ChainRules]]
 deps = ["Adapt", "ChainRulesCore", "Compat", "Distributed", "GPUArraysCore", "IrrationalConstants", "LinearAlgebra", "Random", "RealDot", "SparseArrays", "SparseInverseSubset", "Statistics", "StructArrays", "SuiteSparse"]
-git-tree-sha1 = "3e79289d94b579d81618f4c7c974bb9390dab493"
+git-tree-sha1 = "e7d1016142a71c980309114ee30a3e4f870902f4"
 uuid = "082447d4-558c-5d27-93f4-14fc19e9eca2"
-version = "1.64.0"
+version = "1.65.0"
 
 [[deps.ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra"]
@@ -806,9 +806,9 @@ version = "0.3.8"
 
 [[deps.InfiniteArrays]]
 deps = ["ArrayLayouts", "FillArrays", "Infinities", "LazyArrays", "LinearAlgebra"]
-git-tree-sha1 = "5a4d1b7e02e4ad3e3fd00840b0b1eed57225524d"
+git-tree-sha1 = "c802e86d6d5589fb7333c8b92665fb9469dd5d4f"
 uuid = "4858937d-0d70-526a-a4dd-2d5cb5dd786c"
-version = "0.13.7"
+version = "0.13.8"
 
     [deps.InfiniteArrays.extensions]
     InfiniteArraysDSPExt = "DSP"
