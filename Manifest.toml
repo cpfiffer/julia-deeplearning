@@ -165,9 +165,9 @@ version = "0.10.14"
 
 [[deps.CUDA]]
 deps = ["AbstractFFTs", "Adapt", "BFloat16s", "CEnum", "CUDA_Driver_jll", "CUDA_Runtime_Discovery", "CUDA_Runtime_jll", "Crayons", "DataFrames", "ExprTools", "GPUArrays", "GPUCompiler", "KernelAbstractions", "LLVM", "LLVMLoopInfo", "LazyArtifacts", "Libdl", "LinearAlgebra", "Logging", "NVTX", "Preferences", "PrettyTables", "Printf", "Random", "Random123", "RandomNumbers", "Reexport", "Requires", "SparseArrays", "StaticArrays", "Statistics"]
-git-tree-sha1 = "dd1c682b372b6791b69f6823afe364fc92a0146c"
+git-tree-sha1 = "4afeb9a2502157fd6750a5ceb6d638689e0b8682"
 uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-version = "5.3.1"
+version = "5.3.2"
 weakdeps = ["ChainRulesCore", "SpecialFunctions"]
 
     [deps.CUDA.extensions]
@@ -525,9 +525,9 @@ uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
 
 [[deps.FillArrays]]
 deps = ["LinearAlgebra"]
-git-tree-sha1 = "881275fc6b8c6f0dfb9cfa4a878979a33cb26be3"
+git-tree-sha1 = "57f08d5665e76397e96b168f9acc12ab17c84a68"
 uuid = "1a297f60-69ca-5386-bcde-b61e274b549b"
-version = "1.10.1"
+version = "1.10.2"
 weakdeps = ["PDMats", "SparseArrays", "Statistics"]
 
     [deps.FillArrays.extensions]
@@ -1082,10 +1082,10 @@ uuid = "e9f186c6-92d2-5b65-8a66-fee21dc1b490"
 version = "3.2.2+1"
 
 [[deps.Libgcrypt_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "Libgpg_error_jll", "Pkg"]
-git-tree-sha1 = "64613c82a59c120435c067c2b809fc61cf5166ae"
+deps = ["Artifacts", "JLLWrappers", "Libdl", "Libgpg_error_jll"]
+git-tree-sha1 = "9fd170c4bbfd8b935fdc5f8b7aa33532c991a673"
 uuid = "d4300ac3-e22c-5743-9152-c294e39db1e4"
-version = "1.8.7+0"
+version = "1.8.11+0"
 
 [[deps.Libglvnd_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg", "Xorg_libX11_jll", "Xorg_libXext_jll"]
