@@ -1503,10 +1503,10 @@ uuid = "7b2266bf-644c-5ea3-82d8-af4bbd25a884"
 version = "1.2.1"
 
 [[deps.Pickle]]
-deps = ["BFloat16s", "DataStructures", "InternedStrings", "Serialization", "SparseArrays", "StridedViews", "StringEncodings", "ZipFile"]
-git-tree-sha1 = "8f1651db873eda63f6759a2564d6be5292a38097"
+deps = ["BFloat16s", "DataStructures", "InternedStrings", "Mmap", "Serialization", "SparseArrays", "StridedViews", "StringEncodings", "ZipFile"]
+git-tree-sha1 = "e99da19b86b7e1547b423fc1721b260cfbe83acb"
 uuid = "fbb45041-c46e-462f-888f-7c521cafbc2c"
-version = "0.3.4"
+version = "0.3.5"
 
 [[deps.Pidfile]]
 deps = ["FileWatching", "Test"]
