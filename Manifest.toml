@@ -59,9 +59,9 @@ version = "0.4.0"
 
 [[deps.ArrayLayouts]]
 deps = ["FillArrays", "LinearAlgebra"]
-git-tree-sha1 = "33207a8be6267bc389d0701e97a9bce6a4de68eb"
+git-tree-sha1 = "29649b61e0313db0a7ad5ecf41210e4e85aea234"
 uuid = "4c555306-a7a7-4459-81d9-ec55ddd5c99a"
-version = "1.9.2"
+version = "1.9.3"
 weakdeps = ["SparseArrays"]
 
     [deps.ArrayLayouts.extensions]
@@ -1177,9 +1177,9 @@ version = "2.4.6"
 
 [[deps.MAT]]
 deps = ["BufferedStreams", "CodecZlib", "HDF5", "SparseArrays"]
-git-tree-sha1 = "ed1cf0a322d78cee07718bed5fd945e2218c35a1"
+git-tree-sha1 = "1d2dd9b186742b0f317f2530ddcbf00eebb18e96"
 uuid = "23992714-dd62-5051-b70f-ba57cb901cac"
-version = "0.10.6"
+version = "0.10.7"
 
 [[deps.MIMEs]]
 git-tree-sha1 = "65f28ad4b594aebe22157d6fac869786a255b7eb"
@@ -1315,9 +1315,9 @@ version = "1.0.2"
 
 [[deps.NNlib]]
 deps = ["Adapt", "Atomix", "ChainRulesCore", "GPUArraysCore", "KernelAbstractions", "LinearAlgebra", "Pkg", "Random", "Requires", "Statistics"]
-git-tree-sha1 = "e0cea7ec219ada9ac80ec2e82e374ab2f154ae05"
+git-tree-sha1 = "3d4617f943afe6410206a5294a95948c8d1b35bd"
 uuid = "872c559c-99b0-510c-b3b7-b6c96a88d5cd"
-version = "0.9.16"
+version = "0.9.17"
 
     [deps.NNlib.extensions]
     NNlibAMDGPUExt = "AMDGPU"
