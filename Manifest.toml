@@ -485,9 +485,9 @@ uuid = "21656369-7473-754a-2065-74616d696c43"
 version = "1.0.2"
 
 [[deps.ExproniconLite]]
-git-tree-sha1 = "6091a6fc0f16639f43d7f78fee225ba365712612"
+git-tree-sha1 = "5f0e0da07a2d0750eb1f393182a4bd226def5130"
 uuid = "55351af7-c7e9-48d6-89ff-24e801d99491"
-version = "0.10.8"
+version = "0.10.9"
 
 [[deps.FFMPEG]]
 deps = ["FFMPEG_jll"]
@@ -955,9 +955,9 @@ version = "0.2.1+0"
 
 [[deps.KernelAbstractions]]
 deps = ["Adapt", "Atomix", "InteractiveUtils", "LinearAlgebra", "MacroTools", "PrecompileTools", "Requires", "SparseArrays", "StaticArrays", "UUIDs", "UnsafeAtomics", "UnsafeAtomicsLLVM"]
-git-tree-sha1 = "8e5a339882cc401688d79b811d923a38ba77d50a"
+git-tree-sha1 = "b8fcefe4418e4a7a2c3aaac883fecddd8efbe286"
 uuid = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
-version = "0.9.20"
+version = "0.9.21"
 
     [deps.KernelAbstractions.extensions]
     EnzymeExt = "EnzymeCore"
