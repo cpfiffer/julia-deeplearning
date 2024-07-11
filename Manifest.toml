@@ -1042,9 +1042,9 @@ version = "0.15.1"
 
 [[deps.LazyArrays]]
 deps = ["ArrayLayouts", "FillArrays", "LinearAlgebra", "MacroTools", "SparseArrays"]
-git-tree-sha1 = "a32ffcab2b67af985fe57e23c9708388e5927931"
+git-tree-sha1 = "46dd13736e33cc3bfc610f62b6c7f84b9c95539a"
 uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
-version = "2.1.7"
+version = "2.1.8"
 
     [deps.LazyArrays.extensions]
     LazyArraysBandedMatricesExt = "BandedMatrices"
@@ -1148,9 +1148,9 @@ uuid = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 
 [[deps.Literate]]
 deps = ["Base64", "IOCapture", "JSON", "REPL"]
-git-tree-sha1 = "596df2daea9c27da81eee63ef2cf101baf10c24c"
+git-tree-sha1 = "eef2e1fc1dc38af90a18eb16e519e06d1fd10c2a"
 uuid = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
-version = "2.18.0"
+version = "2.19.0"
 
 [[deps.LiveServer]]
 deps = ["HTTP", "LoggingExtras", "MIMEs", "Pkg", "Sockets", "Test"]
