@@ -1432,9 +1432,9 @@ version = "0.8.1+2"
 
 [[deps.OpenMPI_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Hwloc_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "MPIPreferences", "TOML", "Zlib_jll"]
-git-tree-sha1 = "a9de2f1fc98b92f8856c640bf4aec1ac9b2a0d86"
+git-tree-sha1 = "2f0a1d8c79bc385ec3fcda12830c9d0e72b30e71"
 uuid = "fe0851c0-eecd-5654-98d4-656369965a5c"
-version = "5.0.3+0"
+version = "5.0.4+0"
 
 [[deps.OpenSSL]]
 deps = ["BitFlags", "Dates", "MozillaCACerts_jll", "OpenSSL_jll", "Sockets"]
