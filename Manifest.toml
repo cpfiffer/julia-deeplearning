@@ -811,9 +811,9 @@ version = "0.3.8"
 
 [[deps.InfiniteArrays]]
 deps = ["ArrayLayouts", "FillArrays", "Infinities", "LazyArrays", "LinearAlgebra"]
-git-tree-sha1 = "f21532a663c3fb09ba667c50f9de4cde75a1b517"
+git-tree-sha1 = "f672ebc641b814d7c8e5d62023c5c3f5f0f6ac50"
 uuid = "4858937d-0d70-526a-a4dd-2d5cb5dd786c"
-version = "0.14.1"
+version = "0.14.2"
 
     [deps.InfiniteArrays.extensions]
     InfiniteArraysDSPExt = "DSP"
