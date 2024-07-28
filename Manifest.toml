@@ -883,10 +883,10 @@ uuid = "82899510-4779-5014-852e-03e436cf321d"
 version = "1.0.0"
 
 [[deps.JLD2]]
-deps = ["FileIO", "MacroTools", "Mmap", "OrderedCollections", "Pkg", "PrecompileTools", "Reexport", "Requires", "TranscodingStreams", "UUIDs", "Unicode"]
-git-tree-sha1 = "5fe858cb863e211c6dedc8cce2dc0752d4ab6e2b"
+deps = ["FileIO", "MacroTools", "Mmap", "OrderedCollections", "PrecompileTools", "Reexport", "Requires", "TranscodingStreams", "UUIDs", "Unicode"]
+git-tree-sha1 = "67d4690d32c22e28818a434b293a374cc78473d3"
 uuid = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
-version = "0.4.50"
+version = "0.4.51"
 
 [[deps.JLFzf]]
 deps = ["Pipe", "REPL", "Random", "fzf_jll"]
