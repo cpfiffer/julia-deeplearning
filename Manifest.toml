@@ -1677,10 +1677,10 @@ uuid = "92933f4c-e287-5a05-a399-4b506db050ca"
 version = "1.10.2"
 
 [[deps.ProtoBuf]]
-deps = ["BufferedStreams", "Dates", "EnumX", "TOML", "TranscodingStreams"]
-git-tree-sha1 = "f2bfddd629ba7a53ed789d6427d64e0e4c378ef8"
+deps = ["BufferedStreams", "Dates", "EnumX", "TOML"]
+git-tree-sha1 = "a94945b7faff91d6feba4b6e0fc95e5c44eb5a67"
 uuid = "3349acd9-ac6a-5e09-bcdb-63829b23a429"
-version = "1.0.15"
+version = "1.0.16"
 
 [[deps.PtrArrays]]
 git-tree-sha1 = "f011fbb92c4d401059b2212c05c0601b70f8b759"
@@ -1780,9 +1780,9 @@ version = "1.3.0"
 
 [[deps.Revise]]
 deps = ["CodeTracking", "Distributed", "FileWatching", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "REPL", "Requires", "UUIDs", "Unicode"]
-git-tree-sha1 = "183ea9da1c6b1875a7c2280a86c673ab90383bf4"
+git-tree-sha1 = "7b7850bb94f75762d567834d7e9802fc22d62f9c"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "3.5.17"
+version = "3.5.18"
 
 [[deps.Rmath]]
 deps = ["Random", "Rmath_jll"]
@@ -2031,9 +2031,9 @@ uuid = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
 version = "0.5.24"
 
 [[deps.TranscodingStreams]]
-git-tree-sha1 = "d73336d81cafdc277ff45558bb7eaa2b04a8e472"
+git-tree-sha1 = "96612ac5365777520c3c5396314c8cf7408f436a"
 uuid = "3bb67fe8-82b1-5028-8e26-92a6c54297fa"
-version = "0.10.10"
+version = "0.11.1"
 weakdeps = ["Random", "Test"]
 
     [deps.TranscodingStreams.extensions]
