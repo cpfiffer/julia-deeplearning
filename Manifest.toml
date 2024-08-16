@@ -997,9 +997,9 @@ version = "1.0.0"
 
 [[deps.LLVMOpenMP_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "d986ce2d884d49126836ea94ed5bfb0f12679713"
+git-tree-sha1 = "e16271d212accd09d52ee0ae98956b8a05c4b626"
 uuid = "1d63c593-3942-5779-bab2-d838dc0a180e"
-version = "15.0.7+0"
+version = "17.0.6+0"
 
 [[deps.LZO_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -1614,9 +1614,9 @@ version = "1.40.5"
 
 [[deps.Pluto]]
 deps = ["Base64", "Configurations", "Dates", "Downloads", "ExpressionExplorer", "FileWatching", "FuzzyCompletions", "HTTP", "HypertextLiteral", "InteractiveUtils", "Logging", "LoggingExtras", "MIMEs", "Malt", "Markdown", "MsgPack", "Pkg", "PlutoDependencyExplorer", "PrecompileSignatures", "PrecompileTools", "REPL", "RegistryInstances", "RelocatableFolders", "Scratch", "Sockets", "TOML", "Tables", "URIs", "UUIDs"]
-git-tree-sha1 = "daa8d3f95b43a2e18c63f7bdbabab4f45f332bac"
+git-tree-sha1 = "73a74a03ac427363c4764f956f34b75e93f71514"
 uuid = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
-version = "0.19.45"
+version = "0.19.46"
 
 [[deps.PlutoDependencyExplorer]]
 deps = ["ExpressionExplorer", "InteractiveUtils", "Markdown"]
