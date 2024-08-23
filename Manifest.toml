@@ -641,9 +641,9 @@ version = "3.4.0+1"
 
 [[deps.GPUArrays]]
 deps = ["Adapt", "GPUArraysCore", "LLVM", "LinearAlgebra", "Printf", "Random", "Reexport", "Serialization", "Statistics"]
-git-tree-sha1 = "a74c3f1cf56a3dfcdef0605f8cdb7015926aae30"
+git-tree-sha1 = "62ee71528cca49be797076a76bdc654a170a523e"
 uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
-version = "10.3.0"
+version = "10.3.1"
 
 [[deps.GPUArraysCore]]
 deps = ["Adapt"]
@@ -1205,9 +1205,9 @@ version = "0.1.4"
 
 [[deps.MLDatasets]]
 deps = ["CSV", "Chemfiles", "DataDeps", "DataFrames", "DelimitedFiles", "FileIO", "FixedPointNumbers", "GZip", "Glob", "HDF5", "ImageShow", "JLD2", "JSON3", "LazyModules", "MAT", "MLUtils", "NPZ", "Pickle", "Printf", "Requires", "SparseArrays", "Statistics", "Tables"]
-git-tree-sha1 = "55ed5f79697232389d894d05e93633a03e774818"
+git-tree-sha1 = "61b3293b43813f7114d60cc0c31e5f95d18ff256"
 uuid = "eb30cadb-4394-5ae3-aed4-317e484a6458"
-version = "0.7.16"
+version = "0.7.17"
 
 [[deps.MLStyle]]
 git-tree-sha1 = "bc38dff0548128765760c79eb7388a4b37fae2c8"
@@ -1498,9 +1498,9 @@ version = "0.5.12"
 
 [[deps.Pango_jll]]
 deps = ["Artifacts", "Cairo_jll", "Fontconfig_jll", "FreeType2_jll", "FriBidi_jll", "Glib_jll", "HarfBuzz_jll", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "cb5a2ab6763464ae0f19c86c56c63d4a2b0f5bda"
+git-tree-sha1 = "9dd97171646850ee607593965ce1f55063d8d3f9"
 uuid = "36c8627f-9965-5494-a995-c6b170f724f3"
-version = "1.52.2+0"
+version = "1.54.0+0"
 
 [[deps.ParameterSchedulers]]
 deps = ["InfiniteArrays", "Optimisers"]
@@ -2124,9 +2124,9 @@ version = "0.2.1"
 
 [[deps.UnsafeAtomicsLLVM]]
 deps = ["LLVM", "UnsafeAtomics"]
-git-tree-sha1 = "4073c836c2befcb041e5fe306cb6abf621eb3140"
+git-tree-sha1 = "2d17fabcd17e67d7625ce9c531fb9f40b7c42ce4"
 uuid = "d80eeb9a-aca5-4d75-85e5-170c8b632249"
-version = "0.2.0"
+version = "0.2.1"
 
 [[deps.Unzip]]
 git-tree-sha1 = "ca0969166a028236229f63514992fc073799bb78"
