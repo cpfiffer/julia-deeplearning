@@ -479,9 +479,9 @@ uuid = "e2ba6199-217a-4e67-a87a-7c52f15ade04"
 version = "0.1.10"
 
 [[deps.ExpressionExplorer]]
-git-tree-sha1 = "045b3dc30fd2fd5777107955e2c9b8d47f087de1"
+git-tree-sha1 = "0889fdf7ac69b67b65f54b763941967e0a08b7b3"
 uuid = "21656369-7473-754a-2065-74616d696c43"
-version = "1.0.3"
+version = "1.0.4"
 
 [[deps.ExproniconLite]]
 git-tree-sha1 = "4c9ed87a6b3cd90acf24c556f2119533435ded38"
@@ -932,9 +932,9 @@ version = "3.0.3+0"
 
 [[deps.JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
-git-tree-sha1 = "4b415b6cccb9ab61fec78a621572c82ac7fa5776"
+git-tree-sha1 = "2984284a8abcfcc4784d95a9e2ea4e352dd8ede7"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.9.35"
+version = "0.9.36"
 
 [[deps.JuliaNVTXCallbacks_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -1418,9 +1418,9 @@ version = "0.2.5"
 
 [[deps.OnlineStats]]
 deps = ["AbstractTrees", "Dates", "Distributions", "LinearAlgebra", "OnlineStatsBase", "OrderedCollections", "Random", "RecipesBase", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns"]
-git-tree-sha1 = "29f0e2b369c22190f2500b4fe5af49052c3f0c3b"
+git-tree-sha1 = "8437102a36046b73a50af12430ec3e8e98768d80"
 uuid = "a15396b6-48d5-5d58-9928-6d29437db91e"
-version = "1.7.0"
+version = "1.7.1"
 
 [[deps.OnlineStatsBase]]
 deps = ["AbstractTrees", "Dates", "LinearAlgebra", "OrderedCollections", "Statistics", "StatsBase"]
@@ -1598,9 +1598,9 @@ version = "0.18.13"
 
 [[deps.PlotlyKaleido]]
 deps = ["Base64", "JSON", "Kaleido_jll"]
-git-tree-sha1 = "2650cd8fb83f73394996d507b3411a7316f6f184"
+git-tree-sha1 = "3210de4d88af7ca5de9e26305758a59aabc48aac"
 uuid = "f2990250-8cf9-495f-b13a-cce12b45703c"
-version = "2.2.4"
+version = "2.2.5"
 
 [[deps.Plots]]
 deps = ["Base64", "Contour", "Dates", "Downloads", "FFMPEG", "FixedPointNumbers", "GR", "JLFzf", "JSON", "LaTeXStrings", "Latexify", "LinearAlgebra", "Measures", "NaNMath", "Pkg", "PlotThemes", "PlotUtils", "PrecompileTools", "Printf", "REPL", "Random", "RecipesBase", "RecipesPipeline", "Reexport", "RelocatableFolders", "Requires", "Scratch", "Showoff", "SparseArrays", "Statistics", "StatsBase", "TOML", "UUIDs", "UnicodeFun", "UnitfulLatexify", "Unzip"]
