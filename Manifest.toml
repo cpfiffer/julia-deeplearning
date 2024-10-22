@@ -53,9 +53,9 @@ version = "0.1.38"
 
 [[deps.Adapt]]
 deps = ["LinearAlgebra", "Requires"]
-git-tree-sha1 = "6a55b747d1812e699320963ffde36f1ebdda4099"
+git-tree-sha1 = "d80af0733c99ea80575f612813fa6aa71022d33a"
 uuid = "79e6a3ab-5dfb-504d-930d-738a2a938a0e"
-version = "4.0.4"
+version = "4.1.0"
 weakdeps = ["StaticArrays"]
 
     [deps.Adapt.extensions]
@@ -505,9 +505,9 @@ uuid = "e2ba6199-217a-4e67-a87a-7c52f15ade04"
 version = "0.1.10"
 
 [[deps.ExpressionExplorer]]
-git-tree-sha1 = "0889fdf7ac69b67b65f54b763941967e0a08b7b3"
+git-tree-sha1 = "7005f1493c18afb2fa3bdf06e02b16a9fde5d16d"
 uuid = "21656369-7473-754a-2065-74616d696c43"
-version = "1.0.4"
+version = "1.1.0"
 
 [[deps.ExproniconLite]]
 git-tree-sha1 = "4c9ed87a6b3cd90acf24c556f2119533435ded38"
@@ -1032,10 +1032,10 @@ uuid = "88015f11-f218-50d7-93a8-a6af411a945d"
 version = "4.0.0+0"
 
 [[deps.LLVM]]
-deps = ["CEnum", "LLVMExtra_jll", "Libdl", "Preferences", "Printf", "Requires", "Unicode"]
-git-tree-sha1 = "4ad43cb0a4bb5e5b1506e1d1f48646d7e0c80363"
+deps = ["CEnum", "LLVMExtra_jll", "Libdl", "Preferences", "Printf", "Unicode"]
+git-tree-sha1 = "d422dfd9707bec6617335dc2ea3c5172a87d5908"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "9.1.2"
+version = "9.1.3"
 weakdeps = ["BFloat16s"]
 
     [deps.LLVM.extensions]
@@ -1262,10 +1262,10 @@ uuid = "6c6e2e6c-3030-632d-7369-2d6c69616d65"
 version = "0.1.4"
 
 [[deps.MLDataDevices]]
-deps = ["Adapt", "Compat", "Functors", "Preferences", "Random"]
-git-tree-sha1 = "f19f2629ad20176e524c71d06e1c29689ab002fa"
+deps = ["Adapt", "Compat", "Functors", "LinearAlgebra", "Preferences", "Random"]
+git-tree-sha1 = "3207c2e66164e6366440ad3f0243a8d67abb4a47"
 uuid = "7e8f7934-dd98-4c1a-8fe8-92b47a384d40"
-version = "1.4.0"
+version = "1.4.1"
 
     [deps.MLDataDevices.extensions]
     MLDataDevicesAMDGPUExt = "AMDGPU"
@@ -1724,15 +1724,15 @@ version = "1.40.8"
 
 [[deps.Pluto]]
 deps = ["Base64", "Configurations", "Dates", "Downloads", "ExpressionExplorer", "FileWatching", "FuzzyCompletions", "HTTP", "HypertextLiteral", "InteractiveUtils", "Logging", "LoggingExtras", "MIMEs", "Malt", "Markdown", "MsgPack", "Pkg", "PlutoDependencyExplorer", "PrecompileSignatures", "PrecompileTools", "REPL", "RegistryInstances", "RelocatableFolders", "Scratch", "Sockets", "TOML", "Tables", "URIs", "UUIDs"]
-git-tree-sha1 = "7bfacc26d134744edc825f1434abca4960f53936"
+git-tree-sha1 = "274f6900eb612a173104cddfe60ec95f72b6e379"
 uuid = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
-version = "0.20.0"
+version = "0.20.1"
 
 [[deps.PlutoDependencyExplorer]]
 deps = ["ExpressionExplorer", "InteractiveUtils", "Markdown"]
-git-tree-sha1 = "4bc5284f77d731196d3e97f23abb732ad6f2a6e4"
+git-tree-sha1 = "592470bdf383cd34e88a21bbd7f1f7ffc52a21c6"
 uuid = "72656b73-756c-7461-726b-72656b6b696b"
-version = "1.0.4"
+version = "1.1.0"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
@@ -2023,9 +2023,9 @@ version = "0.1.1"
 
 [[deps.StaticArrays]]
 deps = ["LinearAlgebra", "PrecompileTools", "Random", "StaticArraysCore"]
-git-tree-sha1 = "eeafab08ae20c62c44c8399ccb9354a04b80db50"
+git-tree-sha1 = "777657803913ffc7e8cc20f0fd04b634f871af8f"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
-version = "1.9.7"
+version = "1.9.8"
 weakdeps = ["ChainRulesCore", "Statistics"]
 
     [deps.StaticArrays.extensions]
