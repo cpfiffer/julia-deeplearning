@@ -1660,9 +1660,9 @@ weakdeps = ["REPL"]
 
 [[deps.PlotThemes]]
 deps = ["PlotUtils", "Statistics"]
-git-tree-sha1 = "6e55c6841ce3411ccb3457ee52fc48cb698d6fb0"
+git-tree-sha1 = "41031ef3a1be6f5bbbf3e8073f210556daeae5ca"
 uuid = "ccf2f8ad-2431-5c83-bf29-c5338b663b6a"
-version = "3.2.0"
+version = "3.3.0"
 
 [[deps.PlotUtils]]
 deps = ["ColorSchemes", "Colors", "Dates", "PrecompileTools", "Printf", "Random", "Reexport", "StableRNGs", "Statistics"]
@@ -1722,9 +1722,9 @@ version = "1.40.8"
 
 [[deps.Pluto]]
 deps = ["Base64", "Configurations", "Dates", "Downloads", "ExpressionExplorer", "FileWatching", "FuzzyCompletions", "HTTP", "HypertextLiteral", "InteractiveUtils", "Logging", "LoggingExtras", "MIMEs", "Malt", "Markdown", "MsgPack", "Pkg", "PlutoDependencyExplorer", "PrecompileSignatures", "PrecompileTools", "REPL", "RegistryInstances", "RelocatableFolders", "Scratch", "Sockets", "TOML", "Tables", "URIs", "UUIDs"]
-git-tree-sha1 = "274f6900eb612a173104cddfe60ec95f72b6e379"
+git-tree-sha1 = "3d97d067ea3d04f51821ac86b0d04024fe6e4df8"
 uuid = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
-version = "0.20.1"
+version = "0.20.3"
 
 [[deps.PlutoDependencyExplorer]]
 deps = ["ExpressionExplorer", "InteractiveUtils", "Markdown"]
