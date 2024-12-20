@@ -793,9 +793,9 @@ version = "1.14.2+1"
 
 [[deps.HTTP]]
 deps = ["Base64", "CodecZlib", "ConcurrentUtilities", "Dates", "ExceptionUnwrapping", "Logging", "LoggingExtras", "MbedTLS", "NetworkOptions", "OpenSSL", "PrecompileTools", "Random", "SimpleBufferStream", "Sockets", "URIs", "UUIDs"]
-git-tree-sha1 = "627fcacdb7cb51dc67f557e1598cdffe4dda386d"
+git-tree-sha1 = "c67b33b085f6e2faf8bf79a61962e7339a81129c"
 uuid = "cd3eb016-35fb-5094-929b-558a96fad6f3"
-version = "1.10.14"
+version = "1.10.15"
 
 [[deps.HarfBuzz_jll]]
 deps = ["Artifacts", "Cairo_jll", "Fontconfig_jll", "FreeType2_jll", "Glib_jll", "Graphite2_jll", "JLLWrappers", "Libdl", "Libffi_jll"]
@@ -1189,9 +1189,9 @@ version = "1.7.0+0"
 
 [[deps.Libgpg_error_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "c6ce1e19f3aec9b59186bdf06cdf3c4fc5f5f3e6"
+git-tree-sha1 = "a7f43994b47130e4f491c3b2dbe78fe9e2aed2b3"
 uuid = "7add5ba3-2f88-524e-9cd5-f83b8a55f7b8"
-version = "1.50.0+0"
+version = "1.51.0+0"
 
 [[deps.Libiconv_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -1744,15 +1744,15 @@ version = "1.40.9"
 
 [[deps.Pluto]]
 deps = ["Base64", "Configurations", "Dates", "Downloads", "ExpressionExplorer", "FileWatching", "FuzzyCompletions", "HTTP", "HypertextLiteral", "InteractiveUtils", "Logging", "LoggingExtras", "MIMEs", "Malt", "Markdown", "MsgPack", "Pkg", "PlutoDependencyExplorer", "PrecompileSignatures", "PrecompileTools", "REPL", "RegistryInstances", "RelocatableFolders", "Scratch", "Sockets", "TOML", "Tables", "URIs", "UUIDs"]
-git-tree-sha1 = "3d97d067ea3d04f51821ac86b0d04024fe6e4df8"
+git-tree-sha1 = "b5509a2e4d4c189da505b780e3f447d1e38a0350"
 uuid = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
-version = "0.20.3"
+version = "0.20.4"
 
 [[deps.PlutoDependencyExplorer]]
 deps = ["ExpressionExplorer", "InteractiveUtils", "Markdown"]
-git-tree-sha1 = "592470bdf383cd34e88a21bbd7f1f7ffc52a21c6"
+git-tree-sha1 = "e0864c15334d2c4bac8137ce3359f1174565e719"
 uuid = "72656b73-756c-7461-726b-72656b6b696b"
-version = "1.1.0"
+version = "1.2.0"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
@@ -2043,9 +2043,9 @@ version = "0.1.1"
 
 [[deps.StaticArrays]]
 deps = ["LinearAlgebra", "PrecompileTools", "Random", "StaticArraysCore"]
-git-tree-sha1 = "777657803913ffc7e8cc20f0fd04b634f871af8f"
+git-tree-sha1 = "7c01731da8ab6d3094c4d44c9057b00932459255"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
-version = "1.9.8"
+version = "1.9.9"
 weakdeps = ["ChainRulesCore", "Statistics"]
 
     [deps.StaticArrays.extensions]
