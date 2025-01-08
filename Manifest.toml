@@ -465,9 +465,9 @@ version = "1.11.0"
 
 [[deps.Distributions]]
 deps = ["AliasTables", "FillArrays", "LinearAlgebra", "PDMats", "Printf", "QuadGK", "Random", "SpecialFunctions", "Statistics", "StatsAPI", "StatsBase", "StatsFuns"]
-git-tree-sha1 = "4b138e4643b577ccf355377c2bc70fa975af25de"
+git-tree-sha1 = "7901a6117656e29fa2c74a58adb682f380922c47"
 uuid = "31c24e10-a181-5473-b8eb-7969acd0382f"
-version = "0.25.115"
+version = "0.25.116"
 
     [deps.Distributions.extensions]
     DistributionsChainRulesCoreExt = "ChainRulesCore"
@@ -525,9 +525,9 @@ uuid = "e2ba6199-217a-4e67-a87a-7c52f15ade04"
 version = "0.1.10"
 
 [[deps.ExpressionExplorer]]
-git-tree-sha1 = "7005f1493c18afb2fa3bdf06e02b16a9fde5d16d"
+git-tree-sha1 = "71d0768dd78ad62d3582091bf338d98af8bbda67"
 uuid = "21656369-7473-754a-2065-74616d696c43"
-version = "1.1.0"
+version = "1.1.1"
 
 [[deps.ExproniconLite]]
 git-tree-sha1 = "4c9ed87a6b3cd90acf24c556f2119533435ded38"
