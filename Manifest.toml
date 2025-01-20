@@ -723,15 +723,15 @@ version = "1.1.0"
 
 [[deps.GR]]
 deps = ["Artifacts", "Base64", "DelimitedFiles", "Downloads", "GR_jll", "HTTP", "JSON", "Libdl", "LinearAlgebra", "Preferences", "Printf", "Qt6Wayland_jll", "Random", "Serialization", "Sockets", "TOML", "Tar", "Test", "p7zip_jll"]
-git-tree-sha1 = "424c8f76017e39fdfcdbb5935a8e6742244959e8"
+git-tree-sha1 = "72280b252e0af4c79576b71434582c116f05c524"
 uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
-version = "0.73.10"
+version = "0.73.11"
 
 [[deps.GR_jll]]
 deps = ["Artifacts", "Bzip2_jll", "Cairo_jll", "FFMPEG_jll", "Fontconfig_jll", "FreeType2_jll", "GLFW_jll", "JLLWrappers", "JpegTurbo_jll", "Libdl", "Libtiff_jll", "Pixman_jll", "Qt6Base_jll", "Zlib_jll", "libpng_jll"]
-git-tree-sha1 = "b90934c8cb33920a8dc66736471dc3961b42ec9f"
+git-tree-sha1 = "9d5fe5c15d0807d338b1f6d99f0056613b548d5a"
 uuid = "d2c73de3-f751-5644-a686-071e5b155ba9"
-version = "0.73.10+0"
+version = "0.73.11+0"
 
 [[deps.GZip]]
 deps = ["Libdl", "Zlib_jll"]
@@ -2548,9 +2548,9 @@ version = "0.6.75"
 
 [[deps.ZygoteRules]]
 deps = ["ChainRulesCore", "MacroTools"]
-git-tree-sha1 = "27798139afc0a2afa7b1824c206d5e87ea587a00"
+git-tree-sha1 = "e5fde37ee23176902a9826f71abf0b9913f02b10"
 uuid = "700de1a5-db45-46bc-99cf-38207098b444"
-version = "0.2.5"
+version = "0.2.6"
 
 [[deps.cuDNN]]
 deps = ["CEnum", "CUDA", "CUDA_Runtime_Discovery", "CUDNN_jll"]
