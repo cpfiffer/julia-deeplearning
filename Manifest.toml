@@ -1341,9 +1341,9 @@ version = "0.4.17"
 
 [[deps.MLUtils]]
 deps = ["ChainRulesCore", "Compat", "DataAPI", "DelimitedFiles", "FLoops", "NNlib", "Random", "ShowCases", "SimpleTraits", "Statistics", "StatsBase", "Tables", "Transducers"]
-git-tree-sha1 = "7940c0af802586b97009f254aa6065000a16fa1d"
+git-tree-sha1 = "85a881db183988899fb41b1b7e5cd92bae7b3538"
 uuid = "f1d291b0-491e-4a28-83b9-f70985020b54"
-version = "0.4.5"
+version = "0.4.6"
 
 [[deps.MPICH_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Hwloc_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "MPIPreferences", "TOML"]
