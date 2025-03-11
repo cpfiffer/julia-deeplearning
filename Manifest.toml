@@ -1,6 +1,6 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.11.3"
+julia_version = "1.11.4"
 manifest_format = "2.0"
 project_hash = "42542ea8097221a84479cafcac6b580e934f617b"
 
@@ -212,10 +212,10 @@ uuid = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 version = "0.10.15"
 
 [[deps.CUDA]]
-deps = ["AbstractFFTs", "Adapt", "BFloat16s", "CEnum", "CUDA_Driver_jll", "CUDA_Runtime_Discovery", "CUDA_Runtime_jll", "Crayons", "DataFrames", "ExprTools", "GPUArrays", "GPUCompiler", "KernelAbstractions", "LLVM", "LLVMLoopInfo", "LazyArtifacts", "Libdl", "LinearAlgebra", "Logging", "NVTX", "Preferences", "PrettyTables", "Printf", "Random", "Random123", "RandomNumbers", "Reexport", "Requires", "SparseArrays", "StaticArrays", "Statistics", "demumble_jll"]
-git-tree-sha1 = "7be665c420b5d16059b1ba00b1dbb4e85012fa65"
+deps = ["AbstractFFTs", "Adapt", "BFloat16s", "CEnum", "CUDA_Driver_jll", "CUDA_Runtime_Discovery", "CUDA_Runtime_jll", "Crayons", "DataFrames", "ExprTools", "GPUArrays", "GPUCompiler", "GPUToolbox", "KernelAbstractions", "LLVM", "LLVMLoopInfo", "LazyArtifacts", "Libdl", "LinearAlgebra", "Logging", "NVTX", "Preferences", "PrettyTables", "Printf", "Random", "Random123", "RandomNumbers", "Reexport", "Requires", "SparseArrays", "StaticArrays", "Statistics", "demumble_jll"]
+git-tree-sha1 = "7f393da6f01f271d3791d06f2916db8cc7d999f3"
 uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-version = "5.6.1"
+version = "5.7.0"
 
     [deps.CUDA.extensions]
     ChainRulesCoreExt = "ChainRulesCore"
@@ -229,9 +229,9 @@ version = "5.6.1"
 
 [[deps.CUDA_Driver_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "14996d716a2eaaeccfc8d7bc854dd87fde720ac1"
+git-tree-sha1 = "7cc4ec34bbd15c0381ed0d81b28efed3027c7bca"
 uuid = "4ee394cb-3365-5eb0-8335-949819d2adfc"
-version = "0.10.4+0"
+version = "0.12.0+0"
 
 [[deps.CUDA_Runtime_Discovery]]
 deps = ["Libdl"]
@@ -241,9 +241,9 @@ version = "0.3.5"
 
 [[deps.CUDA_Runtime_jll]]
 deps = ["Artifacts", "CUDA_Driver_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
-git-tree-sha1 = "17f1536c600133f7c4113bae0a2d98dbf27c7ebc"
+git-tree-sha1 = "7bb29cf2aa97ee0877a4f305f8b73f96c5066db0"
 uuid = "76a88914-d11a-5bdc-97e0-2f5a05c973a2"
-version = "0.15.5+0"
+version = "0.16.0+0"
 
 [[deps.CUDNN_jll]]
 deps = ["Artifacts", "CUDA_Runtime_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
@@ -722,6 +722,11 @@ deps = ["ExprTools", "InteractiveUtils", "LLVM", "Libdl", "Logging", "Precompile
 git-tree-sha1 = "199f213e40a7982e9138bc9edc3299419d510390"
 uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
 version = "1.2.0"
+
+[[deps.GPUToolbox]]
+git-tree-sha1 = "52ad2902dda44ab527891317e144e7f718ab77d7"
+uuid = "096a3bc2-3ced-46d0-87f4-dd12716f4bfc"
+version = "0.1.0"
 
 [[deps.GR]]
 deps = ["Artifacts", "Base64", "DelimitedFiles", "Downloads", "GR_jll", "HTTP", "JSON", "Libdl", "LinearAlgebra", "Preferences", "Printf", "Qt6Wayland_jll", "Random", "Serialization", "Sockets", "TOML", "Tar", "Test", "p7zip_jll"]
@@ -1488,9 +1493,9 @@ version = "0.4.3"
 
 [[deps.NVTX]]
 deps = ["Colors", "JuliaNVTXCallbacks_jll", "Libdl", "NVTX_jll"]
-git-tree-sha1 = "6a6f8bfaa91bb2e40ff562ab9f30dc827741daef"
+git-tree-sha1 = "1a24c3430fa2ef3317c4c97fa7e431ef45793bd2"
 uuid = "5da4648a-3479-48b8-97b9-01cb529c0a1f"
-version = "0.3.5"
+version = "1.0.0"
 
 [[deps.NVTX_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -1566,7 +1571,7 @@ version = "0.3.27+1"
 [[deps.OpenLibm_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "05823500-19ac-5b8b-9628-191a04bc5112"
-version = "0.8.1+2"
+version = "0.8.1+4"
 
 [[deps.OpenMPI_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Hwloc_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "MPIPreferences", "TOML", "Zlib_jll"]
@@ -2582,9 +2587,9 @@ version = "0.2.7"
 
 [[deps.cuDNN]]
 deps = ["CEnum", "CUDA", "CUDA_Runtime_Discovery", "CUDNN_jll"]
-git-tree-sha1 = "efb5a4aa0aea8151a4eb21700e8b2c9990c45b0f"
+git-tree-sha1 = "1faded2a0800a6c2c329d77bf75d91685e212222"
 uuid = "02a925ec-e4fe-4b08-9a7e-0d78e3d38ccd"
-version = "1.4.1"
+version = "1.4.2"
 
 [[deps.demumble_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
