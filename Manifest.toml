@@ -1844,9 +1844,9 @@ version = "1.10.2"
 
 [[deps.ProtoBuf]]
 deps = ["BufferedStreams", "Dates", "EnumX", "TOML"]
-git-tree-sha1 = "a94945b7faff91d6feba4b6e0fc95e5c44eb5a67"
+git-tree-sha1 = "0d9c5c0cfb47f0588ed49081427c64d5bc090d6e"
 uuid = "3349acd9-ac6a-5e09-bcdb-63829b23a429"
-version = "1.0.16"
+version = "1.1.0"
 
 [[deps.PtrArrays]]
 git-tree-sha1 = "1d36ef11a9aaf1e8b74dacc6a731dd1de8fd493d"
