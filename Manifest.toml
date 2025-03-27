@@ -527,9 +527,9 @@ uuid = "e2ba6199-217a-4e67-a87a-7c52f15ade04"
 version = "0.1.10"
 
 [[deps.ExpressionExplorer]]
-git-tree-sha1 = "71d0768dd78ad62d3582091bf338d98af8bbda67"
+git-tree-sha1 = "bf2e6a47b70dfb5d103f300ef83d950239f9fa50"
 uuid = "21656369-7473-754a-2065-74616d696c43"
-version = "1.1.1"
+version = "1.1.2"
 
 [[deps.ExproniconLite]]
 git-tree-sha1 = "c13f0b150373771b0fdc1713c97860f8df12e6c2"
@@ -719,9 +719,9 @@ version = "0.2.0"
 
 [[deps.GPUCompiler]]
 deps = ["ExprTools", "InteractiveUtils", "LLVM", "Libdl", "Logging", "PrecompileTools", "Preferences", "Scratch", "Serialization", "TOML", "TimerOutputs", "UUIDs"]
-git-tree-sha1 = "c8ffc85902be50f8fb5a1e1a360bec43efd83493"
+git-tree-sha1 = "36bfd98df6090544d093b7b1c37871be75cac68a"
 uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
-version = "1.3.0"
+version = "1.3.1"
 
 [[deps.GPUToolbox]]
 git-tree-sha1 = "15d8b0f5a6dca9bf8c02eeaf6687660dafa638d0"
