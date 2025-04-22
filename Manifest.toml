@@ -1012,9 +1012,9 @@ version = "3.1.1+0"
 
 [[deps.JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
-git-tree-sha1 = "5bba45ef6761c6ed4f8adbd6d19ce0d5e9eabe41"
+git-tree-sha1 = "c47892541d03e5dc63467f8964c9f2b415dfe718"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.9.45"
+version = "0.9.46"
 
 [[deps.JuliaNVTXCallbacks_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -1274,9 +1274,9 @@ version = "1.1.0"
 
 [[deps.LoweredCodeUtils]]
 deps = ["JuliaInterpreter"]
-git-tree-sha1 = "31c1bff413ef2e8ed588564d994971eda2b311d6"
+git-tree-sha1 = "39240b5f66956acfa462d7fe12efe08e26d6d70d"
 uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
-version = "3.2.1"
+version = "3.2.2"
 
 [[deps.MAT]]
 deps = ["BufferedStreams", "CodecZlib", "HDF5", "SparseArrays"]
@@ -1708,9 +1708,9 @@ version = "1.4.3"
 
 [[deps.PlotlyBase]]
 deps = ["ColorSchemes", "Colors", "Dates", "DelimitedFiles", "DocStringExtensions", "JSON", "LaTeXStrings", "Logging", "Parameters", "Pkg", "REPL", "Requires", "Statistics", "UUIDs"]
-git-tree-sha1 = "90af5c9238c1b3b25421f1fdfffd1e8fca7a7133"
+git-tree-sha1 = "28278bb0053da0fd73537be94afd1682cc5a0a83"
 uuid = "a03496cd-edff-5a9b-9e67-9cda94a718b5"
-version = "0.8.20"
+version = "0.8.21"
 
     [deps.PlotlyBase.extensions]
     DataFramesExt = "DataFrames"
@@ -1949,9 +1949,9 @@ version = "1.3.1"
 
 [[deps.Revise]]
 deps = ["CodeTracking", "FileWatching", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "REPL", "Requires", "UUIDs", "Unicode"]
-git-tree-sha1 = "228d7dacca4558c8e522571da485c95fdfc3b1e3"
+git-tree-sha1 = "4e58145c98094ab2405b8fca034e21bde6c06c1c"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "3.7.4"
+version = "3.7.5"
 weakdeps = ["Distributed"]
 
     [deps.Revise.extensions]
