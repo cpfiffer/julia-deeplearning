@@ -1904,9 +1904,9 @@ version = "1.11.0"
 
 [[deps.Random123]]
 deps = ["Random", "RandomNumbers"]
-git-tree-sha1 = "4743b43e5a9c4a2ede372de7061eed81795b12e7"
+git-tree-sha1 = "dbe5fd0b334694e905cb9fda73cd8554333c46e2"
 uuid = "74087812-796a-5b5d-8853-05524746bad3"
-version = "1.7.0"
+version = "1.7.1"
 
 [[deps.RandomNumbers]]
 deps = ["Random"]
