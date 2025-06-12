@@ -2357,10 +2357,10 @@ uuid = "a2964d1f-97da-50d4-b82a-358c7fce9d89"
 version = "1.23.1+0"
 
 [[deps.Wayland_protocols_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "5db3e9d307d32baba7067b13fc7b5aa6edd4a19a"
+deps = ["Artifacts", "JLLWrappers", "Libdl"]
+git-tree-sha1 = "54b8a029ac145ebe8299463447fd1590b2b1d92f"
 uuid = "2381bf8a-dfd0-557d-9999-79630e7b1b91"
-version = "1.36.0+0"
+version = "1.44.0+0"
 
 [[deps.WeakRefStrings]]
 deps = ["DataAPI", "InlineStrings", "Parsers"]
@@ -2494,10 +2494,10 @@ uuid = "e920d4aa-a673-5f3a-b3d7-f755a4d47c43"
 version = "0.1.4+0"
 
 [[deps.Xorg_xcb_util_image_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg", "Xorg_xcb_util_jll"]
-git-tree-sha1 = "0fab0a40349ba1cba2c1da699243396ff8e94b97"
+deps = ["Artifacts", "JLLWrappers", "Libdl", "Xorg_xcb_util_jll"]
+git-tree-sha1 = "f4fc02e384b74418679983a97385644b67e1263b"
 uuid = "12413925-8142-5f55-bb0e-6d7ca50bb09b"
-version = "0.4.0+1"
+version = "0.4.1+0"
 
 [[deps.Xorg_xcb_util_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Xorg_libxcb_jll"]
@@ -2593,22 +2593,16 @@ uuid = "1e29f10c-031c-5a83-9565-69cddfc27673"
 version = "1.3.0+0"
 
 [[deps.eudev_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg", "gperf_jll"]
-git-tree-sha1 = "431b678a28ebb559d224c0b6b6d01afce87c51ba"
+deps = ["Artifacts", "JLLWrappers", "Libdl"]
+git-tree-sha1 = "c3b0e6196d50eab0c5ed34021aaa0bb463489510"
 uuid = "35ca27e7-8b34-5b7f-bca9-bdc33f59eb06"
-version = "3.2.9+0"
+version = "3.2.14+0"
 
 [[deps.fzf_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
 git-tree-sha1 = "b6a34e0e0960190ac2a4363a1bd003504772d631"
 uuid = "214eeab7-80f7-51ab-84ad-2988db7cef09"
 version = "0.61.1+0"
-
-[[deps.gperf_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "3cad2cf2c8d80f1d17320652b3ea7778b30f473f"
-uuid = "1a1c6b14-54f6-533d-8383-74cd7377aa70"
-version = "3.3.0+0"
 
 [[deps.libaec_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -2652,10 +2646,10 @@ uuid = "f638f0a6-7fb0-5443-88ba-1cc74229b280"
 version = "2.0.3+0"
 
 [[deps.libinput_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg", "eudev_jll", "libevdev_jll", "mtdev_jll"]
-git-tree-sha1 = "ad50e5b90f222cfe78aa3d5183a20a12de1322ce"
+deps = ["Artifacts", "JLLWrappers", "Libdl", "eudev_jll", "libevdev_jll", "mtdev_jll"]
+git-tree-sha1 = "91d05d7f4a9f67205bd6cf395e488009fe85b499"
 uuid = "36db933b-70db-51c0-b978-0f229ee0e533"
-version = "1.18.0+0"
+version = "1.28.1+0"
 
 [[deps.libpng_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Zlib_jll"]
