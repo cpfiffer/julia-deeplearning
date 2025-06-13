@@ -231,9 +231,9 @@ version = "5.8.2"
 
 [[deps.CUDA_Driver_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "5129b555ff876c47ad9e53bcd86e9a94bcc12ea4"
+git-tree-sha1 = "18afa851ed10552e6df25dfaa7ef450104ae73d4"
 uuid = "4ee394cb-3365-5eb0-8335-949819d2adfc"
-version = "0.13.0+0"
+version = "0.13.1+0"
 
 [[deps.CUDA_Runtime_Discovery]]
 deps = ["Libdl"]
@@ -243,9 +243,9 @@ version = "0.3.5"
 
 [[deps.CUDA_Runtime_jll]]
 deps = ["Artifacts", "CUDA_Driver_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
-git-tree-sha1 = "28126781294b2f31bc815f96922d680426e3a0bc"
+git-tree-sha1 = "b5c173a64f9f4224a82fdc26fda8614cb2ecfa27"
 uuid = "76a88914-d11a-5bdc-97e0-2f5a05c973a2"
-version = "0.17.0+0"
+version = "0.17.1+0"
 
 [[deps.CUDNN_jll]]
 deps = ["Artifacts", "CUDA_Runtime_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
@@ -261,9 +261,9 @@ version = "1.18.5+0"
 
 [[deps.ChainRules]]
 deps = ["Adapt", "ChainRulesCore", "Compat", "Distributed", "GPUArraysCore", "IrrationalConstants", "LinearAlgebra", "Random", "RealDot", "SparseArrays", "SparseInverseSubset", "Statistics", "StructArrays", "SuiteSparse"]
-git-tree-sha1 = "204e9b212da5cc7df632b58af8d49763383f47fa"
+git-tree-sha1 = "224f9dc510986549c8139def08e06f78c562514d"
 uuid = "082447d4-558c-5d27-93f4-14fc19e9eca2"
-version = "1.72.4"
+version = "1.72.5"
 
 [[deps.ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra"]
@@ -1509,9 +1509,9 @@ version = "1.0.0"
 
 [[deps.NVTX_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "2c7b791c1eba364e4a70aabdea4ddc1f5ca53911"
+git-tree-sha1 = "cd475b587ff77910789a18e68da789fc446a2a05"
 uuid = "e98f9f5b-d649-5603-91fd-7774390e6439"
-version = "3.1.1+0"
+version = "3.2.1+0"
 
 [[deps.NaNMath]]
 deps = ["OpenLibm_jll"]
