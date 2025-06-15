@@ -1585,9 +1585,9 @@ version = "0.8.5+0"
 
 [[deps.OpenMPI_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Hwloc_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "MPIPreferences", "TOML", "Zlib_jll"]
-git-tree-sha1 = "047b66eb62f3cae59ed260ebb9075a32a04350f1"
+git-tree-sha1 = "ec764453819f802fc1e144bfe750c454181bd66d"
 uuid = "fe0851c0-eecd-5654-98d4-656369965a5c"
-version = "5.0.7+2"
+version = "5.0.8+0"
 
 [[deps.OpenSSL]]
 deps = ["BitFlags", "Dates", "MozillaCACerts_jll", "OpenSSL_jll", "Sockets"]
@@ -1760,9 +1760,9 @@ version = "2.3.0"
 
 [[deps.Plots]]
 deps = ["Base64", "Contour", "Dates", "Downloads", "FFMPEG", "FixedPointNumbers", "GR", "JLFzf", "JSON", "LaTeXStrings", "Latexify", "LinearAlgebra", "Measures", "NaNMath", "Pkg", "PlotThemes", "PlotUtils", "PrecompileTools", "Printf", "REPL", "Random", "RecipesBase", "RecipesPipeline", "Reexport", "RelocatableFolders", "Requires", "Scratch", "Showoff", "SparseArrays", "Statistics", "StatsBase", "TOML", "UUIDs", "UnicodeFun", "UnitfulLatexify", "Unzip"]
-git-tree-sha1 = "809ba625a00c605f8d00cd2a9ae19ce34fc24d68"
+git-tree-sha1 = "28ea788b78009c695eb0d637587c81d26bdf0e36"
 uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
-version = "1.40.13"
+version = "1.40.14"
 
     [deps.Plots.extensions]
     FileIOExt = "FileIO"
