@@ -1070,9 +1070,9 @@ version = "4.0.1+0"
 
 [[deps.LLVM]]
 deps = ["CEnum", "LLVMExtra_jll", "Libdl", "Preferences", "Printf", "Unicode"]
-git-tree-sha1 = "5e8b243b2e4c86648dac82cf767ae1456000b92d"
+git-tree-sha1 = "cfedf80c59000507cc8115a0281931253f4a33cd"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "9.4.0"
+version = "9.4.1"
 weakdeps = ["BFloat16s"]
 
     [deps.LLVM.extensions]
@@ -1080,9 +1080,9 @@ weakdeps = ["BFloat16s"]
 
 [[deps.LLVMExtra_jll]]
 deps = ["Artifacts", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
-git-tree-sha1 = "f8022e2c8b5eef5f30e7fb2fe52c97cc5674db23"
+git-tree-sha1 = "2ea068aac1e7f0337d381b0eae3110581e3f3216"
 uuid = "dad2f222-ce93-54a1-a47d-0025e8a3acab"
-version = "0.0.36+0"
+version = "0.0.37+2"
 
 [[deps.LLVMLoopInfo]]
 git-tree-sha1 = "2e5c102cfc41f48ae4740c7eca7743cc7e7b75ea"
