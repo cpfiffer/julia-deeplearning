@@ -745,17 +745,17 @@ git-tree-sha1 = "0085ccd5ec327c077ec5b91a5f937b759810ba62"
 uuid = "92fee26a-97fe-5a0c-ad85-20a5f3185b63"
 version = "0.6.2"
 
-[[deps.Gettext_jll]]
-deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl", "Libiconv_jll", "Pkg", "XML2_jll"]
-git-tree-sha1 = "9b02998aba7bf074d14de89f9d37ca24a1a0b046"
-uuid = "78b55507-aeef-58d4-861c-77aaff3498b1"
-version = "0.21.0+0"
+[[deps.GettextRuntime_jll]]
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl", "Libiconv_jll"]
+git-tree-sha1 = "45288942190db7c5f760f59c04495064eedf9340"
+uuid = "b0724c58-0f36-5564-988d-3bb0596ebc4a"
+version = "0.22.4+0"
 
 [[deps.Glib_jll]]
-deps = ["Artifacts", "Gettext_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Libiconv_jll", "Libmount_jll", "PCRE2_jll", "Zlib_jll"]
-git-tree-sha1 = "fee60557e4f19d0fe5cd169211fdda80e494f4e8"
+deps = ["Artifacts", "GettextRuntime_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Libiconv_jll", "Libmount_jll", "PCRE2_jll", "Zlib_jll"]
+git-tree-sha1 = "35fbd0cefb04a516104b8e183ce0df11b70a3f1a"
 uuid = "7746bdde-850d-59dc-9ae8-88ece973131d"
-version = "2.84.0+0"
+version = "2.84.3+0"
 
 [[deps.Glob]]
 git-tree-sha1 = "97285bbd5230dd766e9ef6749b80fc617126d496"
