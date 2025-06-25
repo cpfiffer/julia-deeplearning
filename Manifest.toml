@@ -1070,9 +1070,9 @@ version = "4.0.1+0"
 
 [[deps.LLVM]]
 deps = ["CEnum", "LLVMExtra_jll", "Libdl", "Preferences", "Printf", "Unicode"]
-git-tree-sha1 = "cfedf80c59000507cc8115a0281931253f4a33cd"
+git-tree-sha1 = "9c7c721cfd800d87d48c745d8bfb65144f0a91df"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "9.4.1"
+version = "9.4.2"
 weakdeps = ["BFloat16s"]
 
     [deps.LLVM.extensions]
