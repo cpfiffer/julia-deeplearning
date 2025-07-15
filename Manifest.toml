@@ -1293,9 +1293,9 @@ version = "1.1.0"
 
 [[deps.LoweredCodeUtils]]
 deps = ["Compiler", "JuliaInterpreter"]
-git-tree-sha1 = "bc54ba0681bb71e56043a1b923028d652e78ee42"
+git-tree-sha1 = "b882a7dd7ef37643066ae8f9380beea8fdd89cae"
 uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
-version = "3.4.1"
+version = "3.4.2"
 
 [[deps.MAT]]
 deps = ["BufferedStreams", "CodecZlib", "HDF5", "SparseArrays"]
@@ -1769,9 +1769,9 @@ version = "2.3.0"
 
 [[deps.Plots]]
 deps = ["Base64", "Contour", "Dates", "Downloads", "FFMPEG", "FixedPointNumbers", "GR", "JLFzf", "JSON", "LaTeXStrings", "Latexify", "LinearAlgebra", "Measures", "NaNMath", "Pkg", "PlotThemes", "PlotUtils", "PrecompileTools", "Printf", "REPL", "Random", "RecipesBase", "RecipesPipeline", "Reexport", "RelocatableFolders", "Requires", "Scratch", "Showoff", "SparseArrays", "Statistics", "StatsBase", "TOML", "UUIDs", "UnicodeFun", "UnitfulLatexify", "Unzip"]
-git-tree-sha1 = "55818b50883d7141bd98cdf5fc2f4ced96ee075f"
+git-tree-sha1 = "3db9167c618b290a05d4345ca70de6d95304a32a"
 uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
-version = "1.40.16"
+version = "1.40.17"
 
     [deps.Plots.extensions]
     FileIOExt = "FileIO"
@@ -2225,9 +2225,9 @@ version = "1.10.0"
 
 [[deps.TensorBoardLogger]]
 deps = ["CRC32c", "FileIO", "ImageCore", "ProtoBuf", "Requires", "StatsBase"]
-git-tree-sha1 = "898fd634b251ee7b0e24d629fd4ea517ee1cf068"
+git-tree-sha1 = "ffda2ea7ce5b247b98cce31523dcb95149aba187"
 uuid = "899adc3e-224a-11e9-021f-63837185c80f"
-version = "0.1.25"
+version = "0.1.26"
 
 [[deps.TensorCore]]
 deps = ["LinearAlgebra"]
