@@ -1745,9 +1745,9 @@ version = "0.8.21"
 
 [[deps.PlotlyJS]]
 deps = ["Base64", "Blink", "DelimitedFiles", "JSExpr", "JSON", "Kaleido_jll", "Markdown", "Pkg", "PlotlyBase", "PlotlyKaleido", "REPL", "Reexport", "Requires", "WebIO"]
-git-tree-sha1 = "b816b0f301b074e002476159a9ada5691eebaf61"
+git-tree-sha1 = "287e092914da6c91f002aafcf82a2ec065bf94a3"
 uuid = "f0f68f2c-4968-5e81-91da-67840de0976a"
-version = "0.18.16"
+version = "0.18.17"
 
     [deps.PlotlyJS.extensions]
     CSVExt = "CSV"
@@ -2311,9 +2311,9 @@ version = "0.4.1"
 
 [[deps.Unitful]]
 deps = ["Dates", "LinearAlgebra", "Random"]
-git-tree-sha1 = "d2282232f8a4d71f79e85dc4dd45e5b12a6297fb"
+git-tree-sha1 = "6258d453843c466d84c17a58732dda5deeb8d3af"
 uuid = "1986cc42-f94f-5a68-af5c-568840ba703d"
-version = "1.23.1"
+version = "1.24.0"
 weakdeps = ["ConstructionBase", "ForwardDiff", "InverseFunctions", "Printf"]
 
     [deps.Unitful.extensions]
