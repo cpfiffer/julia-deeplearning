@@ -1789,9 +1789,9 @@ version = "1.40.18"
 
 [[deps.Pluto]]
 deps = ["Base64", "Configurations", "Dates", "Downloads", "ExpressionExplorer", "FileWatching", "GracefulPkg", "HTTP", "HypertextLiteral", "InteractiveUtils", "LRUCache", "Logging", "LoggingExtras", "MIMEs", "Malt", "Markdown", "MsgPack", "Pkg", "PlutoDependencyExplorer", "PrecompileSignatures", "PrecompileTools", "REPL", "RegistryInstances", "RelocatableFolders", "Scratch", "Sockets", "TOML", "Tables", "URIs", "UUIDs"]
-git-tree-sha1 = "6f5b316f990235ebbaca22a26e559eff010f6233"
+git-tree-sha1 = "caa732c5e9b927aa778ed7fa0c0accce0d02fbfc"
 uuid = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
-version = "0.20.15"
+version = "0.20.16"
 
 [[deps.PlutoDependencyExplorer]]
 deps = ["ExpressionExplorer", "InteractiveUtils", "Markdown"]
@@ -1801,9 +1801,9 @@ version = "1.2.2"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "Downloads", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
-git-tree-sha1 = "2d7662f95eafd3b6c346acdbfc11a762a2256375"
+git-tree-sha1 = "fcfec547342405c7a8529ea896f98c0ffcc4931d"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.69"
+version = "0.7.70"
 
 [[deps.PooledArrays]]
 deps = ["DataAPI", "Future"]
