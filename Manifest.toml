@@ -277,9 +277,9 @@ weakdeps = ["SparseArrays"]
 
 [[deps.Chemfiles]]
 deps = ["AtomsBase", "Chemfiles_jll", "DocStringExtensions", "Unitful", "UnitfulAtomic"]
-git-tree-sha1 = "b7b6140d72877345f03ce09d2cd97c0115f43c52"
+git-tree-sha1 = "8d4217428ee7c64605d1217a8ea810436fd03742"
 uuid = "46823bd8-5fb3-5f92-9aa0-96921f3dd015"
-version = "0.10.42"
+version = "0.10.43"
 
 [[deps.Chemfiles_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -1789,9 +1789,9 @@ version = "1.40.19"
 
 [[deps.Pluto]]
 deps = ["Base64", "Configurations", "Dates", "Downloads", "ExpressionExplorer", "FileWatching", "GracefulPkg", "HTTP", "HypertextLiteral", "InteractiveUtils", "LRUCache", "Logging", "LoggingExtras", "MIMEs", "Malt", "Markdown", "MsgPack", "Pkg", "PlutoDependencyExplorer", "PrecompileSignatures", "PrecompileTools", "REPL", "RegistryInstances", "RelocatableFolders", "Scratch", "Sockets", "TOML", "Tables", "URIs", "UUIDs"]
-git-tree-sha1 = "caa732c5e9b927aa778ed7fa0c0accce0d02fbfc"
+git-tree-sha1 = "7cddd8a094d2eedf43f21be40d9090f4a5217255"
 uuid = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
-version = "0.20.16"
+version = "0.20.17"
 
 [[deps.PlutoDependencyExplorer]]
 deps = ["ExpressionExplorer", "InteractiveUtils", "Markdown"]
