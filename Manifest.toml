@@ -255,9 +255,9 @@ version = "0.19.0+0"
 
 [[deps.CUDNN_jll]]
 deps = ["Artifacts", "CUDA_Runtime_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
-git-tree-sha1 = "12ab2a3e7d1e5f523e95b94cd9334ebcf5be220e"
+git-tree-sha1 = "a8f80f66eddfcd7bb890c2986c0dfcbec36d13c4"
 uuid = "62b44479-cb7b-5706-934f-f13b2eb2e645"
-version = "9.10.0+0"
+version = "9.12.0+0"
 
 [[deps.Cairo_jll]]
 deps = ["Artifacts", "Bzip2_jll", "CompilerSupportLibraries_jll", "Fontconfig_jll", "FreeType2_jll", "Glib_jll", "JLLWrappers", "LZO_jll", "Libdl", "Pixman_jll", "Xorg_libXext_jll", "Xorg_libXrender_jll", "Zlib_jll", "libpng_jll"]
@@ -2599,9 +2599,9 @@ version = "0.2.7"
 
 [[deps.cuDNN]]
 deps = ["CEnum", "CUDA", "CUDA_Runtime_Discovery", "CUDNN_jll"]
-git-tree-sha1 = "af77337db3737ccd9274ba2ef62c80970cc0f0fc"
+git-tree-sha1 = "b832b4e26effbb8ef9877811ab63f838b4c9c3e0"
 uuid = "02a925ec-e4fe-4b08-9a7e-0d78e3d38ccd"
-version = "1.4.4"
+version = "1.4.5"
 
 [[deps.demumble_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
