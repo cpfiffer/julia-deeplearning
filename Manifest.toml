@@ -237,9 +237,9 @@ version = "0.2.0+3"
 
 [[deps.CUDA_Driver_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "dbb9c3c467ccc0fc028a33fd0349b0ec2d793c82"
+git-tree-sha1 = "0ccbb4ff3aadd17ce531457249ccce31ba9efc77"
 uuid = "4ee394cb-3365-5eb0-8335-949819d2adfc"
-version = "13.0.0+2"
+version = "13.0.0+3"
 
 [[deps.CUDA_Runtime_Discovery]]
 deps = ["Libdl"]
