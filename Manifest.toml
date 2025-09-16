@@ -1,6 +1,6 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.11.6"
+julia_version = "1.11.7"
 manifest_format = "2.0"
 project_hash = "42542ea8097221a84479cafcac6b580e934f617b"
 
@@ -1875,9 +1875,9 @@ version = "1.11.0"
 
 [[deps.ProtoBuf]]
 deps = ["BufferedStreams", "Dates", "EnumX", "TOML"]
-git-tree-sha1 = "fc4db306152dbc89035d5c6d9319a69cf5d4f4b9"
+git-tree-sha1 = "eabdb811dbacadc9d7e0dee9ac11c1a12705e12a"
 uuid = "3349acd9-ac6a-5e09-bcdb-63829b23a429"
-version = "1.1.1"
+version = "1.2.0"
 
 [[deps.PtrArrays]]
 git-tree-sha1 = "1d36ef11a9aaf1e8b74dacc6a731dd1de8fd493d"
@@ -2328,15 +2328,16 @@ version = "0.4.1"
 
 [[deps.Unitful]]
 deps = ["Dates", "LinearAlgebra", "Random"]
-git-tree-sha1 = "6258d453843c466d84c17a58732dda5deeb8d3af"
+git-tree-sha1 = "cec2df8cf14e0844a8c4d770d12347fda5931d72"
 uuid = "1986cc42-f94f-5a68-af5c-568840ba703d"
-version = "1.24.0"
-weakdeps = ["ConstructionBase", "ForwardDiff", "InverseFunctions", "Printf"]
+version = "1.25.0"
+weakdeps = ["ConstructionBase", "ForwardDiff", "InverseFunctions", "LaTeXStrings", "Latexify", "Printf"]
 
     [deps.Unitful.extensions]
     ConstructionBaseUnitfulExt = "ConstructionBase"
     ForwardDiffExt = "ForwardDiff"
     InverseFunctionsUnitfulExt = "InverseFunctions"
+    LatexifyExt = ["Latexify", "LaTeXStrings"]
     PrintfExt = "Printf"
 
 [[deps.UnitfulAtomic]]
