@@ -2409,9 +2409,9 @@ version = "1.6.1"
 
 [[deps.XML2_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Libiconv_jll", "Zlib_jll"]
-git-tree-sha1 = "59071150afa35787c1656ba234cf03fdf8e2603f"
+git-tree-sha1 = "80d3930c6347cfce7ccf96bd3bafdf079d9c0390"
 uuid = "02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a"
-version = "2.13.8+0"
+version = "2.13.9+0"
 
 [[deps.XZ_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -2463,9 +2463,9 @@ version = "1.3.7+0"
 
 [[deps.Xorg_libXfixes_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Xorg_libX11_jll"]
-git-tree-sha1 = "9caba99d38404b285db8801d5c45ef4f4f425a6d"
+git-tree-sha1 = "75e00946e43621e09d431d9b95818ee751e6b2ef"
 uuid = "d091e8ba-531a-589c-9de9-94069b037ed8"
-version = "6.0.1+0"
+version = "6.0.2+0"
 
 [[deps.Xorg_libXi_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Xorg_libXext_jll", "Xorg_libXfixes_jll"]
@@ -2511,9 +2511,9 @@ version = "1.1.3+0"
 
 [[deps.Xorg_xcb_util_cursor_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Xorg_xcb_util_image_jll", "Xorg_xcb_util_jll", "Xorg_xcb_util_renderutil_jll"]
-git-tree-sha1 = "c5bf2dad6a03dfef57ea0a170a1fe493601603f2"
+git-tree-sha1 = "9750dc53819eba4e9a20be42349a6d3b86c7cdf8"
 uuid = "e920d4aa-a673-5f3a-b3d7-f755a4d47c43"
-version = "0.1.5+0"
+version = "0.1.6+0"
 
 [[deps.Xorg_xcb_util_image_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Xorg_xcb_util_jll"]
