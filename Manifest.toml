@@ -1069,9 +1069,9 @@ version = "0.2.1+0"
 
 [[deps.KernelAbstractions]]
 deps = ["Adapt", "Atomix", "InteractiveUtils", "MacroTools", "PrecompileTools", "Requires", "StaticArrays", "UUIDs"]
-git-tree-sha1 = "83c617e9e9b02306a7acab79e05ec10253db7c87"
+git-tree-sha1 = "b5a371fcd1d989d844a4354127365611ae1e305f"
 uuid = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
-version = "0.9.38"
+version = "0.9.39"
 
     [deps.KernelAbstractions.extensions]
     EnzymeExt = "EnzymeCore"
@@ -1449,9 +1449,9 @@ uuid = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
 version = "2.28.10+0"
 
 [[deps.Measures]]
-git-tree-sha1 = "c13304c81eec1ed3af7fc20e75fb6b26092a1102"
+git-tree-sha1 = "b513cedd20d9c914783d8ad83d08120702bf2c77"
 uuid = "442fdcdd-2543-5da2-b0f3-8c86c306513e"
-version = "0.3.2"
+version = "0.3.3"
 
 [[deps.MicroCollections]]
 deps = ["Accessors", "BangBang", "InitialValues"]
