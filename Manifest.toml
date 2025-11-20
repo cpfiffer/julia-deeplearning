@@ -84,9 +84,9 @@ version = "0.4.0"
 
 [[deps.ArrayLayouts]]
 deps = ["FillArrays", "LinearAlgebra", "StaticArrays"]
-git-tree-sha1 = "355ab2d61069927d4247cd69ad0e1f140b31e30d"
+git-tree-sha1 = "122a06c8266e00035bfa572887ab52c344526eb4"
 uuid = "4c555306-a7a7-4459-81d9-ec55ddd5c99a"
-version = "1.12.0"
+version = "1.12.1"
 weakdeps = ["SparseArrays"]
 
     [deps.ArrayLayouts.extensions]
@@ -733,9 +733,9 @@ version = "0.2.0"
 
 [[deps.GPUCompiler]]
 deps = ["ExprTools", "InteractiveUtils", "LLVM", "Libdl", "Logging", "PrecompileTools", "Preferences", "Scratch", "Serialization", "TOML", "Tracy", "UUIDs"]
-git-tree-sha1 = "c55c2f564230f1af2a975d927a814bcb47a63a50"
+git-tree-sha1 = "90554fe518adab1b4c8f7a04d26c414482a240ca"
 uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
-version = "1.7.3"
+version = "1.7.4"
 
 [[deps.GPUToolbox]]
 deps = ["LLVM"]
@@ -745,15 +745,21 @@ version = "0.3.0"
 
 [[deps.GR]]
 deps = ["Artifacts", "Base64", "DelimitedFiles", "Downloads", "GR_jll", "HTTP", "JSON", "Libdl", "LinearAlgebra", "Preferences", "Printf", "Qt6Wayland_jll", "Random", "Serialization", "Sockets", "TOML", "Tar", "Test", "p7zip_jll"]
-git-tree-sha1 = "f52c27dd921390146624f3aab95f4e8614ad6531"
+git-tree-sha1 = "f305bdb91e1f3fcc687944c97f2ede40585b1bd5"
 uuid = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
-version = "0.73.18"
+version = "0.73.19"
+
+    [deps.GR.extensions]
+    GRIJuliaExt = "IJulia"
+
+    [deps.GR.weakdeps]
+    IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
 
 [[deps.GR_jll]]
 deps = ["Artifacts", "Bzip2_jll", "Cairo_jll", "FFMPEG_jll", "Fontconfig_jll", "FreeType2_jll", "GLFW_jll", "JLLWrappers", "JpegTurbo_jll", "Libdl", "Libtiff_jll", "Pixman_jll", "Qt6Base_jll", "Zlib_jll", "libpng_jll"]
-git-tree-sha1 = "4b0406b866ea9fdbaf1148bc9c0b887e59f9af68"
+git-tree-sha1 = "de439fbc02b9dc0e639e67d7c5bd5811ff3b6f06"
 uuid = "d2c73de3-f751-5644-a686-071e5b155ba9"
-version = "0.73.18+0"
+version = "0.73.19+1"
 
 [[deps.GZip]]
 deps = ["Libdl", "Zlib_jll"]
@@ -874,9 +880,9 @@ version = "0.9.5"
 
 [[deps.IOCapture]]
 deps = ["Logging", "Random"]
-git-tree-sha1 = "b6d6bfdd7ce25b0f9b2f6b3dd56b2673a66c8770"
+git-tree-sha1 = "0ee181ec08df7d7c911901ea38baf16f755114dc"
 uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
-version = "0.2.5"
+version = "1.0.0"
 
 [[deps.IRTools]]
 deps = ["InteractiveUtils", "MacroTools"]
@@ -1173,9 +1179,9 @@ version = "0.15.1"
 
 [[deps.LazyArrays]]
 deps = ["ArrayLayouts", "FillArrays", "LinearAlgebra", "MacroTools", "SparseArrays"]
-git-tree-sha1 = "85829152db633948b418181ec33b8badaece9c3e"
+git-tree-sha1 = "0f68899e54e5e98cff674bbe6380bcf89f603787"
 uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
-version = "2.9.0"
+version = "2.9.1"
 
     [deps.LazyArrays.extensions]
     LazyArraysBandedMatricesExt = "BandedMatrices"
@@ -1277,9 +1283,9 @@ version = "1.12.0"
 
 [[deps.Literate]]
 deps = ["Base64", "IOCapture", "JSON", "REPL"]
-git-tree-sha1 = "da046be6d63304f7ba9c1bb04820fb306ba1ab12"
+git-tree-sha1 = "bb26d8b8ed0fa451ce3511e99c950653a2f31fe1"
 uuid = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
-version = "2.20.1"
+version = "2.21.0"
 
 [[deps.LiveServer]]
 deps = ["HTTP", "LoggingExtras", "MIMEs", "Sockets", "Test"]
@@ -1617,9 +1623,9 @@ version = "0.8.7+0"
 
 [[deps.OpenMPI_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Hwloc_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "MPIPreferences", "TOML", "Zlib_jll"]
-git-tree-sha1 = "ec764453819f802fc1e144bfe750c454181bd66d"
+git-tree-sha1 = "ab6596a9d8236041dcd59b5b69316f28a8753592"
 uuid = "fe0851c0-eecd-5654-98d4-656369965a5c"
-version = "5.0.8+0"
+version = "5.0.9+0"
 
 [[deps.OpenSSL]]
 deps = ["BitFlags", "Dates", "MozillaCACerts_jll", "NetworkOptions", "OpenSSL_jll", "Sockets"]
@@ -1827,9 +1833,9 @@ version = "1.2.2"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "Downloads", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
-git-tree-sha1 = "3faff84e6f97a7f18e0dd24373daa229fd358db5"
+git-tree-sha1 = "db8a06ef983af758d285665a0398703eb5bc1d66"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.73"
+version = "0.7.75"
 
 [[deps.PooledArrays]]
 deps = ["DataAPI", "Future"]
