@@ -781,9 +781,9 @@ version = "9.55.1+0"
 
 [[deps.Glib_jll]]
 deps = ["Artifacts", "GettextRuntime_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Libiconv_jll", "Libmount_jll", "PCRE2_jll", "Zlib_jll"]
-git-tree-sha1 = "50c11ffab2a3d50192a228c313f05b5b5dc5acb2"
+git-tree-sha1 = "6b4d2dc81736fe3980ff0e8879a9fc7c33c44ddf"
 uuid = "7746bdde-850d-59dc-9ae8-88ece973131d"
-version = "2.86.0+0"
+version = "2.86.2+0"
 
 [[deps.Glob]]
 git-tree-sha1 = "97285bbd5230dd766e9ef6749b80fc617126d496"
@@ -1601,9 +1601,9 @@ version = "0.2.10"
 
 [[deps.OnlineStats]]
 deps = ["AbstractTrees", "Dates", "Distributions", "LinearAlgebra", "OnlineStatsBase", "OrderedCollections", "Random", "RecipesBase", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns"]
-git-tree-sha1 = "86b3bdec7f7394ab7400ef2bae3af27ddc001c05"
+git-tree-sha1 = "a19ba00b3968afcde81471033fd22976e62f5fea"
 uuid = "a15396b6-48d5-5d58-9928-6d29437db91e"
-version = "1.7.2"
+version = "1.7.3"
 
 [[deps.OnlineStatsBase]]
 deps = ["AbstractTrees", "Dates", "LinearAlgebra", "OrderedCollections", "Statistics", "StatsBase"]
@@ -2156,9 +2156,9 @@ weakdeps = ["SparseArrays"]
 
 [[deps.StatsAPI]]
 deps = ["LinearAlgebra"]
-git-tree-sha1 = "9d72a13a3f4dd3795a195ac5a44d7d6ff5f552ff"
+git-tree-sha1 = "178ed29fd5b2a2cfc3bd31c13375ae925623ff36"
 uuid = "82ae8749-77ed-4fe6-ae5f-f523153014b0"
-version = "1.7.1"
+version = "1.8.0"
 
 [[deps.StatsBase]]
 deps = ["AliasTables", "DataAPI", "DataStructures", "LinearAlgebra", "LogExpFunctions", "Missings", "Printf", "Random", "SortingAlgorithms", "SparseArrays", "Statistics", "StatsAPI"]
