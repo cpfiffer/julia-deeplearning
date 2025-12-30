@@ -2149,9 +2149,9 @@ version = "0.1.2"
 
 [[deps.StaticArrays]]
 deps = ["LinearAlgebra", "PrecompileTools", "Random", "StaticArraysCore"]
-git-tree-sha1 = "b8693004b385c842357406e3af647701fe783f98"
+git-tree-sha1 = "eee1b9ad8b29ef0d936e3ec9838c7ec089620308"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
-version = "1.9.15"
+version = "1.9.16"
 weakdeps = ["ChainRulesCore", "Statistics"]
 
     [deps.StaticArrays.extensions]
@@ -2450,9 +2450,9 @@ version = "2.13.9+0"
 
 [[deps.XZ_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "fee71455b0aaa3440dfdd54a9a36ccef829be7d4"
+git-tree-sha1 = "9cce64c0fdd1960b597ba7ecda2950b5ed957438"
 uuid = "ffd25f8a-64ca-5728-b0f7-c24cf3aae800"
-version = "5.8.1+0"
+version = "5.8.2+0"
 
 [[deps.Xorg_libICE_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
