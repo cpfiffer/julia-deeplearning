@@ -97,10 +97,10 @@ uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 version = "1.11.0"
 
 [[deps.AssetRegistry]]
-deps = ["Distributed", "JSON", "Pidfile", "SHA", "Test"]
-git-tree-sha1 = "b25e88db7944f98789130d7b503276bc34bc098e"
+deps = ["JSON", "Pidfile", "SHA"]
+git-tree-sha1 = "902b85010203830d4bc02259f5450d2e16b316d8"
 uuid = "bf4720bc-e11a-5d0c-854e-bdca1663c893"
-version = "0.1.0"
+version = "0.1.1"
 
 [[deps.Atomix]]
 deps = ["UnsafeAtomics"]
@@ -2203,9 +2203,9 @@ weakdeps = ["ChainRulesCore", "InverseFunctions"]
 
 [[deps.StridedViews]]
 deps = ["LinearAlgebra", "PackageExtensionCompat"]
-git-tree-sha1 = "425158c52aa58d42593be6861befadf8b2541e9b"
+git-tree-sha1 = "7feeb862b4d3ccdbc5d5a3dd9e321cfa92238dbb"
 uuid = "4db3bf67-4bd7-4b4e-b153-31dc3fb37143"
-version = "0.4.1"
+version = "0.4.2"
 weakdeps = ["CUDA", "PtrArrays"]
 
     [deps.StridedViews.extensions]
