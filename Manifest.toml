@@ -237,9 +237,9 @@ version = "0.2.2+0"
 
 [[deps.CUDA_Driver_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "TOML"]
-git-tree-sha1 = "69bb8fdf66c687e35149ac9b2bd1d582fd58a792"
+git-tree-sha1 = "23c51e2c9bb36be09c3f10f92d0b9cc294e1bc5e"
 uuid = "4ee394cb-3365-5eb0-8335-949819d2adfc"
-version = "13.2.1+2"
+version = "13.2.1+3"
 
 [[deps.CUDA_Runtime_Discovery]]
 deps = ["Libdl"]
@@ -735,9 +735,9 @@ version = "3.4.1+1"
 
 [[deps.GPUArrays]]
 deps = ["Adapt", "GPUArraysCore", "KernelAbstractions", "LLVM", "LinearAlgebra", "Printf", "Random", "Reexport", "ScopedValues", "Serialization", "SparseArrays", "Statistics"]
-git-tree-sha1 = "34fd745547978beb471f029f447290ef4dbc7bbd"
+git-tree-sha1 = "cf230532c7871ce9bfa5812dd699cb68da888364"
 uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
-version = "11.5.3"
+version = "11.5.4"
 weakdeps = ["JLD2"]
 
     [deps.GPUArrays.extensions]
@@ -1131,9 +1131,9 @@ weakdeps = ["BFloat16s"]
 
 [[deps.LLVMExtra_jll]]
 deps = ["Artifacts", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
-git-tree-sha1 = "a7f7333df8ee998f8f8f65f08b49f04baf8db623"
+git-tree-sha1 = "70c96f133c78c3cdc06234157144fab3744c6b38"
 uuid = "dad2f222-ce93-54a1-a47d-0025e8a3acab"
-version = "0.0.43+0"
+version = "0.0.43+1"
 
 [[deps.LLVMLoopInfo]]
 git-tree-sha1 = "2e5c102cfc41f48ae4740c7eca7743cc7e7b75ea"
