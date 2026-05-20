@@ -750,9 +750,9 @@ version = "0.2.0"
 
 [[deps.GPUCompiler]]
 deps = ["ExprTools", "InteractiveUtils", "LLVM", "Libdl", "Logging", "PrecompileTools", "Preferences", "Scratch", "Serialization", "TOML", "Tracy", "UUIDs"]
-git-tree-sha1 = "31d46d9e39273b6a7d7784615678d84a29597e1b"
+git-tree-sha1 = "e9817f6e11bf985b4da0f16fd61476438776f3d2"
 uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
-version = "1.12.0"
+version = "1.13.1"
 
 [[deps.GPUToolbox]]
 deps = ["LLVM"]
@@ -1120,9 +1120,9 @@ version = "4.1.0+0"
 
 [[deps.LLVM]]
 deps = ["CEnum", "LLVMExtra_jll", "Libdl", "PrecompileTools", "Preferences", "Printf", "Unicode"]
-git-tree-sha1 = "6884c216a5e3671990d245514aa94c67046b6e40"
+git-tree-sha1 = "0eeef733eebb4bb1464dd9d1d8c8f3ad20a090d1"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "9.8.1"
+version = "9.8.2"
 weakdeps = ["BFloat16s"]
 
     [deps.LLVM.extensions]
