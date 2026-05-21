@@ -1856,9 +1856,9 @@ version = "1.2.2"
 
 [[deps.PlutoUI]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "Downloads", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
-git-tree-sha1 = "79436d2d6f29a5d5b4e4749043a3f190d55631a3"
+git-tree-sha1 = "0ecd70a51c13e150266e76a865f10a64a7f178a3"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.81"
+version = "0.7.82"
 
 [[deps.PooledArrays]]
 deps = ["DataAPI", "Future"]
