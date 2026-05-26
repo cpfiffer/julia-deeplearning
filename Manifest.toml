@@ -750,9 +750,9 @@ version = "0.2.0"
 
 [[deps.GPUCompiler]]
 deps = ["ExprTools", "InteractiveUtils", "LLVM", "Libdl", "Logging", "PrecompileTools", "Preferences", "Scratch", "Serialization", "TOML", "Tracy", "UUIDs"]
-git-tree-sha1 = "e9817f6e11bf985b4da0f16fd61476438776f3d2"
+git-tree-sha1 = "074ce0b1dcb100eee6acf08943096a4a3403e79e"
 uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
-version = "1.13.1"
+version = "1.13.2"
 
 [[deps.GPUToolbox]]
 deps = ["LLVM"]
@@ -1844,9 +1844,9 @@ version = "1.41.6"
 
 [[deps.Pluto]]
 deps = ["Base64", "Configurations", "Dates", "Downloads", "ExpressionExplorer", "FileWatching", "GracefulPkg", "HTTP", "HypertextLiteral", "InteractiveUtils", "LRUCache", "Logging", "LoggingExtras", "MIMEs", "Malt", "Markdown", "MsgPack", "Pkg", "PlutoDependencyExplorer", "PrecompileSignatures", "PrecompileTools", "REPL", "Random", "RegistryInstances", "RelocatableFolders", "SHA", "Scratch", "Sockets", "TOML", "Tables", "URIs", "UUIDs"]
-git-tree-sha1 = "82bfe1e06a2b6a3893f24f0b64d91efa307a941b"
+git-tree-sha1 = "309c1c32dbb564efe97359a363c0888933081f0d"
 uuid = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
-version = "0.20.27"
+version = "1.0.0"
 
 [[deps.PlutoDependencyExplorer]]
 deps = ["ExpressionExplorer", "InteractiveUtils", "Markdown"]
