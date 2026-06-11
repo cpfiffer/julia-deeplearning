@@ -734,9 +734,9 @@ version = "3.4.1+1"
 
 [[deps.GPUArrays]]
 deps = ["Adapt", "GPUArraysCore", "KernelAbstractions", "LLVM", "LinearAlgebra", "Printf", "Random", "Reexport", "ScopedValues", "Serialization", "SparseArrays", "Statistics"]
-git-tree-sha1 = "62ad1fd3c217acaf6d39615866e16a529b406aeb"
+git-tree-sha1 = "1af8927d9e39aff9ade292aeafb53c65d702e3d8"
 uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
-version = "11.5.5"
+version = "11.5.6"
 weakdeps = ["JLD2"]
 
     [deps.GPUArrays.extensions]
@@ -1335,9 +1335,9 @@ version = "1.2.0"
 
 [[deps.LoweredCodeUtils]]
 deps = ["CodeTracking", "Compiler", "JuliaInterpreter"]
-git-tree-sha1 = "a2d6be586f4bb29b5b1400ea32c62c60d32f255e"
+git-tree-sha1 = "0aad96d7b987a5600e260eec50147b254d5ff7e6"
 uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
-version = "3.5.3"
+version = "3.6.0"
 
 [[deps.MAT]]
 deps = ["CodecZlib", "Dates", "HDF5", "OrderedCollections", "PooledArrays", "SparseArrays", "StringEncodings", "Tables"]
@@ -1579,9 +1579,9 @@ version = "3.2.2+0"
 
 [[deps.NaNMath]]
 deps = ["OpenLibm_jll"]
-git-tree-sha1 = "9b8215b1ee9e78a293f99797cd31375471b2bcae"
+git-tree-sha1 = "dbd2e8cd2c1c27f0b584f6661b4309609c5a685e"
 uuid = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
-version = "1.1.3"
+version = "1.1.4"
 
 [[deps.NameResolution]]
 deps = ["PrettyPrint"]
@@ -1627,15 +1627,15 @@ version = "0.2.11"
 
 [[deps.OnlineStats]]
 deps = ["AbstractTrees", "Dates", "Distributions", "LinearAlgebra", "OnlineStatsBase", "OrderedCollections", "Random", "RecipesBase", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns"]
-git-tree-sha1 = "a19ba00b3968afcde81471033fd22976e62f5fea"
+git-tree-sha1 = "1f4885d0fb89cac215118ed640951ce750e280e5"
 uuid = "a15396b6-48d5-5d58-9928-6d29437db91e"
-version = "1.7.3"
+version = "1.7.4"
 
 [[deps.OnlineStatsBase]]
 deps = ["AbstractTrees", "Dates", "LinearAlgebra", "OrderedCollections", "Statistics", "StatsBase"]
-git-tree-sha1 = "17f1430ba308db10af8a921c27edc791dede0558"
+git-tree-sha1 = "55c519dfadb4d47970f5cd13bab27e640731598e"
 uuid = "925886fa-5bf2-5e8e-b522-a9147a512338"
-version = "1.7.2"
+version = "1.7.3"
 
 [[deps.OpenBLAS_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
@@ -2032,9 +2032,9 @@ version = "1.3.1"
 
 [[deps.Revise]]
 deps = ["CodeTracking", "FileWatching", "InteractiveUtils", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Preferences", "REPL", "UUIDs"]
-git-tree-sha1 = "2f722c6581f297014be42c95d36f862e9bc2d668"
+git-tree-sha1 = "65569cca6282716a14177af1358db91ef79300f0"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "3.14.5"
+version = "3.15.0"
 weakdeps = ["Distributed"]
 
     [deps.Revise.extensions]
@@ -2200,9 +2200,9 @@ version = "0.34.11"
 
 [[deps.StatsFuns]]
 deps = ["HypergeometricFunctions", "IrrationalConstants", "LogExpFunctions", "Reexport", "Rmath", "SpecialFunctions"]
-git-tree-sha1 = "91f091a8716a6bb38417a6e6f274602a19aaa685"
+git-tree-sha1 = "3f4e1d24289cd974e089c617b1472311a2b1feab"
 uuid = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
-version = "1.5.2"
+version = "2.1.0"
 weakdeps = ["ChainRulesCore", "InverseFunctions"]
 
     [deps.StatsFuns.extensions]
