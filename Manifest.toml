@@ -646,9 +646,9 @@ version = "3.4.1+1"
 
 [[deps.GPUArrays]]
 deps = ["Adapt", "GPUArraysCore", "KernelAbstractions", "LLVM", "LinearAlgebra", "Printf", "Random", "Reexport", "ScopedValues", "Serialization", "SparseArrays", "Statistics"]
-git-tree-sha1 = "1af8927d9e39aff9ade292aeafb53c65d702e3d8"
+git-tree-sha1 = "afd3cddb9800cde892d766595640ccf75a536c5a"
 uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
-version = "11.5.6"
+version = "11.5.7"
 weakdeps = ["JLD2"]
 
     [deps.GPUArrays.extensions]
@@ -1084,9 +1084,9 @@ version = "0.15.1"
 
 [[deps.LazyArrays]]
 deps = ["ArrayLayouts", "FillArrays", "LinearAlgebra", "MacroTools", "SparseArrays"]
-git-tree-sha1 = "8832dc93cc77ab2836776fbd197c4301b85fdcfc"
+git-tree-sha1 = "f4a748dfe61bf060e9f60320433080958bd6befa"
 uuid = "5078a376-72f3-5289-bfd5-ec5146d43c02"
-version = "2.9.8"
+version = "2.9.9"
 
     [deps.LazyArrays.extensions]
     LazyArraysBandedMatricesExt = "BandedMatrices"
