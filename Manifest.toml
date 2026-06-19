@@ -1804,9 +1804,9 @@ version = "6.10.2+2"
 
 [[deps.Qt6Declarative_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Qt6Base_jll", "Qt6ShaderTools_jll", "Qt6Svg_jll"]
-git-tree-sha1 = "d5b7dd0e226774cbd87e2790e34def09245c7eab"
+git-tree-sha1 = "159d253ab126d5b29230cf53521899bea4ef4648"
 uuid = "629bc702-f1f5-5709-abd5-49b8460ea067"
-version = "6.10.2+1"
+version = "6.10.2+2"
 
 [[deps.Qt6ShaderTools_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Qt6Base_jll"]
@@ -2065,9 +2065,9 @@ version = "0.34.12"
 
 [[deps.StatsFuns]]
 deps = ["HypergeometricFunctions", "IrrationalConstants", "LogExpFunctions", "Reexport", "Rmath", "SpecialFunctions"]
-git-tree-sha1 = "3f4e1d24289cd974e089c617b1472311a2b1feab"
+git-tree-sha1 = "770240df9a3b8888065046948f7a09b4e0f997d5"
 uuid = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
-version = "2.1.0"
+version = "2.2.0"
 
     [deps.StatsFuns.extensions]
     StatsFunsChainRulesCoreExt = "ChainRulesCore"
