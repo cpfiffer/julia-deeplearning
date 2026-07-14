@@ -546,9 +546,9 @@ version = "8.1.2+0"
 
 [[deps.FileIO]]
 deps = ["Pkg", "Requires", "UUIDs"]
-git-tree-sha1 = "8e9c059d6857607253e837730dbf780b6b151acd"
+git-tree-sha1 = "6621fef488e496356c9c9625d0562c12a6070819"
 uuid = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
-version = "1.19.0"
+version = "1.20.0"
 weakdeps = ["HTTP"]
 
     [deps.FileIO.extensions]
@@ -1069,9 +1069,9 @@ version = "4.1.0+0"
 
 [[deps.LLVM]]
 deps = ["CEnum", "LLVMExtra_jll", "Libdl", "PrecompileTools", "Preferences", "Printf", "Unicode"]
-git-tree-sha1 = "f74a9668f02e33399baa5ed3a092b3f7a93f192e"
+git-tree-sha1 = "24af42ea221a14a04283e362d83d2cdcb115cd12"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "9.10.0"
+version = "9.10.1"
 weakdeps = ["BFloat16s"]
 
     [deps.LLVM.extensions]
@@ -1987,9 +1987,9 @@ version = "0.5.1+0"
 
 [[deps.Roots]]
 deps = ["Accessors", "CommonSolve", "Printf"]
-git-tree-sha1 = "125cbd31a56de53169c3eed9c17180bc6c245f83"
+git-tree-sha1 = "a7caaf7ba8cf307112ca443784d1b56b4a591455"
 uuid = "f2b01f46-fcfa-551c-844a-d8ac1e96c665"
-version = "3.0.4"
+version = "3.0.5"
 
     [deps.Roots.extensions]
     RootsChainRulesCoreExt = "ChainRulesCore"
