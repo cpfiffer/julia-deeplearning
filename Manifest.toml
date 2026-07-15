@@ -1018,9 +1018,9 @@ version = "3.2.0+0"
 
 [[deps.JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
-git-tree-sha1 = "58927c485919bf17ea308d9d82156de1adf4b006"
+git-tree-sha1 = "027434f0225197332771b3a2ac8c6408021310a4"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.10.12"
+version = "0.11.2"
 
 [[deps.JuliaNVTXCallbacks_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -1281,9 +1281,9 @@ version = "1.2.0"
 
 [[deps.LoweredCodeUtils]]
 deps = ["CodeTracking", "Compiler", "JuliaInterpreter"]
-git-tree-sha1 = "3733419e9a71156b389f3e331672d2e95436783f"
+git-tree-sha1 = "8b6ba8759d80f313a92545246c8dad2a7e8e7b4e"
 uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
-version = "3.6.2"
+version = "3.7.2"
 
 [[deps.MAT]]
 deps = ["CodecZlib", "Dates", "HDF5", "OrderedCollections", "PooledArrays", "SparseArrays", "StringEncodings", "Tables"]
@@ -1964,10 +1964,10 @@ uuid = "ae029012-a4dd-5104-9daa-d747884805df"
 version = "1.3.1"
 
 [[deps.Revise]]
-deps = ["CRC32c", "CodeTracking", "FileWatching", "InteractiveUtils", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Preferences", "REPL", "UUIDs"]
-git-tree-sha1 = "27e3ee13fc8739a59b380d6163d6a82f52c03bd7"
+deps = ["CRC32c", "CodeTracking", "FileWatching", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Preferences", "REPL", "UUIDs"]
+git-tree-sha1 = "838f84266bf2e9ca4b7d0b8965807c7a72745501"
 uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "3.15.1"
+version = "3.16.1"
 weakdeps = ["Distributed"]
 
     [deps.Revise.extensions]
