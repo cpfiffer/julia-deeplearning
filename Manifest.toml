@@ -1018,9 +1018,9 @@ version = "3.2.0+0"
 
 [[deps.JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
-git-tree-sha1 = "027434f0225197332771b3a2ac8c6408021310a4"
+git-tree-sha1 = "cac745d4e5b7980d1121a549bc8aeb44b47cbd09"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.11.2"
+version = "0.11.3"
 
 [[deps.JuliaNVTXCallbacks_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
