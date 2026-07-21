@@ -1018,9 +1018,9 @@ version = "3.2.0+0"
 
 [[deps.JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
-git-tree-sha1 = "cac745d4e5b7980d1121a549bc8aeb44b47cbd09"
+git-tree-sha1 = "c3d401f110454b4ea24a76be33f6ee0d7d385103"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.11.3"
+version = "0.11.4"
 
 [[deps.JuliaNVTXCallbacks_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -1281,9 +1281,9 @@ version = "1.2.0"
 
 [[deps.LoweredCodeUtils]]
 deps = ["CodeTracking", "Compiler", "JuliaInterpreter"]
-git-tree-sha1 = "8b6ba8759d80f313a92545246c8dad2a7e8e7b4e"
+git-tree-sha1 = "1d4c737ab26f51ceed52ab2019c09b7660eb7440"
 uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
-version = "3.7.2"
+version = "3.8.0"
 
 [[deps.MAT]]
 deps = ["CodecZlib", "Dates", "HDF5", "OrderedCollections", "PooledArrays", "SparseArrays", "StringEncodings", "Tables"]
