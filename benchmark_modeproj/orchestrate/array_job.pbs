@@ -1,0 +1,49 @@
+#!/bin/bash
+# array_job.pbs - Section 5 orchestration. One array index per (arch, seed, member).
+#
+# Head-to-head = 2 arms x 5 seeds x 5 members = 50 tasks (indices 0..49).
+#   idx 0..24  -> arch=baseline
+#   idx 25..49 -> arch=candidate
+#   within each arm: seed   = (idx % 25) // 5   in {0..4}
+#                    member =  idx % 5          in {0..4}
+#
+# Budget-first: run smoke.sh (1 arch x 1 seed x 1 member) and confirm it
+# converges + writes artifacts BEFORE submitting this array.
+#
+# Submit: qsub -J 0-49 array_job.pbs
+# (Second wave / ablations use a separate submission with a different index map;
+#  see launch.md. Only launch the second wave if the primary DeltaSIS CI
+#  excludes 0.)
+#
+#PBS -N modeproj_bench
+#PBS -J 0-49
+#PBS -l select=1:ncpus=8:ngpus=1:mem=48gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -o /srv/scratch/z5076150/benchmark_modeproj/logs/
+
+set -euo pipefail
+
+module purge
+source ~/.bashrc
+conda activate pyg
+
+cd "${PBS_O_WORKDIR:-$PWD}"
+
+IDX=${PBS_ARRAY_INDEX}
+if [ "$IDX" -lt 25 ]; then ARCH="baseline"; LOCAL=$IDX; else ARCH="candidate"; LOCAL=$((IDX-25)); fi
+SEED=$(( (LOCAL / 5) % 5 ))
+MEMBER=$(( LOCAL % 5 ))
+
+echo "task idx=$IDX -> arch=$ARCH seed=$SEED member=$MEMBER on $(hostname)"
+
+OUT_ROOT="/srv/scratch/z5076150/benchmark_modeproj"
+mkdir -p "$OUT_ROOT/logs"
+
+# train.py quarantines its own failures and appends runs.jsonl atomically.
+python train.py \
+    --arch "$ARCH" \
+    --seed "$SEED" \
+    --member "$MEMBER" \
+    --prereg "$OUT_ROOT/prereg.json" \
+    --out-root "$OUT_ROOT"
