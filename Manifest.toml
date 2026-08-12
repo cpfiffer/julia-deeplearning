@@ -2676,9 +2676,9 @@ version = "1.1.7+0"
 
 [[deps.libaom_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "852795ceb802e0f375e749d07ae97ba1179ebfcb"
+git-tree-sha1 = "ef17c47d22224aaecc76e597ab21a072e025cf7b"
 uuid = "a4ae2306-e953-59d6-aa16-d00cac43593b"
-version = "3.13.3+1"
+version = "3.14.1+0"
 
 [[deps.libass_jll]]
 deps = ["Artifacts", "Bzip2_jll", "FreeType2_jll", "FriBidi_jll", "HarfBuzz_jll", "JLLWrappers", "Libdl", "Zlib_jll"]
