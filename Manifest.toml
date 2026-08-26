@@ -681,9 +681,9 @@ version = "1.11.0"
 
 [[deps.GLFW_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Libglvnd_jll", "Xorg_libXcursor_jll", "Xorg_libXi_jll", "Xorg_libXinerama_jll", "Xorg_libXrandr_jll", "libdecor_jll", "xkbcommon_jll"]
-git-tree-sha1 = "9e0fb9e54594c47f278d75063980e43066e26e20"
+git-tree-sha1 = "64bbbb7d1499297751b536dd39c58b20750ab1db"
 uuid = "0656b61e-2033-5cc2-a64a-77c0f6c09b89"
-version = "3.4.1+1"
+version = "3.5.1+0"
 
 [[deps.GPUArrays]]
 deps = ["Adapt", "GPUArraysCore", "KernelAbstractions", "LLVM", "LinearAlgebra", "Printf", "Random", "Reexport", "ScopedValues", "Serialization", "SparseArrays", "Statistics"]
@@ -1070,9 +1070,9 @@ version = "4.1.0+0"
 
 [[deps.LLVM]]
 deps = ["CEnum", "LLVMExtra_jll", "Libdl", "PrecompileTools", "Preferences", "Printf", "Unicode"]
-git-tree-sha1 = "5f708df9df936ff026cc6232e187ddf93f343430"
+git-tree-sha1 = "d4bfee24427f4f441bd9212a107e375c39663aab"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "9.13.0"
+version = "9.13.1"
 weakdeps = ["BFloat16s"]
 
     [deps.LLVM.extensions]
@@ -1080,9 +1080,9 @@ weakdeps = ["BFloat16s"]
 
 [[deps.LLVMExtra_jll]]
 deps = ["Artifacts", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
-git-tree-sha1 = "23caf34b74ef5d02b03f2c2853724df7cf6ec3ca"
+git-tree-sha1 = "d77aea19c9a71059a021acd99b0a4343e9661d94"
 uuid = "dad2f222-ce93-54a1-a47d-0025e8a3acab"
-version = "0.0.46+0"
+version = "0.0.47+0"
 
 [[deps.LLVMLoopInfo]]
 git-tree-sha1 = "2e5c102cfc41f48ae4740c7eca7743cc7e7b75ea"
