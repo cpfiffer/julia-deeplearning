@@ -786,11 +786,6 @@ git-tree-sha1 = "7a98c6502f4632dbe9fb1973a4244eaa3324e84d"
 uuid = "86223c79-3864-5bf0-83f7-82e725a168b6"
 version = "1.13.1"
 
-[[deps.Grisu]]
-git-tree-sha1 = "53bb909d1151e57e2484c3d1b53e19552b887fb2"
-uuid = "42e2da0e-8278-4e71-bc24-59509adca0fe"
-version = "1.0.2"
-
 [[deps.HDF5]]
 deps = ["Compat", "HDF5_jll", "Libdl", "MPIPreferences", "Mmap", "Preferences", "Printf", "Random", "Requires", "UUIDs"]
 git-tree-sha1 = "491ea627ac824619f34168e29a0427a9e00e3e40"
@@ -2051,10 +2046,10 @@ uuid = "605ecd9f-84a6-4c9e-81e2-4798472b76a3"
 version = "0.1.0"
 
 [[deps.Showoff]]
-deps = ["Dates", "Grisu"]
-git-tree-sha1 = "91eddf657aca81df9ae6ceb20b959ae5653ad1de"
+deps = ["Dates"]
+git-tree-sha1 = "8238217340ad0aaabe11afe39c1098b5bc9f4c8e"
 uuid = "992d4aef-0814-514b-bc4d-f2e9a6c4116f"
-version = "1.0.3"
+version = "1.1.1"
 
 [[deps.SimpleBufferStream]]
 git-tree-sha1 = "f305871d2f381d21527c770d4788c06c097c9bc1"
