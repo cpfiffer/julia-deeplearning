@@ -98,9 +98,9 @@ version = "0.1.1"
 
 [[deps.Atomix]]
 deps = ["UnsafeAtomics"]
-git-tree-sha1 = "b9e07ea9199cd995125c649e09a93f175737f7b9"
+git-tree-sha1 = "1bbcf97714051f302b3beafab65bcdeb6044c4df"
 uuid = "a9b6321e-bd34-4604-b9c9-b65b8de01458"
-version = "1.2.0"
+version = "1.2.1"
 
     [deps.Atomix.extensions]
     AtomixCUDAExt = "CUDA"
@@ -2759,9 +2759,9 @@ version = "17.7.0+0"
 
 [[deps.s2n_tls_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "f3a7831c8a44767ff9e36d41bb1f7b576bbce81c"
+git-tree-sha1 = "a968513a5d3b3f3c6e9cbc73edb0d9c05b9fe77e"
 uuid = "cddc5d3d-934d-5d3a-9747-62fc12ea3f48"
-version = "1.7.8+0"
+version = "1.7.9+0"
 
 [[deps.x264_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
